@@ -8,16 +8,22 @@ import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import KYCPage.AClKYCformPage;
 import KYCPage.AClLoginPage;
-
 import LibraryFiles.BaseClass;
 import LibraryFiles.DataSupplierForKYCForm;
 import LibraryFiles.UtilityClass;
+import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 import net.bytebuddy.utility.RandomString;
 	
 public class KYCPage extends BaseClass
@@ -26,7 +32,11 @@ public class KYCPage extends BaseClass
 	AClLoginPage lp;
     AClKYCformPage kp;
 	SoftAssert soft;
-	
+	ExtentSparkReporter htmlReporter;
+	 
+    ExtentReports extent;
+    //helps to generate the logs in the test report.
+    ExtentTest test;
 @BeforeMethod
 public void openBrowser() throws Throwable 
 {
@@ -35,13 +45,34 @@ public void openBrowser() throws Throwable
 	lp= new AClLoginPage(driver);
 	kp=new AClKYCformPage(driver);
 
-	soft=new SoftAssert();		
+	soft=new SoftAssert();	
+
 /*	hp.clickHomePageSignInButton();	
 	lp.inpLoginPageEmail(UtilityClass.getPFData("EMailID"));
 	lp.inpLoginPagePwd(UtilityClass.getPFData("Password"));
 	lp.clickLoginPageLoginBtn();*/
+
 }	
-		
+@BeforeTest
+public void startReport() {
+    // initialize the HtmlReporter
+    htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir") +"/test-output/testReport.html");
+
+    //initialize ExtentReports and attach the HtmlReporter
+    extent = new ExtentReports();
+    extent.attachReporter(htmlReporter);
+
+
+    //configuration items to change the look and feel
+    //add content, manage tests etc
+
+    htmlReporter.config().setDocumentTitle("Simple Automation Report");
+    htmlReporter.config().setReportName("Test Report");
+ //   htmlReporter.config().setChartVisibilityOnOpen(true);
+ //   htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
+    htmlReporter.config().setTheme(Theme.DARK);
+    htmlReporter.config().setTimeStampFormat("EEEE, MMMM dd, yyyy, hh:mm a '('zzz')'");
+}	
 
 @Test(dataProvider = "dataContainerKYCForm", dataProviderClass = DataSupplierForKYCForm.class)public void KYCFormFill
 (
@@ -428,9 +459,33 @@ public void openBrowser() throws Throwable
 	
 	Reporter.log(compName +iCoName);*/
 
-	soft.assertAll();
+	
+	test = extent.createTest("Test Case 1", "The test case 1 has passed");
+    soft.assertTrue(true);
+    soft.assertAll();
 }
-
+@Test(timeOut = 1)
+public void test2() 
+{
+	String s1="s1";
+	String s2="s2";
+	test = extent.createTest("Test Case 1", "The test case 1 has passed");
+    soft.assertEquals(s1, s2);
+    Reporter.log(s1+"==>"+s2,true);
+    soft.assertAll();
+}
+@AfterMethod
+public void getResult(ITestResult result) {
+    if(result.getStatus() == ITestResult.FAILURE) {
+        test.log(Status.FAIL,result.getThrowable());
+    }
+    else if(result.getStatus() == ITestResult.SUCCESS) {
+        test.log(Status.PASS, result.getTestName());
+    }
+    else {
+        test.log(Status.SKIP, result.getTestName());
+    }
+}
 @AfterMethod(enabled =false)
 public void CaptureFailedTCSS(ITestResult s1) throws IOException, InterruptedException
 {
@@ -446,6 +501,7 @@ if(s1.getStatus()==ITestResult.FAILURE)
 @AfterClass
 public void logOut() throws IOException
 {
+	 extent.flush();
  //  driver.close();
 }
 }

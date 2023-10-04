@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Oct 04 12:11:07 IST 2023</td>
+<td>Started on:</td><td>Wed Oct 04 19:08:08 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>44 seconds (44555 ms)</td>
+<tr><td>Total time:</td><td>45 seconds (45450 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,73 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='KycPageTC.KYCPage.test2()'><b>test2</b><br>Test class: KycPageTC.KYCPage</td>
+<td><div><pre>org.testng.internal.thread.ThreadTimeoutException: Method KycPageTC.KYCPage.test2() didn&apos;t finish within the time-out 1
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeoutWithNewExecutor(MethodInvocationHelper.java:391)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:303)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1221439830", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1221439830'><pre>org.testng.internal.thread.ThreadTimeoutException: Method KycPageTC.KYCPage.test2() didn&apos;t finish within the time-out 1
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeoutWithNewExecutor(MethodInvocationHelper.java:391)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:303)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>KycPageTC.KYCPage@5149d738</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,17 +143,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='KycPageTC.KYCPage.KYCFormFill()'><b>KYCFormFill</b><br>Test class: KycPageTC.KYCPage<br>Parameters: Positive, Hashtag InfoSystem 123456, parent Hashtag InfoSystem 123456, 1/405, 1st Floor, hashtag, Nanpura, Surat, Gujarat 395001, Israel, 123456789, www.hashtaginfosystem.com, hashtaginfosystem.com, 100, Others, Private Limited, Others, Transportation, India, 1, 1, 2021, REG123455, TRD456, 31, 12, 2025, VAT456, State Bank Of India, India, 1/405, 2nd Floor, SBI, Surat, Gujarat 395001, SBISWIFT1245658, HashCurrent Avccount, Afghanistan-Afghani, SBINO123456789123456, SBIIBAN12235555544444, Mr. John Snow B'M, International, +918698706548, ICICI Bank, ICICISWIT122322, Mrs. Robert B'aratheon, 51, Australia, Miss. Aegon T'argarian, 20, Bahamas, Mr. P B D'hangar PCD, C E Officer, International, +123456789041, pbdhanger@gmail.com, Dr. A S S'hivade CFD, M Director, Colombia, 1234567842, asshivade@gmail.com, Er. Emmar O'DD, Finance Manager, Oman, 789561243, emmar_123@gmail.com, Ms. J P Datta A'CCD, Operation Manager, Afghanistan, 7894561244, jpdatta@gmail.com, Oil Filtration, Mr. Johan C'arter, Dr. Jiya D'susa, Oman, 789456444, Jiya@hashtaginfosystem.com, Mr. Tom J'erry, Oman, 789561555, tom@hashtaginfosystem.in, C:\Users\PC\git\AdamNewKyc\AdamNewKyc\Upload Document\1certOfInc43.png, C:\Users\PC\git\AdamNewKyc\AdamNewKyc\Upload Document\1certOfInc43.png, C:\Users\PC\git\AdamNewKyc\AdamNewKyc\Upload Document\1certOfInc43.png, C:\Users\PC\git\AdamNewKyc\AdamNewKyc\Upload Document\1certOfInc43.png, C:\Users\PC\git\AdamNewKyc\AdamNewKyc\Upload Document\1certOfInc43.png, C:\Users\PC\git\AdamNewKyc\AdamNewKyc\Upload Document\1certOfInc43.png, C:\Users\PC\git\AdamNewKyc\AdamNewKyc\Upload Document\1certOfInc43.png, C:\Users\PC\git\AdamNewKyc\AdamNewKyc\Upload Document\1certOfInc43.png, C:\Users\PC\git\AdamNewKyc\AdamNewKyc\Upload Document\1certOfInc43.png, Mr. Tom J'erry, https://adamadminui.web.app, tester.adambrands@gmail.com, Admin@123<br/>
-<a href="#Output-682025329" onClick='toggleBox("Output-682025329", this, "Show output", "Hide output");'>Show output</a>
+<td title='KycPageTC.KYCPage.KYCFormFill()'><b>KYCFormFill</b><br>Test class: KycPageTC.KYCPage<br>Parameters: Positive, Hashtag InfoSystem 123456, parent Hashtag InfoSystem 123456, 1/405, 1st Floor, hashtag, Nanpura, Surat, Gujarat 395001, Israel, 123456789, www.hashtaginfosystem.com, hashtaginfosystem.com, 100, Others, Private Limited, Others, Transportation, India, 1, 1, 2021, REG123455, TRD456, 31, 12, 2025, VAT456, State Bank Of India, India, 1/405, 2nd Floor, SBI, Surat, Gujarat 395001, SBISWIFT1245658, HashCurrent Avccount, Afghanistan-Afghani, SBINO123456789123456, SBIIBAN12235555544444, Mr. John Snow B'M, International, +918698706548, ICICI Bank, ICICISWIT122322, Mrs. Robert B'aratheon, 51, Australia, Miss. Aegon T'argarian, 20, Bahamas, Mr. P B D'hangar PCD, C E Officer, International, +123456789041, pbdhanger@gmail.com, Dr. A S S'hivade CFD, M Director, Colombia, 1234567842, asshivade@gmail.com, Er. Emmar O'DD, Finance Manager, Oman, 789561243, emmar_123@gmail.com, Ms. J P Datta A'CCD, Operation Manager, Afghanistan, 7894561244, jpdatta@gmail.com, Oil Filtration, Mr. Johan C'arter, Dr. Jiya D'susa, Oman, 789456444, Jiya@hashtaginfosystem.com, Mr. Tom J'erry, Oman, 789561555, tom@hashtaginfosystem.in, C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\1certOfInc43.png, C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\2ArtOfAsso107.jpeg, C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\3TradeLisc133.pdf, C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\4TaxRegi.jpeg, C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\5CompProfile70.png, www.hashtaginfosystemurl.com, C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\6BankRef43.png, C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\7Passport133.pdf, C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\8AuthoSign105.jpeg, Mr. Tom J'erry, https://adamadminui.web.app, tester.adambrands@gmail.com, Admin@123<br/>
+<a href="#Output-1990828041" onClick='toggleBox("Output-1990828041", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-682025329" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-682025329">
+<a href="#Output-1990828041" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1990828041">
 true<br/>
 </div>
 </td>
 <td></td>
 <td>37</td>
-<td>KycPageTC.KYCPage@298a5e20</td></tr>
+<td>KycPageTC.KYCPage@5149d738</td></tr>
 </table><p>
 </body>
 </html>
