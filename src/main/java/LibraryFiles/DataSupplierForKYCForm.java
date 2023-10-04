@@ -17,7 +17,7 @@ public class DataSupplierForKYCForm
 @DataProvider(name = "dataContainerKYCForm")
 public String[][] excelDataSupplierKYCData() throws IOException
 {
-FileInputStream file = new FileInputStream("C:\\Users\\PC\\git\\AdamNewKyc\\AdamNewKyc\\Test Data\\excelDataProviderKYCPage.xlsx");
+FileInputStream file = new FileInputStream("C:\\Users\\PC\\eclipse-workspace\\AdamJayKyc\\Test Data\\excelDataProviderKYCPage.xlsx");
 XSSFWorkbook Workbook = new XSSFWorkbook(file);
 XSSFSheet sheet = Workbook.getSheet("KYC");
 int row=endRow-startRow+1;
@@ -64,7 +64,7 @@ return data;
 @DataProvider(name = "dataContainerEditKYC")
 public String[][] excelDataSupplierEditKYCData() throws IOException
 {
-FileInputStream file = new FileInputStream("C:\\\\Users\\\\PC\\\\git\\\\AdamNewKyc\\\\AdamNewKyc\\\\Test Data\\\\excelDataProviderKYCPage.xlsx");
+FileInputStream file = new FileInputStream("C:\\Users\\PC\\eclipse-workspace\\AdamJayKyc\\Test Data\\excelDataProviderKYCPage.xlsx");
 XSSFWorkbook Workbook = new XSSFWorkbook(file);
 XSSFSheet sheet = Workbook.getSheet("EditKYC");
 
@@ -94,7 +94,7 @@ return data;
 @DataProvider(name = "dataContainerKYCCompanyInfo")
 public String[][] excelDSCompInfo() throws IOException
 {
-FileInputStream file = new FileInputStream("C:\\\\Users\\\\PC\\\\git\\\\AdamNewKyc\\\\AdamNewKyc\\\\Test Data\\\\excelDataProviderKYCPage.xlsx");
+FileInputStream file = new FileInputStream("C:\\Users\\PC\\eclipse-workspace\\AdamJayKyc\\Test Data\\excelDataProviderKYCPage.xlsx");
 XSSFWorkbook Workbook = new XSSFWorkbook(file);
 XSSFSheet sheet = Workbook.getSheet("KYCCompInfo");
 
@@ -120,7 +120,7 @@ return data;
 @DataProvider(name = "dataContainerKYCCompanyStructure")
 public String[][] excelDSKYCCompanyStructure() throws IOException
 {
-FileInputStream file = new FileInputStream("C:\\\\Users\\\\PC\\\\git\\\\AdamNewKyc\\\\AdamNewKyc\\\\Test Data\\\\excelDataProviderKYCPage.xlsx");
+FileInputStream file = new FileInputStream("C:\\Users\\PC\\eclipse-workspace\\AdamJayKyc\\Test Data\\excelDataProviderKYCPage.xlsx");
 XSSFWorkbook Workbook = new XSSFWorkbook(file);
 XSSFSheet sheet = Workbook.getSheet("KYCCompStru");
 

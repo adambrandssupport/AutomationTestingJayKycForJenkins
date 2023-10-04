@@ -20,7 +20,7 @@ public class UtilityClass
 
 public static String getPFData(String key) throws IOException
 {
-	FileInputStream file= new FileInputStream("C:\\Users\\PC\\git\\AdamNewKyc\\AdamNewKyc\\PropertyFile.properties");
+	FileInputStream file= new FileInputStream("C:\\Users\\PC\\eclipse-workspace\\AdamJayKyc\\PropertyFile.properties");
 	Properties p = new Properties();
 	p.load(file);
 	String value = p.getProperty(key);
@@ -29,7 +29,7 @@ public static String getPFData(String key) throws IOException
 }
 public static String getTD(int rowIndex, int colIndex) throws IOException
 {
-FileInputStream file= new FileInputStream("C:\\Users\\PC\\git\\AdamNewKyc\\AdamNewKyc\\Test Data\\TestDataHomePage.xlsx");
+FileInputStream file= new FileInputStream("C:\\Users\\PC\\eclipse-workspace\\AdamJayKyc\\Test Data\\TestDataHomePage.xlsx");
 String value = WorkbookFactory.create(file).getSheet("Sheet1").getRow(rowIndex).getCell(colIndex).getStringCellValue();
 return value;
 }
@@ -37,7 +37,7 @@ return value;
 public static void captureSS(WebDriver driver, String TCID) throws IOException
 {
     File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-    File dest = new File("C:\\Users\\PC\\git\\AdamNewKyc\\AdamNewKyc\\FailedTCScreenShots\\Screenshot"+TCID+".png");
+    File dest = new File("C:\\Users\\PC\\eclipse-workspace\\AdamJayKyc\\FailedTCScreenShots\\Screenshot"+TCID+".png");
     FileHandler.copy(src, dest);
 }
 

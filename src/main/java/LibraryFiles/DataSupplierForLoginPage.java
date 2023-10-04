@@ -14,7 +14,7 @@ public class DataSupplierForLoginPage
 @DataProvider(name = "dataContainerTFLogin")
 public String[][] excelDataSupplierTFLogin() throws IOException
 {
-FileInputStream file = new FileInputStream("C:\\Users\\PC\\git\\AdamNewKyc\\AdamNewKyc\\Test Data\\excelDataProviderLoginPage.xlsx");
+FileInputStream file = new FileInputStream("C:\\Users\\PC\\eclipse-workspace\\AdamJayKyc\\Test Data\\excelDataProviderLoginPage.xlsx");
 XSSFWorkbook Workbook = new XSSFWorkbook(file);
 XSSFSheet sheet = Workbook.getSheet("LoginCombination");
 
@@ -61,7 +61,7 @@ return data;
 @DataProvider(name = "dataContainerForNegativeTC")
 public String[][] excelDataSupplierNegative() throws IOException
 {
-FileInputStream file = new FileInputStream("C:\\Users\\PC\\git\\AdamNewKyc\\AdamNewKyc\\Test Data\\excelDataProviderLoginPage.xlsx");
+FileInputStream file = new FileInputStream("C:\\Users\\PC\\eclipse-workspace\\AdamJayKyc\\Test Data\\excelDataProviderLoginPage.xlsx");
 XSSFWorkbook Workbook = new XSSFWorkbook(file);
 XSSFSheet sheet = Workbook.getSheet("NegativeTC");
 

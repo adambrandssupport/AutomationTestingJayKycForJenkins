@@ -14,7 +14,7 @@ public class DataSupplierForContactUsPage
 @DataProvider(name = "dataContainerContactUsPage")
 public String[][] excelDataSupplierTFLogin() throws IOException
 {
-FileInputStream file = new FileInputStream("C:\\Users\\PC\\git\\AdamNewKyc\\AdamNewKyc\\Test Data\\excelDataProviderContactUsPage.xlsx");
+FileInputStream file = new FileInputStream("C:\\Users\\PC\\eclipse-workspace\\AdamJayKyc\\Test Data\\excelDataProviderContactUsPage.xlsx");
 XSSFWorkbook Workbook = new XSSFWorkbook(file);
 XSSFSheet sheet = Workbook.getSheet("ContactUsForm");
 

@@ -17,7 +17,7 @@ int endRow=10;
 @DataProvider(name = "dataContainerRegistrationPage")
 public String[][] excelDSRegistrationPage() throws IOException
 {
-FileInputStream file = new FileInputStream("C:\\Users\\PC\\git\\AdamNewKyc\\AdamNewKyc\\Test Data\\excelDataProviderRegistrationPage.xlsx");
+FileInputStream file = new FileInputStream("C:\\Users\\PC\\eclipse-workspace\\AdamJayKyc\\Test Data\\excelDataProviderRegistrationPage.xlsx");
 XSSFWorkbook Workbook = new XSSFWorkbook(file);
 XSSFSheet sheet = Workbook.getSheet("RegiCombin");
 
