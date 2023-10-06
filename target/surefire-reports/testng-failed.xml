@@ -10,7 +10,7 @@
           <include name="getResult"/>
           <include name="logOut"/>
           <include name="openBrowser"/>
-          <include name="startReport"/>
+          <include name="startExtentReport"/>
         </methods>
       </class> <!-- KycPageTC.KYCPage -->
     </classes>

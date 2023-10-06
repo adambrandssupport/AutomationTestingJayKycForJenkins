@@ -9,8 +9,8 @@
           <include name="test2"/>
           <include name="getResult"/>
           <include name="logOut"/>
-          <include name="startReport"/>
           <include name="openBrowser"/>
+          <include name="startExtentReport"/>
         </methods>
       </class> <!-- KycPageTC.KYCPage -->
     </classes>

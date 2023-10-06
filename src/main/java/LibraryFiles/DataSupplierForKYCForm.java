@@ -107,7 +107,7 @@ String[][] data = new String[row-2][col];
    {
     for(int j=0; j<col; j++)
        {
-    	DataFormatter df = new  DataFormatter();
+    	DataFormatter df = new DataFormatter();
     	   data [i][j]=df.formatCellValue(sheet.getRow(i+2).getCell(j));
        }
     	System.out.println();
@@ -142,5 +142,6 @@ Workbook.close();
 file.close(); 
 return data;
 }
+
 
 }

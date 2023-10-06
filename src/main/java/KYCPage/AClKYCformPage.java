@@ -23,7 +23,7 @@ public class AClKYCformPage
 @FindBy(xpath="//input[@name='ParentCompany']")private WebElement parCompName;
 @FindBy(xpath="//div[4]//div[1]//div[2]//p[2]")private WebElement parCompNameEr;
 @FindBy(xpath="//input[@name='companyRegisteredAddress']")private WebElement compRegAddrs;
-@FindBy(xpath="//div[4]//div[1]//div[3]//p[2]")private WebElement compRegAddrsEr;
+@FindBy(xpath="//input[@name='companyWebsite']/following-sibling::div")private WebElement compRegAddrsEr;
 @FindBy(xpath="(//div[@class='selected-flag'])[1]")private WebElement seleInfoCountry;
 @FindBy(xpath="//span[@class='country-name']")private List<WebElement> seleCountrylist;
 
@@ -75,20 +75,19 @@ public class AClKYCformPage
 @FindBy(xpath="//input[@name='IBAN']")private WebElement iBan;
 @FindBy(xpath="//input[@name='BankAccountMangersName']")private WebElement bnkAccMangName;
 @FindBy(xpath="(//select[@class='PhoneInputCountrySelect'])[2]")private WebElement seleBnkAccManCountry;
-@FindBy(xpath="//input[@name='BankAccountManagersContactDetails']")private WebElement bnkAccMangConct;
+@FindBy(xpath="(//input[@placeholder='Phone No.'])[2]")private WebElement bnkAccMangConct;
 @FindBy(xpath="//input[@name='CorrespondentBankName']")private WebElement corrBnkName;
 @FindBy(xpath="//input[@name='CorrespondentBankSwiftCode']")private WebElement corrBnkSwift;
 
 //*Share Holder*//
-@FindBy(xpath="//input[@name='name']")private WebElement shrHldName1;
-@FindBy(xpath="//input[@name='percentage']")private WebElement shrHldPerctg1;
+@FindBy(xpath="//input[@name='shareHolderName1']")private WebElement shrHldName1;
+@FindBy(xpath="//input[@name='Percentage1']")private WebElement shrHldPerctg1;
 @FindBy(xpath="//select[@class='sharholderCountry']")private WebElement shrHldCountry1;
 //@FindBy(xpath="//input[@placeholder='Search']")private WebElement typeShrCountry1;
 //@FindBy(xpath="//li")private List<WebElement> listShrCountry1;
-@FindBy(xpath="//button[text()='Add Row']")private WebElement addRowBtn;
-@FindBy(xpath="(//button[text()='Submit'])[1]")private WebElement shrSubmitBtn;
-@FindBy(xpath="(//input[@name='name'])[2]")private WebElement shrHldName2;
-@FindBy(xpath="(//input[@name='percentage'])[2]")private WebElement shrHldPerctg2;
+
+@FindBy(xpath="//input[@name='shareHolderName2']")private WebElement shrHldName2;
+@FindBy(xpath="//input[@name='Percentage2']")private WebElement shrHldPerctg2;
 @FindBy(xpath="(//select[@class='sharholderCountry'])[2]")private WebElement shrHldCountry2;
 //@FindBy(xpath="//input[@placeholder='Search']")private WebElement typeShrCountry2;
 //@FindBy(xpath="//li")private List<WebElement> listShrCountry2;
@@ -108,25 +107,25 @@ public class AClKYCformPage
 @FindBy(xpath="//input[@name='PrimaryContactName']")private WebElement pCName;
 @FindBy(xpath="//input[@name='PrimaryContactDesignation']")private WebElement pCDesigna;
 @FindBy(xpath="(//select[@class='PhoneInputCountrySelect'])[3]")private WebElement seleCDPCCountry;
-@FindBy(xpath="(//input[@type='tel'])[2]")private WebElement pCphNo;
+@FindBy(xpath="(//input[@type='tel'])[3]")private WebElement pCphNo;
 @FindBy(xpath="//input[@name='PrimaryContactEmail']")private WebElement pCEmail;
 
 @FindBy(xpath="//input[@name='CreditNAME']")private WebElement cfdName;
 @FindBy(xpath="//input[@name='CreditDesignation']")private WebElement cfdDesigna;
 @FindBy(xpath="(//select[@class='PhoneInputCountrySelect'])[4]")private WebElement seleCFCountry;
-@FindBy(xpath="(//input[@type='tel'])[4]")private WebElement cfdphNo;
+@FindBy(xpath="(//input[@type='tel'])[5]")private WebElement cfdphNo;
 @FindBy(xpath="//input[@name='CreditEmail']")private WebElement cfdEmail;
 
 @FindBy(xpath="//input[@name='OperationDepartmentName']")private WebElement opDCName;
 @FindBy(xpath="//input[@name='OperationDepartmentDesignation']")private WebElement opDCDesigna;
 @FindBy(xpath="(//select[@class='PhoneInputCountrySelect'])[5]")private WebElement seleOpDCountry;
-@FindBy(xpath="(//input[@type='tel'])[3]")private WebElement opDCPhNo;
+@FindBy(xpath="(//input[@type='tel'])[4]")private WebElement opDCPhNo;
 @FindBy(xpath="//input[@name='OperationDepartmentEmail']")private WebElement opDCEmail;
 
 @FindBy(xpath="//input[@name='AccountDepartName']")private WebElement acdName;
 @FindBy(xpath="//input[@name='AcoountDepartDesignation']")private WebElement acdDesigna;
 @FindBy(xpath="(//select[@class='PhoneInputCountrySelect'])[6]")private WebElement seleAccCountry;
-@FindBy(xpath="(//input[@type='tel'])[5]")private WebElement acdphNo;
+@FindBy(xpath="(//input[@type='tel'])[6]")private WebElement acdphNo;
 @FindBy(xpath="//input[@name='AccountDepartmentEmail']")private WebElement acdEmail;
 
 @FindBy(xpath="//input[@name='ProposedBusiness']")private WebElement proposBusiness;
@@ -135,12 +134,12 @@ public class AClKYCformPage
 //*Trade Referance*//
 @FindBy(xpath="//input[@name='TradeReferenceName1']")private WebElement tRName1;
 @FindBy(xpath="")private WebElement seleTrRefCountry1;
-@FindBy(xpath="(//input[@type='tel'])[6]")private WebElement tRPhone1;
+@FindBy(xpath="//input[@placeholder='Phone 1']")private WebElement tRPhone1;
 @FindBy(xpath="//input[@name='TradeReferenceEmail1']")private WebElement tREmail1;
 
 @FindBy(xpath="//input[@name='TradeReferenceName2']")private WebElement tRName2;
 @FindBy(xpath="(//select[@class='PhoneInputCountrySelect'])[8]")private WebElement seleTrRefCountry2;
-@FindBy(xpath="(//input[@type='tel'])[7]")private WebElement tRPhone2;
+@FindBy(xpath="//input[@placeholder='Phone 2']")private WebElement tRPhone2;
 @FindBy(xpath="//input[@name='TradeReferenceEmail2']")private WebElement tREmail2;
 
 //*Upload Document*//
@@ -624,16 +623,6 @@ public AClKYCformPage(WebDriver driver) throws Throwable
  // 		  rb.delay(500);
 //	      }	  
 //	  }	
- }
- 
- public void clickAClKYCformPageShrHldAddBtn()
- {
-	 addRowBtn.click();
- }
- 
- public void clickAClKYCformPageShrHldSubmitBtn()
- {
-	 shrSubmitBtn.click();
  }
  
 //*Contact Details*//

@@ -7,6 +7,7 @@ import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -41,12 +42,10 @@ public class KYCPage extends BaseClass
 public void openBrowser() throws Throwable 
 {
 	initialiseBrowser();      //nullpointer Exception
-
 	lp= new AClLoginPage(driver);
 	kp=new AClKYCformPage(driver);
-
 	soft=new SoftAssert();	
-
+	
 /*	hp.clickHomePageSignInButton();	
 	lp.inpLoginPageEmail(UtilityClass.getPFData("EMailID"));
 	lp.inpLoginPagePwd(UtilityClass.getPFData("Password"));
@@ -54,7 +53,7 @@ public void openBrowser() throws Throwable
 
 }	
 @BeforeTest
-public void startReport() {
+public void startExtentReport() {
     // initialize the HtmlReporter
     htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir") +"/test-output/testReport.html");
 
@@ -146,12 +145,12 @@ public void startReport() {
 	soft.assertFalse(result3);
 	
 	boolean result4 = kp.inpAClKYCformPageIRegCompConNoEr();
-	soft.assertFalse(result4);
+	soft.assertFalse(result4);*/
 	
-	boolean result5 = kp.inpAClKYCformPageIRegCompWSiteEr();
-	soft.assertFalse(result5);
+ //boolean result5 = kp.inpAClKYCformPageIRegCompWSiteEr();
+//	soft.assertFalse(result5,"error msg not diaplayed");
 		
-	boolean result6 = kp.inpAClKYCformPageIRegCompDomainEr();
+/*	boolean result6 = kp.inpAClKYCformPageIRegCompDomainEr();
 	soft.assertFalse(result6);
 	
 	boolean result7 = kp.inpAClKYCformPageIRegCompEmployeeEr();
@@ -225,7 +224,7 @@ public void startReport() {
 	Thread.sleep(100);
 //	kp.selectAClKYCformPageBankAccMangCountry(bMangCountry);
 	Thread.sleep(100);
-//	kp.inpAClKYCformPageBankAccMangConct(bMangCont);
+	kp.inpAClKYCformPageBankAccMangConct(bMangCont);
 	Thread.sleep(100);
 	kp.inpAClKYCformPageBankCorrBnkName(bCorBankName);
 	Thread.sleep(100);
@@ -240,7 +239,7 @@ public void startReport() {
 	kp.selectAClKYCformPageShrHldCountry1(shrCountry1);
 //	Thread.sleep(100);
 	
-	kp.clickAClKYCformPageShrHldAddBtn();
+	
 	Thread.sleep(100);
 	kp.inpAClKYCformPageShrHldName2(shrHldName2);
 	Thread.sleep(100);
@@ -249,7 +248,7 @@ public void startReport() {
 	kp.selectAClKYCformPageShrHldCountry2(shrCountry2);
 	Thread.sleep(100);
 	
-	kp.clickAClKYCformPageShrHldSubmitBtn();
+
 	Thread.sleep(100);
 //Contact Details
 	kp.inpAClKYCformPageCPCName(cPCName);
@@ -263,6 +262,17 @@ public void startReport() {
 	kp.inpAClKYCformPageCPCEmail(cPCEmail);
 	Thread.sleep(100);
 	
+	kp.inpAClKYCformPageCOpDCName(cOpName); 
+	Thread.sleep(100);
+	kp.inpAClKYCformPageCOpDCDesigna(cOpDesign);
+	Thread.sleep(100);
+//	kp.selectAClKYCformPageCOpDCCountry(opCountry);
+	Thread.sleep(100);
+	kp.inpAClKYCformPageCOpDCPhNo(cOpPhon);
+	Thread.sleep(100);
+	kp.inpAClKYCformPageCOpDCEmail(cOpEmail);
+	Thread.sleep(100);
+	
 	kp.inpAClKYCformPageCCFName(cCFName); 
 	Thread.sleep(100);
 	kp.inpAClKYCformPageCCFDesigna(cCFDesign);
@@ -274,16 +284,7 @@ public void startReport() {
 	kp.inpAClKYCformPageCCFEmail(cCFEmail);
 	Thread.sleep(100);
 	
-	kp.inpAClKYCformPageCOpDCName(cOpName); 
-	Thread.sleep(100);
-	kp.inpAClKYCformPageCOpDCDesigna(cOpDesign);
-	Thread.sleep(100);
-//	kp.selectAClKYCformPageCOpDCCountry(opCountry);
-	Thread.sleep(100);
-	kp.inpAClKYCformPageCOpDCPhNo(cOpPhon);
-	Thread.sleep(100);
-	kp.inpAClKYCformPageCOpDCEmail(cOpEmail);
-	Thread.sleep(100);
+
 	
 	kp.inpAClKYCformPageCAcdName(cAccName);
 	Thread.sleep(100);
@@ -464,20 +465,23 @@ public void startReport() {
     soft.assertTrue(true);
     soft.assertAll();
 }
-@Test(timeOut = 1)
-public void test2() 
+@Test
+public void test2()
 {
-	String s1="s1";
-	String s2="s2";
-	test = extent.createTest("Test Case 1", "The test case 1 has passed");
-    soft.assertEquals(s1, s2);
-    Reporter.log(s1+"==>"+s2,true);
+	int a=20;
+	int b=21;
+	soft.assertEquals(a,b,"a and b not equal");
+	Reporter.log("a+b");
+	test = extent.createTest("Test Case 2", "The test case 2 has passed");
+    
     soft.assertAll();
 }
-@AfterMethod
+@AfterMethod		
 public void getResult(ITestResult result) {
     if(result.getStatus() == ITestResult.FAILURE) {
+    	
         test.log(Status.FAIL,result.getThrowable());
+      //  test.log(Status.FAIL, result.getTestName());
     }
     else if(result.getStatus() == ITestResult.SUCCESS) {
         test.log(Status.PASS, result.getTestName());
