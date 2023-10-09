@@ -8,20 +8,20 @@
       <![CDATA[a+b]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-10-06T17:56:32 IST" name="Default suite" finished-at="2023-10-06T17:57:34 IST" duration-ms="62623">
+  <suite started-at="2023-10-09T14:49:28 IST" name="Default suite" finished-at="2023-10-09T14:50:30 IST" duration-ms="62164">
     <groups>
     </groups>
-    <test started-at="2023-10-06T17:56:32 IST" name="Default test" finished-at="2023-10-06T17:57:34 IST" duration-ms="62623">
+    <test started-at="2023-10-09T14:49:28 IST" name="Default test" finished-at="2023-10-09T14:50:30 IST" duration-ms="62164">
       <class name="KycPageTC.KYCPage">
-        <test-method is-config="true" signature="startExtentReport()[pri:0, instance:KycPageTC.KYCPage@5149d738]" started-at="2023-10-06T17:56:32 IST" name="startExtentReport" finished-at="2023-10-06T17:56:32 IST" duration-ms="303" status="PASS">
+        <test-method is-config="true" signature="startExtentReport()[pri:0, instance:KycPageTC.KYCPage@5149d738]" started-at="2023-10-09T14:49:28 IST" name="startExtentReport" finished-at="2023-10-09T14:49:29 IST" duration-ms="353" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startExtentReport -->
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:KycPageTC.KYCPage@5149d738]" started-at="2023-10-06T17:56:33 IST" name="openBrowser" finished-at="2023-10-06T17:56:37 IST" duration-ms="3287" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:KycPageTC.KYCPage@5149d738]" started-at="2023-10-09T14:49:30 IST" name="openBrowser" finished-at="2023-10-09T14:49:36 IST" duration-ms="5914" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="KYCFormFill(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:KycPageTC.KYCPage@5149d738]" started-at="2023-10-06T17:56:37 IST" name="KYCFormFill" data-provider="dataContainerKYCForm" finished-at="2023-10-06T17:57:32 IST" duration-ms="55274" status="PASS">
+        <test-method signature="KYCFormFill(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:KycPageTC.KYCPage@5149d738]" started-at="2023-10-09T14:49:36 IST" name="KYCFormFill" data-provider="dataContainerKYCForm" finished-at="2023-10-09T14:50:28 IST" duration-ms="51711" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -55,12 +55,12 @@
             </param>
             <param index="6">
               <value>
-                <![CDATA[www.hashtaginfosystem.com]]>
+                <![CDATA[www.hashtag-info.system.com]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[hashtaginfosystem.com]]>
+                <![CDATA[hashtaginfosy-st.em.com]]>
               </value>
             </param>
             <param index="8">
@@ -95,17 +95,17 @@
             </param>
             <param index="14">
               <value>
-                <![CDATA[1]]>
+                <![CDATA[3]]>
               </value>
             </param>
             <param index="15">
               <value>
-                <![CDATA[1]]>
+                <![CDATA[3]]>
               </value>
             </param>
             <param index="16">
               <value>
-                <![CDATA[2021]]>
+                <![CDATA[2022]]>
               </value>
             </param>
             <param index="17">
@@ -120,12 +120,12 @@
             </param>
             <param index="19">
               <value>
-                <![CDATA[31]]>
+                <![CDATA[5]]>
               </value>
             </param>
             <param index="20">
               <value>
-                <![CDATA[12]]>
+                <![CDATA[5]]>
               </value>
             </param>
             <param index="21">
@@ -185,12 +185,12 @@
             </param>
             <param index="32">
               <value>
-                <![CDATA[International]]>
+                <![CDATA[Bhutan]]>
               </value>
             </param>
             <param index="33">
               <value>
-                <![CDATA[+918698706548]]>
+                <![CDATA[8698706548]]>
               </value>
             </param>
             <param index="34">
@@ -245,17 +245,17 @@
             </param>
             <param index="44">
               <value>
-                <![CDATA[International]]>
+                <![CDATA[Congo]]>
               </value>
             </param>
             <param index="45">
               <value>
-                <![CDATA[+123456789041]]>
+                <![CDATA[456789041]]>
               </value>
             </param>
             <param index="46">
               <value>
-                <![CDATA[pbdhanger@gmail.com]]>
+                <![CDATA[pbdha12!@#nger@gm.ai-l.com]]>
               </value>
             </param>
             <param index="47">
@@ -320,7 +320,7 @@
             </param>
             <param index="59">
               <value>
-                <![CDATA[Afghanistan]]>
+                <![CDATA[Costa Rica]]>
               </value>
             </param>
             <param index="60">
@@ -350,7 +350,7 @@
             </param>
             <param index="65">
               <value>
-                <![CDATA[Oman]]>
+                <![CDATA[Thailand]]>
               </value>
             </param>
             <param index="66">
@@ -370,7 +370,7 @@
             </param>
             <param index="69">
               <value>
-                <![CDATA[Oman]]>
+                <![CDATA[Turkey]]>
               </value>
             </param>
             <param index="70">
@@ -455,7 +455,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- KYCFormFill -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:KycPageTC.KYCPage@5149d738]" started-at="2023-10-06T17:57:32 IST" name="getResult" finished-at="2023-10-06T17:57:32 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:KycPageTC.KYCPage@5149d738]" started-at="2023-10-09T14:50:28 IST" name="openBrowser" finished-at="2023-10-09T14:50:30 IST" duration-ms="1836" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:KycPageTC.KYCPage@5149d738]" started-at="2023-10-09T14:50:28 IST" name="getResult" finished-at="2023-10-09T14:50:28 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -466,11 +470,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:KycPageTC.KYCPage@5149d738]" started-at="2023-10-06T17:57:32 IST" name="openBrowser" finished-at="2023-10-06T17:57:34 IST" duration-ms="1945" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method signature="test2()[pri:0, instance:KycPageTC.KYCPage@5149d738]" started-at="2023-10-06T17:57:34 IST" name="test2" finished-at="2023-10-06T17:57:34 IST" duration-ms="10" status="FAIL">
+        <test-method signature="test2()[pri:0, instance:KycPageTC.KYCPage@5149d738]" started-at="2023-10-09T14:50:30 IST" name="test2" finished-at="2023-10-09T14:50:30 IST" duration-ms="33" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -519,7 +519,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:KycPageTC.KYCPage@5149d738]" started-at="2023-10-06T17:57:34 IST" name="getResult" finished-at="2023-10-06T17:57:34 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:KycPageTC.KYCPage@5149d738]" started-at="2023-10-09T14:50:30 IST" name="getResult" finished-at="2023-10-09T14:50:30 IST" duration-ms="32" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -530,7 +530,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="logOut()[pri:0, instance:KycPageTC.KYCPage@5149d738]" started-at="2023-10-06T17:57:34 IST" name="logOut" finished-at="2023-10-06T17:57:34 IST" duration-ms="369" status="PASS">
+        <test-method is-config="true" signature="logOut()[pri:0, instance:KycPageTC.KYCPage@5149d738]" started-at="2023-10-09T14:50:30 IST" name="logOut" finished-at="2023-10-09T14:50:30 IST" duration-ms="316" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->

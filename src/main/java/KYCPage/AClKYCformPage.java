@@ -74,7 +74,7 @@ public class AClKYCformPage
 @FindBy(xpath="//input[@name='AccountNumber']")private WebElement accNo;
 @FindBy(xpath="//input[@name='IBAN']")private WebElement iBan;
 @FindBy(xpath="//input[@name='BankAccountMangersName']")private WebElement bnkAccMangName;
-@FindBy(xpath="(//select[@class='PhoneInputCountrySelect'])[2]")private WebElement seleBnkAccManCountry;
+@FindBy(xpath="(//div[@class='selected-flag'])[2]")private WebElement seleBnkAccManCountry;
 @FindBy(xpath="(//input[@placeholder='Phone No.'])[2]")private WebElement bnkAccMangConct;
 @FindBy(xpath="//input[@name='CorrespondentBankName']")private WebElement corrBnkName;
 @FindBy(xpath="//input[@name='CorrespondentBankSwiftCode']")private WebElement corrBnkSwift;
@@ -106,25 +106,25 @@ public class AClKYCformPage
 //*Contact Details*//
 @FindBy(xpath="//input[@name='PrimaryContactName']")private WebElement pCName;
 @FindBy(xpath="//input[@name='PrimaryContactDesignation']")private WebElement pCDesigna;
-@FindBy(xpath="(//select[@class='PhoneInputCountrySelect'])[3]")private WebElement seleCDPCCountry;
+@FindBy(xpath="(//div[@class='selected-flag'])[3]")private WebElement seleCDPCCountry;
 @FindBy(xpath="(//input[@type='tel'])[3]")private WebElement pCphNo;
 @FindBy(xpath="//input[@name='PrimaryContactEmail']")private WebElement pCEmail;
 
 @FindBy(xpath="//input[@name='CreditNAME']")private WebElement cfdName;
 @FindBy(xpath="//input[@name='CreditDesignation']")private WebElement cfdDesigna;
-@FindBy(xpath="(//select[@class='PhoneInputCountrySelect'])[4]")private WebElement seleCFCountry;
+@FindBy(xpath="(//div[@class='selected-flag'])[5]")private WebElement seleCFCountry;
 @FindBy(xpath="(//input[@type='tel'])[5]")private WebElement cfdphNo;
 @FindBy(xpath="//input[@name='CreditEmail']")private WebElement cfdEmail;
 
 @FindBy(xpath="//input[@name='OperationDepartmentName']")private WebElement opDCName;
 @FindBy(xpath="//input[@name='OperationDepartmentDesignation']")private WebElement opDCDesigna;
-@FindBy(xpath="(//select[@class='PhoneInputCountrySelect'])[5]")private WebElement seleOpDCountry;
+@FindBy(xpath="(//div[@class='selected-flag'])[4]")private WebElement seleOpDCountry;
 @FindBy(xpath="(//input[@type='tel'])[4]")private WebElement opDCPhNo;
 @FindBy(xpath="//input[@name='OperationDepartmentEmail']")private WebElement opDCEmail;
 
 @FindBy(xpath="//input[@name='AccountDepartName']")private WebElement acdName;
 @FindBy(xpath="//input[@name='AcoountDepartDesignation']")private WebElement acdDesigna;
-@FindBy(xpath="(//select[@class='PhoneInputCountrySelect'])[6]")private WebElement seleAccCountry;
+@FindBy(xpath="(//div[@class='selected-flag'])[6]")private WebElement seleAccCountry;
 @FindBy(xpath="(//input[@type='tel'])[6]")private WebElement acdphNo;
 @FindBy(xpath="//input[@name='AccountDepartmentEmail']")private WebElement acdEmail;
 
@@ -133,12 +133,12 @@ public class AClKYCformPage
 
 //*Trade Referance*//
 @FindBy(xpath="//input[@name='TradeReferenceName1']")private WebElement tRName1;
-@FindBy(xpath="")private WebElement seleTrRefCountry1;
+@FindBy(xpath="(//div[@class='selected-flag'])[7]")private WebElement seleTrRefCountry1;
 @FindBy(xpath="//input[@placeholder='Phone 1']")private WebElement tRPhone1;
 @FindBy(xpath="//input[@name='TradeReferenceEmail1']")private WebElement tREmail1;
 
 @FindBy(xpath="//input[@name='TradeReferenceName2']")private WebElement tRName2;
-@FindBy(xpath="(//select[@class='PhoneInputCountrySelect'])[8]")private WebElement seleTrRefCountry2;
+@FindBy(xpath="(//div[@class='selected-flag'])[8]")private WebElement seleTrRefCountry2;
 @FindBy(xpath="//input[@placeholder='Phone 2']")private WebElement tRPhone2;
 @FindBy(xpath="//input[@name='TradeReferenceEmail2']")private WebElement tREmail2;
 
@@ -199,25 +199,31 @@ public AClKYCformPage(WebDriver driver) throws Throwable
   {
 	  return compRegAddrsEr.isDisplayed();
   }
-  public void selectAClKYCformPageStCountry(String infoCountry) throws IOException
+  public void selectAClKYCformPageStCountry(String infoCountry) throws IOException, InterruptedException
   {
 	  seleInfoCountry.click();
+	  Thread.sleep(1000);
 	  for(WebElement c : seleCountrylist)
 	  {
 		  if(c.getText().equals(infoCountry) )
 		  {
 			  c.click();
+			  break;
 		  }
 	  }
 	  
   }
-  public void inpAClKYCformPageIRegCompConNo(String regConNoN)
+  public void inpAClKYCformPageIRegCompConNo(String regConNoN) throws InterruptedException
    {
-	  compRegAddrs.click();
+	 /* Thread.sleep(3000);
+	  cEmail.click();
+	  Thread.sleep(3000);
 	  rb.keyPress(KeyEvent.VK_TAB);
-	  
+	  rb.delay(500);
 	  rb.keyRelease(KeyEvent.VK_TAB);
+	  Thread.sleep(3000);*/
 	  contNo.sendKeys(regConNoN);
+	  rb.delay(1500);
    }
   public boolean inpAClKYCformPageIRegCompConNoEr()
   {
@@ -542,10 +548,20 @@ public AClKYCformPage(WebDriver driver) throws Throwable
  {
  	bnkAccMangName.sendKeys(bnkAccManName);
  }
- public void selectAClKYCformPageBankAccMangCountry(String infoCountry) throws IOException, InterruptedException
+ public void selectAClKYCformPageBankAccMangCountry(String bmCountry) throws IOException, InterruptedException
  {
 	
-	  UtilityClass.selectCountryList(seleBnkAccManCountry, infoCountry);
+	 
+	  seleBnkAccManCountry.click();
+	  Thread.sleep(1000);
+	  for(WebElement c : seleCountrylist)
+	  {
+		  if(c.getText().equals(bmCountry) )
+		  {
+			  c.click();
+			  break;
+		  }
+	  }
  }
  public void inpAClKYCformPageBankAccMangConct(String bnkAccMangPhone) throws InterruptedException
  {
@@ -635,9 +651,19 @@ public AClKYCformPage(WebDriver driver) throws Throwable
  	pCDesigna.sendKeys(PConDesigna);
  }
  
- public void selectAClKYCformPageCPCCountry(String CPCCountry) throws IOException
+ public void selectAClKYCformPageCPCCountry(String CPCCountry) throws IOException, InterruptedException
  {
-	  UtilityClass.selectCountryList(seleCDPCCountry, CPCCountry);
+	  
+	  seleCDPCCountry.click();
+	  Thread.sleep(1000);
+	  for(WebElement c:seleCountrylist)
+	  {
+		  if(c.getText().equals(CPCCountry))
+		  {
+			  c.click();
+			  break;
+		  }
+	  }
  }
  public void inpAClKYCformPageCPCPhNo(String pConPhNo)
  {
@@ -659,7 +685,16 @@ public AClKYCformPage(WebDriver driver) throws Throwable
  }
  public void selectAClKYCformPageCCFCountry(String CCFCountry) throws IOException
  {
-	  UtilityClass.selectCountryList(seleCFCountry, CCFCountry);
+
+	  seleCFCountry.click();
+	  for(WebElement c:seleCountrylist)
+	  {
+		  if(c.getText().equals(CCFCountry))
+		  {
+			  c.click();
+			  break;
+		  }
+	  }
  }
  public void inpAClKYCformPageCCFPhNo(String cFPhNo)
  {
@@ -679,9 +714,19 @@ public AClKYCformPage(WebDriver driver) throws Throwable
  {
  	opDCDesigna.sendKeys(opDConDesigna);
  }
- public void selectAClKYCformPageCOpDCCountry(String COpDCCountry) throws IOException
+ public void selectAClKYCformPageCOpDCCountry(String COpDCCountry) throws IOException, InterruptedException
  {
-	  UtilityClass.selectCountryList(seleOpDCountry, COpDCCountry);
+	  seleOpDCountry.click();
+	  Thread.sleep(1000);
+	  for(WebElement c:seleCountrylist)
+	  {
+		  if(c.getText().equals(COpDCCountry))
+		  {
+			  Thread.sleep(1000);
+			  c.click();
+			  break;
+		  }
+	  }
  }
  public void inpAClKYCformPageCOpDCPhNo(String opDConNo)
  {
@@ -701,9 +746,19 @@ public AClKYCformPage(WebDriver driver) throws Throwable
  {
  	acdDesigna.sendKeys(accdDesigna);
  }
- public void selectAClKYCformPageCAccCountry(String CAcdCountry) throws IOException
+ public void selectAClKYCformPageCAccCountry(String CAcdCountry) throws IOException, InterruptedException
  {
-	  UtilityClass.selectCountryList(seleAccCountry, CAcdCountry);
+	 Thread.sleep(1000);
+	  seleAccCountry.click();
+	  for(WebElement c:seleCountrylist)
+	  {
+		  if(c.getText().equals(CAcdCountry))
+		  {
+			  Thread.sleep(1000);
+			  c.click();
+			  break;
+		  }
+	  }
  }
  public void inpAClKYCformPageCAcdphNo(String accdNo)
  {
@@ -730,9 +785,19 @@ public AClKYCformPage(WebDriver driver) throws Throwable
  {
  	tRName1.sendKeys(tradeRefName1);
  }
- public void seleAClKYCformPageTrdRefCountry1(String tradeRefCountry1)
+ public void seleAClKYCformPageTrdRefCountry1(String tradeRefCountry1) throws InterruptedException
  {
-	 UtilityClass.selectCountryList(seleTrRefCountry1, tradeRefCountry1);
+	 seleTrRefCountry1.click();
+	 Thread.sleep(1000);
+	  for(WebElement c:seleCountrylist)
+	  {
+		  if(c.getText().equals(tradeRefCountry1))
+		  {
+			  Thread.sleep(1000);
+			  c.click();
+			  break;
+		  }
+	  }
  }
  public void inpAClKYCformPageTrdRefPhone1(String tradeRefPhone1)
  {
@@ -747,9 +812,20 @@ public AClKYCformPage(WebDriver driver) throws Throwable
  {
  	tRName2.sendKeys(tradeRefName2);
  }
- public void seleAClKYCformPageTrdRefCountry2(String tradeRefCountry2)
+ public void seleAClKYCformPageTrdRefCountry2(String tradeRefCountry2) throws InterruptedException
  {
-	 UtilityClass.selectCountryList(seleTrRefCountry2, tradeRefCountry2);
+	 
+	 seleTrRefCountry2.click();
+	 Thread.sleep(1000);
+	  for(WebElement c:seleCountrylist)
+	  {
+		  if(c.getText().equals(tradeRefCountry2))
+		  {
+			  Thread.sleep(1000);
+			  c.click();
+			  break;
+		  }
+	  }
  }
  public void inpAClKYCformPageTrdRefPhone2(String tradeRefPhone2)
  {

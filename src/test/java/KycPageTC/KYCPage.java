@@ -109,9 +109,9 @@ public void startExtentReport() {
 	kp.inpAClKYCformPageIParCompName(ipCoName);
 	Thread.sleep(100);
 	kp.inpAClKYCformPageICompRegAddrs(iRAdd);
-	Thread.sleep(100);
-   // kp.selectAClKYCformPageStCountry(infCountry);  
-	Thread.sleep(100);
+	Thread.sleep(500);
+    kp.selectAClKYCformPageStCountry(infCountry);  
+	Thread.sleep(500);
 	kp.inpAClKYCformPageIRegCompConNo(iCont);
 	Thread.sleep(100);
     kp.inpAClKYCformPageIRegCompWSite(iWbsite);
@@ -222,7 +222,7 @@ public void startExtentReport() {
 	kp.inpAClKYCformPageBankAccMangName(bMangName);
 	
 	Thread.sleep(100);
-//	kp.selectAClKYCformPageBankAccMangCountry(bMangCountry);
+	kp.selectAClKYCformPageBankAccMangCountry(bMangCountry);
 	Thread.sleep(100);
 	kp.inpAClKYCformPageBankAccMangConct(bMangCont);
 	Thread.sleep(100);
@@ -255,7 +255,7 @@ public void startExtentReport() {
 	Thread.sleep(100);
 	kp.inpAClKYCformPageCPCDesigna(cPCDesign);
 	Thread.sleep(100);
-//	kp.selectAClKYCformPageCPCCountry(pcCountry);
+	kp.selectAClKYCformPageCPCCountry(pcCountry);
 	Thread.sleep(100);
 	kp.inpAClKYCformPageCPCPhNo(cPCPhon);
 	Thread.sleep(100);
@@ -266,7 +266,7 @@ public void startExtentReport() {
 	Thread.sleep(100);
 	kp.inpAClKYCformPageCOpDCDesigna(cOpDesign);
 	Thread.sleep(100);
-//	kp.selectAClKYCformPageCOpDCCountry(opCountry);
+	kp.selectAClKYCformPageCOpDCCountry(opCountry);
 	Thread.sleep(100);
 	kp.inpAClKYCformPageCOpDCPhNo(cOpPhon);
 	Thread.sleep(100);
@@ -277,7 +277,7 @@ public void startExtentReport() {
 	Thread.sleep(100);
 	kp.inpAClKYCformPageCCFDesigna(cCFDesign);
 	Thread.sleep(100);
-//	kp.selectAClKYCformPageCCFCountry(ccfCountry);
+	kp.selectAClKYCformPageCCFCountry(ccfCountry);
 	Thread.sleep(100);
 	kp.inpAClKYCformPageCCFPhNo(cCFPhon);
 	Thread.sleep(100);
@@ -290,7 +290,7 @@ public void startExtentReport() {
 	Thread.sleep(100);
 	kp.inpAClKYCformPageCAcdDesigna(cAccDesign);
 	Thread.sleep(100);
-//	kp.selectAClKYCformPageCAccCountry(acCountry);
+	kp.selectAClKYCformPageCAccCountry(acCountry);
 	Thread.sleep(100);
 	kp.inpAClKYCformPageCAcdphNo(cAccPhon);
 	Thread.sleep(100);
@@ -305,7 +305,7 @@ public void startExtentReport() {
 //TradeReferance
 	kp.inpAClKYCformPageTrdRefName1(tRFName1);
 	Thread.sleep(100);
-//	kp.seleAClKYCformPageTrdRefCountry1(trfCountry1);	
+	kp.seleAClKYCformPageTrdRefCountry1(trfCountry1);	
 	Thread.sleep(100);
 	kp.inpAClKYCformPageTrdRefPhone1(trfPhon1);
 	Thread.sleep(100);
@@ -314,7 +314,7 @@ public void startExtentReport() {
 	
 	kp.inpAClKYCformPageTrdRefName2(tRFName2);
 	Thread.sleep(100);
-//	kp.seleAClKYCformPageTrdRefCountry2(trfCountry2);
+	kp.seleAClKYCformPageTrdRefCountry2(trfCountry2);
 	Thread.sleep(100);
 	kp.inpAClKYCformPageTrdRefPhone2(trfPhon2);
 	Thread.sleep(100);
@@ -481,7 +481,7 @@ public void getResult(ITestResult result) {
     if(result.getStatus() == ITestResult.FAILURE) {
     	
         test.log(Status.FAIL,result.getThrowable());
-      //  test.log(Status.FAIL, result.getTestName());
+        test.log(Status.WARNING, result.getTestName());
     }
     else if(result.getStatus() == ITestResult.SUCCESS) {
         test.log(Status.PASS, result.getTestName());

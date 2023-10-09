@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 63.29 s <<< FAILURE! -- in TestSuite
-KycPageTC.KYCPage.test2 -- Time elapsed: 0.013 s <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 62.41 s <<< FAILURE! -- in TestSuite
+KycPageTC.KYCPage.test2 -- Time elapsed: 0.020 s <<< FAILURE!
 java.lang.AssertionError: 
 The following asserts failed:
 	a and b not equal expected [21] but found [20]
