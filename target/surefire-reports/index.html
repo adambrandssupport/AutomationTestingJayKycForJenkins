@@ -145,7 +145,7 @@
                   <span class="method-name">test2</span>
                   <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
 	a and b not equal expected [21] but found [20]
-	at KycPageTC.KYCPage.test2(KYCPage.java:477)
+	at KycPageTC.KYCPage.test2(KYCPage.java:483)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 33 stack frames
 </div> <!-- stack-trace -->
@@ -225,16 +225,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'KYCFormFill')
 data.setCell(0, 2, 'KycPageTC.KYCPage')
-data.setCell(0, 3, 51797);
+data.setCell(0, 3, 53091);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'test2')
 data.setCell(1, 2, 'KycPageTC.KYCPage')
-data.setCell(1, 3, 18);
+data.setCell(1, 3, 10);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 51 seconds</span>
+              <span class="suite-total-time">Total running time: 53 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -279,33 +279,33 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">openBrowser</span>
-                <span class="method-start">1171 ms</span>
+                <span class="method-start">1175 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">KYCFormFill(Positive, Hashtag InfoSystem 123456, parent Hashtag InfoSystem 123456, 1/405, 1st Floor, hashtag, Na...)</span>
-                <span class="method-start">7603 ms</span>
+                <span class="method-start">4678 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">openBrowser</span>
-                <span class="method-start">59400 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=KYCFormFill status=SUCCESS method=KYCPage.KYCFormFill(java.lang.String,java.lang.St...)</span>
-                <span class="method-start">59400 ms</span>
+                <span class="method-start">57769 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">57784 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">test2</span>
-                <span class="method-start">61253 ms</span>
+                <span class="method-start">59565 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=test2 status=FAILURE method=KYCPage.test2()[pri:0, instance:KycPageTC.KYCPage@56773...)</span>
-                <span class="method-start">61275 ms</span>
+                <span class="method-start">59591 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">logOut</span>
-                <span class="method-start">61283 ms</span>
+                <span class="method-start">59601 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
