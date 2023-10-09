@@ -379,13 +379,19 @@ public void startExtentReport() {
 	  soft.assertAll();*/
 	
 //KYC View Before Submit	
-/*    UtilityClass.drawBorder(driver, kp.rtnAClKYCformPageCBPopUpKycViewBeforeSubmit());
+	/*   UtilityClass.drawBorder(driver, kp.rtnAClKYCformPageCBPopUpKycViewBeforeSubmit());
 	Thread.sleep(5000);
 	boolean ViewBeforeSubmitPopUp =kp.rtnAClKYCformPageCBPopUpKycViewBeforeSubmit().isDisplayed();
 	Thread.sleep(10000);
 	System.out.println(ViewBeforeSubmitPopUp);
-
-	kp.clickAClKYCformPageVBSPopUpIReview();
+ if(ViewBeforeSubmitPopUp==true)
+ {
+	 test.pass("Test case pass==>View Before Submit PopUp Displyed"+ViewBeforeSubmitPopUp);
+ }
+ else
+ { test.fail("Test case pass==>View Before Submit PopUp Displyed"+ViewBeforeSubmitPopUp);
+ } 
+ kp.clickAClKYCformPageVBSPopUpIReview();
 	Thread.sleep(5000);
     soft.assertTrue(ViewBeforeSubmitPopUp, "not displayed");	
 	Thread.sleep(5000);
@@ -482,9 +488,11 @@ public void getResult(ITestResult result) {
     	
         test.log(Status.FAIL,result.getThrowable());
         test.log(Status.WARNING, result.getTestName());
+        test.log(Status.INFO, "TEST FAILED");
     }
     else if(result.getStatus() == ITestResult.SUCCESS) {
         test.log(Status.PASS, result.getTestName());
+        test.log(Status.INFO, "TEST PASSED");
     }
     else {
         test.log(Status.SKIP, result.getTestName());
