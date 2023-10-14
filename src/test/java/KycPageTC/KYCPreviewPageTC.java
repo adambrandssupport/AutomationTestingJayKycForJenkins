@@ -15,11 +15,11 @@ import org.testng.asserts.SoftAssert;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+import KYCPage.ACIkycPreviewPage;
 import KYCPage.AClKYCformPage;
 import KYCPage.AClLoginPage;
 import LibraryFiles.BaseClass;
@@ -28,9 +28,9 @@ import LibraryFiles.UtilityClass;
 import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 import net.bytebuddy.utility.RandomString;
 	
-public class KYCPage extends BaseClass
+public class KYCPreviewPageTC extends BaseClass
 {	
-	
+	ACIkycPreviewPage prevp;
 	AClLoginPage lp;
     AClKYCformPage kp;
 	SoftAssert soft;
@@ -46,7 +46,7 @@ public void openBrowser() throws Throwable
 	lp= new AClLoginPage(driver);
 	kp=new AClKYCformPage(driver);
 	soft=new SoftAssert();	
-	
+	prevp= new ACIkycPreviewPage(driver);
 /*	hp.clickHomePageSignInButton();	
 	lp.inpLoginPageEmail(UtilityClass.getPFData("EMailID"));
 	lp.inpLoginPagePwd(UtilityClass.getPFData("Password"));
@@ -70,7 +70,6 @@ public void startExtentReport() {
     htmlReporter.config().setReportName("Test Report");
  //   htmlReporter.config().setChartVisibilityOnOpen(true);
  //   htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
-   
     htmlReporter.config().setTheme(Theme.DARK);
     htmlReporter.config().setTimeStampFormat("EEEE, MMMM dd, yyyy, hh:mm a '('zzz')'");
 }	
@@ -102,10 +101,10 @@ public void startExtentReport() {
 		) throws InterruptedException, IOException, AWTException
 {
 	//if (Scenario.equals("Positive"))
-	test = extent.createTest("KYC Form Filling", "The test case 1 has passed").assignAuthor("Kiran").pass("details");
-	
+//	{ 
+
 //COMPANY INFO
-	test.info("start of test");
+	
 	kp.inpAClKYCformPageIRegCompName(iCoName);
 	Thread.sleep(100);	
 	kp.inpAClKYCformPageIParCompName(ipCoName);
@@ -123,42 +122,6 @@ public void startExtentReport() {
 	kp.inpAClKYCformPageIRegCompEmployee(iEmp);
 	Thread.sleep(100);
 	
-	test.info("filled company details");
-/*	if (Scenario.equals("Alpha")||Scenario.equals("AlphaNum"))
-  {
-		soft.assertFalse(kp.inpAClKYCformPageIRegCompNameEr());
-		soft.assertFalse(kp.inpAClKYCformPageIParCompNameEr());	
-		soft.assertFalse(kp.inpAClKYCformPageIRegCompNameEr());
-		soft.assertFalse(kp.inpAClKYCformPageIParCompNameEr());	
-		soft.assertAll();
-	}
-	else
-	{
-		soft.assertTrue(kp.inpAClKYCformPageIRegCompNameEr());
-		soft.assertTrue(kp.inpAClKYCformPageIParCompNameEr());	
-		soft.assertAll();
-	}
-	soft.assertFalse(result1);
-	
-	boolean result2 = kp.inpAClKYCformPageIParCompNameEr();
-	soft.assertFalse(result2);
-	
-	boolean result3 = kp.inpAClKYCformPageICompRegAddrsEr();
-	soft.assertFalse(result3);
-	
-	boolean result4 = kp.inpAClKYCformPageIRegCompConNoEr();
-	soft.assertFalse(result4);*/
-	
- //boolean result5 = kp.inpAClKYCformPageIRegCompWSiteEr();
-//	soft.assertFalse(result5,"error msg not diaplayed");
-		
-/*	boolean result6 = kp.inpAClKYCformPageIRegCompDomainEr();
-	soft.assertFalse(result6);
-	
-	boolean result7 = kp.inpAClKYCformPageIRegCompEmployeeEr();
-	soft.assertFalse(result7);
-	soft.assertAll();
-	}*/
 //COMPANY STRUCTURE	
 	
 	 kp.selectAClKYCformPageStBusineStructure(struType); 
@@ -323,7 +286,7 @@ public void startExtentReport() {
 	Thread.sleep(100);
 	
 //Upload Document
-    
+   
 	Thread.sleep(100);
 	kp.uplodkAClKYCformPageUpldCertOfIncorp(upCoI);
 	Thread.sleep(100);
@@ -335,7 +298,7 @@ public void startExtentReport() {
 	Thread.sleep(100);
 	kp.uplodAClKYCformPageUpldCompProfile(upCP);
 	Thread.sleep(100);
-    kp.inpAClKYCformPageUpldURL(uURL);
+	kp.inpAClKYCformPageUpldURL(uURL);
 
 	Thread.sleep(100);
 	kp.uplodAClKYCformPageUpldBankRef(upBR);
@@ -363,9 +326,6 @@ public void startExtentReport() {
 	if (driver.getPageSource().contains("Invalid"))
 	{
 		test.log(Status.WARNING, "form contains error");
-	}
-	else {
-		test.pass("Kyc form filled correctly");
 	}
 	
 /*boolean emailIsTakenPopUp= kp.rtnAClKYCformPageUemailIsTakenMsgWindow().isDisplayed();
@@ -468,7 +428,7 @@ public void startExtentReport() {
 	Reporter.log(compName +iCoName);*/
 
 	
-	
+	test = extent.createTest("Test Case 1", "The test case 1 has passed");
     soft.assertTrue(true);
     soft.assertAll();
 }
@@ -494,8 +454,6 @@ public void getResult(ITestResult result) {
     else if(result.getStatus() == ITestResult.SUCCESS) {
         test.log(Status.PASS, result.getTestName());
         test.log(Status.INFO, "TEST PASSED");
-        test.pass("details", MediaEntityBuilder.createScreenCaptureFromPath("screenshot.png").build());
-        test.addScreenCaptureFromPath("screenshot.png");
     }
     else {
         test.log(Status.SKIP, result.getTestName());

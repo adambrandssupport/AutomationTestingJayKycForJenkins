@@ -9,6 +9,7 @@
           <include name="test2"/>
           <include name="getResult"/>
           <include name="logOut"/>
+          <include name="KYCFormFill" invocation-numbers="0"/>
           <include name="openBrowser"/>
           <include name="startExtentReport"/>
         </methods>

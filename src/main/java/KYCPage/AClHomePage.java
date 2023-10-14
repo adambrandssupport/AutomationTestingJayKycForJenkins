@@ -1,5 +1,7 @@
 package KYCPage;
 
+import java.awt.AWTException;
+import java.awt.Robot;
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
@@ -16,9 +18,11 @@ public class AClHomePage
 @FindBy(xpath="//button[@class='got_to_kyc_button']")private WebElement goToKYCFormBtnAtBottom;
 @FindBy(xpath="//img[@src='/static/media/image 1.399d1d89eaa091aed76d.png']")private WebElement adamBrandsLogo;
 @FindBy(xpath="//i[@class='fa-sharp fa-solid fa-circle-user']")private WebElement clientProfileLogo;
-public AClHomePage(WebDriver driver)
+Robot rb;
+public AClHomePage(WebDriver driver) throws AWTException
 {
 	PageFactory.initElements(driver, this);
+	this.rb=new Robot();
 }
 
 public WebElement HomePageAdamBrandsLogoPresent() throws IOException
