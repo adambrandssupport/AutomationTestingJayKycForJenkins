@@ -1,27 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[true]]>
-    </line>
-    <line>
-      <![CDATA[a+b]]>
-    </line>
   </reporter-output>
-  <suite started-at="2023-10-14T16:44:54 IST" name="Suite" finished-at="2023-10-14T16:45:54 IST" duration-ms="59435">
+  <suite started-at="2023-10-14T20:24:45 IST" name="Suite" finished-at="2023-10-14T20:27:35 IST" duration-ms="170165">
     <groups>
     </groups>
-    <test started-at="2023-10-14T16:44:54 IST" name="Test" finished-at="2023-10-14T16:45:54 IST" duration-ms="59435">
+    <test started-at="2023-10-14T20:24:45 IST" name="Test" finished-at="2023-10-14T20:27:35 IST" duration-ms="170165">
       <class name="KycPageTC.KYCPage">
-        <test-method is-config="true" signature="startExtentReport()[pri:0, instance:KycPageTC.KYCPage@5677323c]" started-at="2023-10-14T16:44:54 IST" name="startExtentReport" finished-at="2023-10-14T16:44:55 IST" duration-ms="250" status="PASS">
+        <test-method is-config="true" signature="startExtentReport()[pri:0, instance:KycPageTC.KYCPage@6574a52c]" started-at="2023-10-14T20:24:45 IST" name="startExtentReport" finished-at="2023-10-14T20:24:45 IST" duration-ms="236" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startExtentReport -->
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:KycPageTC.KYCPage@5677323c]" started-at="2023-10-14T16:44:56 IST" name="openBrowser" finished-at="2023-10-14T16:45:00 IST" duration-ms="3632" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:KycPageTC.KYCPage@6574a52c]" started-at="2023-10-14T20:26:12 IST" name="openBrowser" finished-at="2023-10-14T20:26:14 IST" duration-ms="2023" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="KYCFormFill(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:KycPageTC.KYCPage@5677323c]" started-at="2023-10-14T16:45:00 IST" name="KYCFormFill" data-provider="dataContainerKYCForm" finished-at="2023-10-14T16:45:52 IST" duration-ms="51903" status="PASS">
+        <test-method signature="KYCFormFillDataprovider(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:KycPageTC.KYCPage@6574a52c]" started-at="2023-10-14T20:26:14 IST" name="KYCFormFillDataprovider" data-provider="dataContainerKYCForm" finished-at="2023-10-14T20:27:35 IST" duration-ms="81466" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -55,47 +49,47 @@
             </param>
             <param index="6">
               <value>
-                <![CDATA[www.hashtag-info.system.com]]>
+                <![CDATA[kiran@gmail.com]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[hashtaginfosy-st.em.com]]>
+                <![CDATA[www.hashtaystem.com]]>
               </value>
             </param>
             <param index="8">
               <value>
-                <![CDATA[100]]>
+                <![CDATA[hashtaginfosy-st.em.com]]>
               </value>
             </param>
             <param index="9">
               <value>
-                <![CDATA[Others]]>
+                <![CDATA[100]]>
               </value>
             </param>
             <param index="10">
               <value>
-                <![CDATA[Private Limited]]>
+                <![CDATA[Others]]>
               </value>
             </param>
             <param index="11">
               <value>
-                <![CDATA[Others]]>
+                <![CDATA[Private Limited]]>
               </value>
             </param>
             <param index="12">
               <value>
-                <![CDATA[Transportation]]>
+                <![CDATA[Others]]>
               </value>
             </param>
             <param index="13">
               <value>
-                <![CDATA[India]]>
+                <![CDATA[Transportation]]>
               </value>
             </param>
             <param index="14">
               <value>
-                <![CDATA[3]]>
+                <![CDATA[India]]>
               </value>
             </param>
             <param index="15">
@@ -105,22 +99,22 @@
             </param>
             <param index="16">
               <value>
-                <![CDATA[2022]]>
+                <![CDATA[3]]>
               </value>
             </param>
             <param index="17">
               <value>
-                <![CDATA[REG123455]]>
+                <![CDATA[2022]]>
               </value>
             </param>
             <param index="18">
               <value>
-                <![CDATA[TRD456]]>
+                <![CDATA[REG123455]]>
               </value>
             </param>
             <param index="19">
               <value>
-                <![CDATA[5]]>
+                <![CDATA[TRD456]]>
               </value>
             </param>
             <param index="20">
@@ -130,358 +124,372 @@
             </param>
             <param index="21">
               <value>
-                <![CDATA[2025]]>
+                <![CDATA[5]]>
               </value>
             </param>
             <param index="22">
               <value>
-                <![CDATA[VAT456]]>
+                <![CDATA[2025]]>
               </value>
             </param>
             <param index="23">
               <value>
-                <![CDATA[State Bank Of India]]>
+                <![CDATA[VAT456]]>
               </value>
             </param>
             <param index="24">
               <value>
-                <![CDATA[India]]>
+                <![CDATA[State Bank Of India]]>
               </value>
             </param>
             <param index="25">
               <value>
-                <![CDATA[1/405, 2nd Floor, SBI, Surat, Gujarat 395001]]>
+                <![CDATA[India]]>
               </value>
             </param>
             <param index="26">
               <value>
-                <![CDATA[SBISWIFT1245658]]>
+                <![CDATA[1/405, 2nd Floor, SBI, Surat, Gujarat 395001]]>
               </value>
             </param>
             <param index="27">
               <value>
-                <![CDATA[HashCurrent Avccount]]>
+                <![CDATA[SBISWIFT1245658]]>
               </value>
             </param>
             <param index="28">
               <value>
-                <![CDATA[Afghanistan-Afghani]]>
+                <![CDATA[HashCurrent Avccount]]>
               </value>
             </param>
             <param index="29">
               <value>
-                <![CDATA[SBINO123456789123456]]>
+                <![CDATA[Afghanistan-Afghani]]>
               </value>
             </param>
             <param index="30">
               <value>
-                <![CDATA[SBIIBAN12235555544444]]>
+                <![CDATA[SBINO123456789123456]]>
               </value>
             </param>
             <param index="31">
               <value>
-                <![CDATA[Mr. John Snow B'M]]>
+                <![CDATA[SBIIBAN12235555544444]]>
               </value>
             </param>
             <param index="32">
               <value>
-                <![CDATA[Bhutan]]>
+                <![CDATA[Mr. John Snow B'M]]>
               </value>
             </param>
             <param index="33">
               <value>
-                <![CDATA[8698706548]]>
+                <![CDATA[Bhutan]]>
               </value>
             </param>
             <param index="34">
               <value>
-                <![CDATA[ICICI Bank]]>
+                <![CDATA[8698706548]]>
               </value>
             </param>
             <param index="35">
               <value>
-                <![CDATA[ICICISWIT122322]]>
+                <![CDATA[ICICI Bank]]>
               </value>
             </param>
             <param index="36">
               <value>
-                <![CDATA[Mrs. Robert B'aratheon]]>
+                <![CDATA[ICICISWIT122322]]>
               </value>
             </param>
             <param index="37">
               <value>
-                <![CDATA[51]]>
+                <![CDATA[Mrs. Robert B'aratheon]]>
               </value>
             </param>
             <param index="38">
               <value>
-                <![CDATA[Australia]]>
+                <![CDATA[51]]>
               </value>
             </param>
             <param index="39">
               <value>
-                <![CDATA[Miss. Aegon T'argarian]]>
+                <![CDATA[Australia]]>
               </value>
             </param>
             <param index="40">
               <value>
-                <![CDATA[20]]>
+                <![CDATA[Miss. Aegon T'argarian]]>
               </value>
             </param>
             <param index="41">
               <value>
-                <![CDATA[Bahamas]]>
+                <![CDATA[20]]>
               </value>
             </param>
             <param index="42">
               <value>
-                <![CDATA[Mr. P B D'hangar PCD]]>
+                <![CDATA[Bahamas]]>
               </value>
             </param>
             <param index="43">
               <value>
-                <![CDATA[C E Officer]]>
+                <![CDATA[Mr. P B D'hangar PCD]]>
               </value>
             </param>
             <param index="44">
               <value>
-                <![CDATA[Congo]]>
+                <![CDATA[C E Officer]]>
               </value>
             </param>
             <param index="45">
               <value>
-                <![CDATA[456789041]]>
+                <![CDATA[Congo]]>
               </value>
             </param>
             <param index="46">
               <value>
-                <![CDATA[pbdha12nger@gm.ai-l.com]]>
+                <![CDATA[456789041]]>
               </value>
             </param>
             <param index="47">
               <value>
-                <![CDATA[Dr. A S S'hivade CFD]]>
+                <![CDATA[sdsfsf@sf.in]]>
               </value>
             </param>
             <param index="48">
               <value>
-                <![CDATA[M Director]]>
+                <![CDATA[Dr. A S S'hivade CFD]]>
               </value>
             </param>
             <param index="49">
               <value>
-                <![CDATA[Colombia]]>
+                <![CDATA[M Director]]>
               </value>
             </param>
             <param index="50">
               <value>
-                <![CDATA[1234567842]]>
+                <![CDATA[Colombia]]>
               </value>
             </param>
             <param index="51">
               <value>
-                <![CDATA[asshi-va12de@gm-ail.com]]>
+                <![CDATA[1234567842]]>
               </value>
             </param>
             <param index="52">
               <value>
-                <![CDATA[Er. Emmar O'DD]]>
+                <![CDATA[sdsfsf@sf.in]]>
               </value>
             </param>
             <param index="53">
               <value>
-                <![CDATA[Finance Manager]]>
+                <![CDATA[Er. Emmar O'DD]]>
               </value>
             </param>
             <param index="54">
               <value>
-                <![CDATA[Oman]]>
+                <![CDATA[Finance Manager]]>
               </value>
             </param>
             <param index="55">
               <value>
-                <![CDATA[789561243]]>
+                <![CDATA[Oman]]>
               </value>
             </param>
             <param index="56">
               <value>
-                <![CDATA[emmar_123@gm-ail.com]]>
+                <![CDATA[789561243]]>
               </value>
             </param>
             <param index="57">
               <value>
-                <![CDATA[Ms. J P Datta A'CCD]]>
+                <![CDATA[sdsfsf@sf.in]]>
               </value>
             </param>
             <param index="58">
               <value>
-                <![CDATA[Operation Manager]]>
+                <![CDATA[Ms. J P Datta A'CCD]]>
               </value>
             </param>
             <param index="59">
               <value>
-                <![CDATA[Costa Rica]]>
+                <![CDATA[Operation Manager]]>
               </value>
             </param>
             <param index="60">
               <value>
-                <![CDATA[7894561244]]>
+                <![CDATA[Costa Rica]]>
               </value>
             </param>
             <param index="61">
               <value>
-                <![CDATA[jpdatta@gm.ail.com]]>
+                <![CDATA[7894561244]]>
               </value>
             </param>
             <param index="62">
               <value>
-                <![CDATA[Oil Filtration]]>
+                <![CDATA[sdsfsf@sf.in]]>
               </value>
             </param>
             <param index="63">
               <value>
-                <![CDATA[Mr. Johan C'arter]]>
+                <![CDATA[Oil Filtration]]>
               </value>
             </param>
             <param index="64">
               <value>
-                <![CDATA[Dr. Jiya D'susa]]>
+                <![CDATA[Mr. Johan C'arter]]>
               </value>
             </param>
             <param index="65">
               <value>
-                <![CDATA[Thailand]]>
+                <![CDATA[Dr. Jiya D'susa]]>
               </value>
             </param>
             <param index="66">
               <value>
-                <![CDATA[789456444]]>
+                <![CDATA[Thailand]]>
               </value>
             </param>
             <param index="67">
               <value>
-                <![CDATA[Jiya@hashtag-info.system.com]]>
+                <![CDATA[789456444]]>
               </value>
             </param>
             <param index="68">
               <value>
-                <![CDATA[Mr. Tom J'erry]]>
+                <![CDATA[sdsfsf@sxvf.com]]>
               </value>
             </param>
             <param index="69">
               <value>
-                <![CDATA[Turkey]]>
+                <![CDATA[Mr. Tom J'erry]]>
               </value>
             </param>
             <param index="70">
               <value>
-                <![CDATA[789561555]]>
+                <![CDATA[Turkey]]>
               </value>
             </param>
             <param index="71">
               <value>
-                <![CDATA[tom@hashtag.infos-ystem.in]]>
+                <![CDATA[789561555]]>
               </value>
             </param>
             <param index="72">
               <value>
-                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\1certOfInc43.png]]>
+                <![CDATA[sdsfsf@sf.in]]>
               </value>
             </param>
             <param index="73">
               <value>
-                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\2ArtOfAsso107.jpeg]]>
+                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\1certOfInc43.png]]>
               </value>
             </param>
             <param index="74">
               <value>
-                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\3TradeLisc133.pdf]]>
+                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\2ArtOfAsso107.jpeg]]>
               </value>
             </param>
             <param index="75">
               <value>
-                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\4TaxRegi.jpeg]]>
+                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\3TradeLisc133.pdf]]>
               </value>
             </param>
             <param index="76">
               <value>
-                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\5CompProfile70.png]]>
+                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\4TaxRegi.jpeg]]>
               </value>
             </param>
             <param index="77">
               <value>
-                <![CDATA[www.hashtaginfosystemurl.com]]>
+                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\5CompProfile70.png]]>
               </value>
             </param>
             <param index="78">
               <value>
-                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\6BankRef43.png]]>
+                <![CDATA[www.hashtaginfosystemurl.com]]>
               </value>
             </param>
             <param index="79">
               <value>
-                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\7Passport133.pdf]]>
+                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\6BankRef43.png]]>
               </value>
             </param>
             <param index="80">
               <value>
-                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\8AuthoSign105.jpeg]]>
+                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\7Passport133.pdf]]>
               </value>
             </param>
             <param index="81">
               <value>
-                <![CDATA[Mr. Tom J'erry]]>
+                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\8AuthoSign105.jpeg]]>
               </value>
             </param>
             <param index="82">
               <value>
-                <![CDATA[https://adamadminui.web.app]]>
+                <![CDATA[Mr. Tom J'erry]]>
               </value>
             </param>
             <param index="83">
               <value>
-                <![CDATA[tester.adambrands@gmail.com]]>
+                <![CDATA[https://adamadminui.web.app]]>
               </value>
             </param>
             <param index="84">
+              <value>
+                <![CDATA[tester.adambrands@gmail.com]]>
+              </value>
+            </param>
+            <param index="85">
               <value>
                 <![CDATA[Admin@123]]>
               </value>
             </param>
           </params>
-          <reporter-output>
-            <line>
-              <![CDATA[true]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- KYCFormFill -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:KycPageTC.KYCPage@5677323c]" started-at="2023-10-14T16:45:52 IST" name="getResult" finished-at="2023-10-14T16:45:52 IST" duration-ms="19" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=KYCFormFill status=SUCCESS method=KYCPage.KYCFormFill(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:KycPageTC.KYCPage@5677323c] output=true]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:KycPageTC.KYCPage@5677323c]" started-at="2023-10-14T16:45:52 IST" name="openBrowser" finished-at="2023-10-14T16:45:53 IST" duration-ms="1931" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method signature="test2()[pri:0, instance:KycPageTC.KYCPage@5677323c]" started-at="2023-10-14T16:45:53 IST" name="test2" finished-at="2023-10-14T16:45:53 IST" duration-ms="26" status="FAIL">
-          <exception class="java.lang.AssertionError">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[The following asserts failed:
-a and b not equal expected [21] but found [20]]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Submit']"}
+  (Session info: chrome=117.0.5938.152)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2221502267370cb804246fa19db4da80, findElement {using=xpath, value=//button[text()='Submit']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.152, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\PC\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65343}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65343/devtoo..., se:cdpVersion: 117.0.5938.152, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2221502267370cb804246fa19db4da80]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-a and b not equal expected [21] but found [20]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at KycPageTC.KYCPage.test2(KYCPage.java:484)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Submit']"}
+  (Session info: chrome=117.0.5938.152)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2221502267370cb804246fa19db4da80, findElement {using=xpath, value=//button[text()='Submit']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.152, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\PC\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65343}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65343/devtoo..., se:cdpVersion: 117.0.5938.152, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2221502267370cb804246fa19db4da80
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.isEnabled(Unknown Source)
+at KycPageTC.KYCPage.KYCFormFillDataprovider(KYCPage.java:360)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -516,29 +524,564 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
-            <line>
-              <![CDATA[a+b]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:KycPageTC.KYCPage@5677323c]" started-at="2023-10-14T16:45:53 IST" name="getResult" finished-at="2023-10-14T16:45:53 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- KYCFormFillDataprovider -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:KycPageTC.KYCPage@6574a52c]" started-at="2023-10-14T20:27:35 IST" name="getResult" finished-at="2023-10-14T20:27:35 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test2 status=FAILURE method=KYCPage.test2()[pri:0, instance:KycPageTC.KYCPage@5677323c] output=a+b]]]>
+                <![CDATA[[TestResult name=KYCFormFillDataprovider status=FAILURE method=KYCPage.KYCFormFillDataprovider(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:KycPageTC.KYCPage@6574a52c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="logOut()[pri:0, instance:KycPageTC.KYCPage@5677323c]" started-at="2023-10-14T16:45:53 IST" name="logOut" finished-at="2023-10-14T16:45:54 IST" duration-ms="395" status="PASS">
+        <test-method is-config="true" signature="logOut()[pri:0, instance:KycPageTC.KYCPage@6574a52c]" started-at="2023-10-14T20:27:35 IST" name="logOut" finished-at="2023-10-14T20:27:35 IST" duration-ms="79" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
       </class> <!-- KycPageTC.KYCPage -->
+      <class name="KycPageTC.KYCPreviewPageTC">
+        <test-method is-config="true" signature="startExtentReport()[pri:0, instance:KycPageTC.KYCPreviewPageTC@18df8434]" started-at="2023-10-14T20:24:45 IST" name="startExtentReport" finished-at="2023-10-14T20:24:45 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtentReport -->
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:KycPageTC.KYCPreviewPageTC@18df8434]" started-at="2023-10-14T20:24:46 IST" name="openBrowser" finished-at="2023-10-14T20:24:49 IST" duration-ms="3243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="KYCFormFillForPreview(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:KycPageTC.KYCPreviewPageTC@18df8434]" started-at="2023-10-14T20:24:49 IST" name="KYCFormFillForPreview" data-provider="dataContainerKYCForm" finished-at="2023-10-14T20:26:11 IST" duration-ms="81768" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Positive]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hashtag InfoSystem 123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[parent Hashtag InfoSystem 123456]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1/405, 1st Floor, hashtag, Nanpura, Surat, Gujarat 395001]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Israel]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[123456789]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[kiran@gmail.com]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[www.hashtaystem.com]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[hashtaginfosy-st.em.com]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Others]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Private Limited]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[Others]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[Transportation]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[2022]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[REG123455]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[TRD456]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[2025]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[VAT456]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[State Bank Of India]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="26">
+              <value>
+                <![CDATA[1/405, 2nd Floor, SBI, Surat, Gujarat 395001]]>
+              </value>
+            </param>
+            <param index="27">
+              <value>
+                <![CDATA[SBISWIFT1245658]]>
+              </value>
+            </param>
+            <param index="28">
+              <value>
+                <![CDATA[HashCurrent Avccount]]>
+              </value>
+            </param>
+            <param index="29">
+              <value>
+                <![CDATA[Afghanistan-Afghani]]>
+              </value>
+            </param>
+            <param index="30">
+              <value>
+                <![CDATA[SBINO123456789123456]]>
+              </value>
+            </param>
+            <param index="31">
+              <value>
+                <![CDATA[SBIIBAN12235555544444]]>
+              </value>
+            </param>
+            <param index="32">
+              <value>
+                <![CDATA[Mr. John Snow B'M]]>
+              </value>
+            </param>
+            <param index="33">
+              <value>
+                <![CDATA[Bhutan]]>
+              </value>
+            </param>
+            <param index="34">
+              <value>
+                <![CDATA[8698706548]]>
+              </value>
+            </param>
+            <param index="35">
+              <value>
+                <![CDATA[ICICI Bank]]>
+              </value>
+            </param>
+            <param index="36">
+              <value>
+                <![CDATA[ICICISWIT122322]]>
+              </value>
+            </param>
+            <param index="37">
+              <value>
+                <![CDATA[Mrs. Robert B'aratheon]]>
+              </value>
+            </param>
+            <param index="38">
+              <value>
+                <![CDATA[51]]>
+              </value>
+            </param>
+            <param index="39">
+              <value>
+                <![CDATA[Australia]]>
+              </value>
+            </param>
+            <param index="40">
+              <value>
+                <![CDATA[Miss. Aegon T'argarian]]>
+              </value>
+            </param>
+            <param index="41">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="42">
+              <value>
+                <![CDATA[Bahamas]]>
+              </value>
+            </param>
+            <param index="43">
+              <value>
+                <![CDATA[Mr. P B D'hangar PCD]]>
+              </value>
+            </param>
+            <param index="44">
+              <value>
+                <![CDATA[C E Officer]]>
+              </value>
+            </param>
+            <param index="45">
+              <value>
+                <![CDATA[Congo]]>
+              </value>
+            </param>
+            <param index="46">
+              <value>
+                <![CDATA[456789041]]>
+              </value>
+            </param>
+            <param index="47">
+              <value>
+                <![CDATA[sdsfsf@sf.in]]>
+              </value>
+            </param>
+            <param index="48">
+              <value>
+                <![CDATA[Dr. A S S'hivade CFD]]>
+              </value>
+            </param>
+            <param index="49">
+              <value>
+                <![CDATA[M Director]]>
+              </value>
+            </param>
+            <param index="50">
+              <value>
+                <![CDATA[Colombia]]>
+              </value>
+            </param>
+            <param index="51">
+              <value>
+                <![CDATA[1234567842]]>
+              </value>
+            </param>
+            <param index="52">
+              <value>
+                <![CDATA[sdsfsf@sf.in]]>
+              </value>
+            </param>
+            <param index="53">
+              <value>
+                <![CDATA[Er. Emmar O'DD]]>
+              </value>
+            </param>
+            <param index="54">
+              <value>
+                <![CDATA[Finance Manager]]>
+              </value>
+            </param>
+            <param index="55">
+              <value>
+                <![CDATA[Oman]]>
+              </value>
+            </param>
+            <param index="56">
+              <value>
+                <![CDATA[789561243]]>
+              </value>
+            </param>
+            <param index="57">
+              <value>
+                <![CDATA[sdsfsf@sf.in]]>
+              </value>
+            </param>
+            <param index="58">
+              <value>
+                <![CDATA[Ms. J P Datta A'CCD]]>
+              </value>
+            </param>
+            <param index="59">
+              <value>
+                <![CDATA[Operation Manager]]>
+              </value>
+            </param>
+            <param index="60">
+              <value>
+                <![CDATA[Costa Rica]]>
+              </value>
+            </param>
+            <param index="61">
+              <value>
+                <![CDATA[7894561244]]>
+              </value>
+            </param>
+            <param index="62">
+              <value>
+                <![CDATA[sdsfsf@sf.in]]>
+              </value>
+            </param>
+            <param index="63">
+              <value>
+                <![CDATA[Oil Filtration]]>
+              </value>
+            </param>
+            <param index="64">
+              <value>
+                <![CDATA[Mr. Johan C'arter]]>
+              </value>
+            </param>
+            <param index="65">
+              <value>
+                <![CDATA[Dr. Jiya D'susa]]>
+              </value>
+            </param>
+            <param index="66">
+              <value>
+                <![CDATA[Thailand]]>
+              </value>
+            </param>
+            <param index="67">
+              <value>
+                <![CDATA[789456444]]>
+              </value>
+            </param>
+            <param index="68">
+              <value>
+                <![CDATA[sdsfsf@sxvf.com]]>
+              </value>
+            </param>
+            <param index="69">
+              <value>
+                <![CDATA[Mr. Tom J'erry]]>
+              </value>
+            </param>
+            <param index="70">
+              <value>
+                <![CDATA[Turkey]]>
+              </value>
+            </param>
+            <param index="71">
+              <value>
+                <![CDATA[789561555]]>
+              </value>
+            </param>
+            <param index="72">
+              <value>
+                <![CDATA[sdsfsf@sf.in]]>
+              </value>
+            </param>
+            <param index="73">
+              <value>
+                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\1certOfInc43.png]]>
+              </value>
+            </param>
+            <param index="74">
+              <value>
+                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\2ArtOfAsso107.jpeg]]>
+              </value>
+            </param>
+            <param index="75">
+              <value>
+                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\3TradeLisc133.pdf]]>
+              </value>
+            </param>
+            <param index="76">
+              <value>
+                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\4TaxRegi.jpeg]]>
+              </value>
+            </param>
+            <param index="77">
+              <value>
+                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\5CompProfile70.png]]>
+              </value>
+            </param>
+            <param index="78">
+              <value>
+                <![CDATA[www.hashtaginfosystemurl.com]]>
+              </value>
+            </param>
+            <param index="79">
+              <value>
+                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\6BankRef43.png]]>
+              </value>
+            </param>
+            <param index="80">
+              <value>
+                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\7Passport133.pdf]]>
+              </value>
+            </param>
+            <param index="81">
+              <value>
+                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\8AuthoSign105.jpeg]]>
+              </value>
+            </param>
+            <param index="82">
+              <value>
+                <![CDATA[Mr. Tom J'erry]]>
+              </value>
+            </param>
+            <param index="83">
+              <value>
+                <![CDATA[https://adamadminui.web.app]]>
+              </value>
+            </param>
+            <param index="84">
+              <value>
+                <![CDATA[tester.adambrands@gmail.com]]>
+              </value>
+            </param>
+            <param index="85">
+              <value>
+                <![CDATA[Admin@123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Submit']"}
+  (Session info: chrome=117.0.5938.152)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [468586d13c26a4fd6751d10f483d0453, findElement {using=xpath, value=//button[text()='Submit']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.152, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\PC\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65318}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65318/devtoo..., se:cdpVersion: 117.0.5938.152, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 468586d13c26a4fd6751d10f483d0453]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Submit']"}
+  (Session info: chrome=117.0.5938.152)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [468586d13c26a4fd6751d10f483d0453, findElement {using=xpath, value=//button[text()='Submit']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.152, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\PC\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65318}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65318/devtoo..., se:cdpVersion: 117.0.5938.152, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 468586d13c26a4fd6751d10f483d0453
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.isEnabled(Unknown Source)
+at KycPageTC.KYCPreviewPageTC.KYCFormFillForPreview(KYCPreviewPageTC.java:362)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- KYCFormFillForPreview -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:KycPageTC.KYCPreviewPageTC@18df8434]" started-at="2023-10-14T20:26:11 IST" name="getResult" finished-at="2023-10-14T20:26:11 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=KYCFormFillForPreview status=FAILURE method=KYCPreviewPageTC.KYCFormFillForPreview(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:KycPageTC.KYCPreviewPageTC@18df8434] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:KycPageTC.KYCPreviewPageTC@18df8434]" started-at="2023-10-14T20:26:11 IST" name="logOut" finished-at="2023-10-14T20:26:11 IST" duration-ms="283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+      </class> <!-- KycPageTC.KYCPreviewPageTC -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

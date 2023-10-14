@@ -45,6 +45,18 @@ public class ACIkycPreviewPage
 @FindBy(xpath = "(//label[text()='Name'])[1]//following-sibling::p")private WebElement ShrHldName1;
 @FindBy(xpath = "(//label[text()='Percentage'])[1]//following-sibling::p")private WebElement ShrHldPercentage1;
 @FindBy(xpath = "(//label[text()='Country'])[1]//following-sibling::p")private WebElement ShrHldCountry1;
+@FindBy(xpath = "(//label[text()='Name'])[2]//following-sibling::p")private WebElement ShrHldName2;
+@FindBy(xpath = "(//label[text()='Percentage'])[2]//following-sibling::p")private WebElement ShrHldPercentage2;
+@FindBy(xpath = "(//label[text()='Country'])[2]//following-sibling::p")private WebElement ShrHldCountry2;
+@FindBy(xpath = "(//label[text()='Name'])[3]//following-sibling::p")private WebElement ShrHldName3;
+@FindBy(xpath = "(//label[text()='Percentage'])[3]//following-sibling::p")private WebElement ShrHldPercentage3;
+@FindBy(xpath = "(//label[text()='Country'])[3]//following-sibling::p")private WebElement ShrHldCountry3;
+@FindBy(xpath = "(//label[text()='Name'])[4]//following-sibling::p")private WebElement ShrHldName4;
+@FindBy(xpath = "(//label[text()='Percentage'])[4]//following-sibling::p")private WebElement ShrHldPercentage4;
+@FindBy(xpath = "(//label[text()='Country'])[4]//following-sibling::p")private WebElement ShrHldCountry4;
+@FindBy(xpath = "(//label[text()='Name'])[5]//following-sibling::p")private WebElement ShrHldName5;
+@FindBy(xpath = "(//label[text()='Percentage'])[5]//following-sibling::p")private WebElement ShrHldPercentage5;
+@FindBy(xpath = "(//label[text()='Country'])[5]//following-sibling::p")private WebElement ShrHldCountry5;
 
 
 public ACIkycPreviewPage(WebDriver driver)
@@ -175,5 +187,30 @@ public String getACIkycPreviewPageCorrespBnk()
 public String getACIkycPreviewPageCorrespBnkSwift()
 {
 	return CorreBnkswiftCode.getText();
+}
+//ShareHolder
+public String getACIkycPreviewPageShrName1()
+{
+	return ShrHldName1.getText();
+}
+public String getACIkycPreviewPageShrPercentage1()
+{
+	return ShrHldPercentage1.getText();
+}
+public String getACIkycPreviewPageShrCountry1()
+{
+	return ShrHldCountry1.getText();
+}
+public String getACIkycPreviewPageShrName2()
+{
+	return ShrHldName2.getText();
+}
+public String getACIkycPreviewPageShrPercentage2()
+{
+	return ShrHldPercentage2.getText();
+}
+public String getACIkycPreviewPageShrCountry2()
+{
+	return ShrHldCountry2.getText();
 }
 }

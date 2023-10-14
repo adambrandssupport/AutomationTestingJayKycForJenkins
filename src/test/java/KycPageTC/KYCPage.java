@@ -75,9 +75,10 @@ public void startExtentReport() {
     htmlReporter.config().setTimeStampFormat("EEEE, MMMM dd, yyyy, hh:mm a '('zzz')'");
 }	
 
-@Test(dataProvider = "dataContainerKYCForm", dataProviderClass = DataSupplierForKYCForm.class)public void KYCFormFill
+@Test(dataProvider = "dataContainerKYCForm", dataProviderClass = DataSupplierForKYCForm.class)
+public void KYCFormFillDataprovider
 (
-		String Scenario, String iCoName, String ipCoName, String iRAdd,String infCountry, String iCont, String iWbsite, String iDomain, String iEmp,
+		String Scenario, String iCoName, String ipCoName, String iRAdd,String infCountry, String iCont,String Email, String iWbsite, String iDomain, String iEmp,
 
 		String struType, String sOStr, String natureType, String sOBusi, String CntryOfInc, String dd1,String mm1, String yyyy1, String sRegNo, String sTrdLisc, String dd2,String mm2, String yyyy2, String sVat, 
  
@@ -102,7 +103,7 @@ public void startExtentReport() {
 		) throws InterruptedException, IOException, AWTException
 {
 	//if (Scenario.equals("Positive"))
-	test = extent.createTest("KYC Form Filling", "The test case 1 has passed").assignAuthor("Kiran").pass("details");
+	test = extent.createTest("KYC Form Filling for Dataprovider", "The test case 1 has passed").assignAuthor("Kiran").pass("details");
 	
 //COMPANY INFO
 	test.info("start of test");
@@ -115,6 +116,8 @@ public void startExtentReport() {
     kp.selectAClKYCformPageStCountry(infCountry);  
 	Thread.sleep(500);
 	kp.inpAClKYCformPageIRegCompConNo(iCont);
+	Thread.sleep(100);
+	kp.inpAClKYCformPageEmail(Email);
 	Thread.sleep(100);
     kp.inpAClKYCformPageIRegCompWSite(iWbsite);
     Thread.sleep(100);
@@ -471,7 +474,7 @@ public void startExtentReport() {
 	
     soft.assertTrue(true);
     soft.assertAll();
-}
+}/*
 @Test
 public void test2()
 {
@@ -482,7 +485,7 @@ public void test2()
 	test = extent.createTest("Test Case 2", "The test case 2 has passed");
     
     soft.assertAll();
-}
+}*/
 @AfterMethod		
 public void getResult(ITestResult result) {
     if(result.getStatus() == ITestResult.FAILURE) {

@@ -179,6 +179,10 @@ public AClKYCformPage(WebDriver driver) throws Throwable
 	regCompName.sendKeys(regCoName);	
    }
 
+  public void inpAClKYCformPageEmail(String email)
+  {
+	  cEmail.sendKeys(email);
+  }
   public boolean inpAClKYCformPageIRegCompNameEr()
   {  
 		return regCompNameEr.isDisplayed();

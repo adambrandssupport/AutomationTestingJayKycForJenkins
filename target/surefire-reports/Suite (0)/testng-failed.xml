@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite (0)]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="KycPageTC.KYCPage">
+        <methods>
+          <include name="CaptureFailedTCSS"/>
+          <include name="test2"/>
+          <include name="getResult"/>
+          <include name="openBrowser"/>
+          <include name="logOut"/>
+          <include name="startExtentReport"/>
+        </methods>
+      </class> <!-- KycPageTC.KYCPage -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite (0)] -->
