@@ -6,6 +6,7 @@ import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.util.List;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -13,6 +14,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import LibraryFiles.UtilityClass;
+
 
 public class AClKYCformPage 
 {
@@ -68,8 +70,8 @@ public class AClKYCformPage
 @FindBy(xpath="//input[@name='AccountName']")private WebElement accName;
 
 @FindBy(xpath="//select[@name='AccountCurrency']")private WebElement selectCurrency;
-//@FindBy(xpath="//input[@id='react-select-2-input']")private WebElement typeCurrency;
-//@FindBy(xpath="//li")private List<WebElement> listOfCurrency;
+@FindBy(xpath="//input[@id='react-select-2-input']")private WebElement typeCurrency;
+@FindBy(xpath="//li")private List<WebElement> listOfCurrency;
 
 @FindBy(xpath="//input[@name='AccountNumber']")private WebElement accNo;
 @FindBy(xpath="//input[@name='IBAN']")private WebElement iBan;
@@ -83,25 +85,24 @@ public class AClKYCformPage
 @FindBy(xpath="//input[@name='shareHolderName1']")private WebElement shrHldName1;
 @FindBy(xpath="//input[@name='Percentage1']")private WebElement shrHldPerctg1;
 @FindBy(xpath="//select[@class='sharholderCountry']")private WebElement shrHldCountry1;
-//@FindBy(xpath="//input[@placeholder='Search']")private WebElement typeShrCountry1;
-//@FindBy(xpath="//li")private List<WebElement> listShrCountry1;
+@FindBy(xpath="//input[@placeholder='Search']")private WebElement typeShrCountry1;
+@FindBy(xpath="//li")private List<WebElement> listShrCountry1;
 
 @FindBy(xpath="//input[@name='shareHolderName2']")private WebElement shrHldName2;
 @FindBy(xpath="//input[@name='Percentage2']")private WebElement shrHldPerctg2;
 @FindBy(xpath="(//select[@class='sharholderCountry'])[2]")private WebElement shrHldCountry2;
-//@FindBy(xpath="//input[@placeholder='Search']")private WebElement typeShrCountry2;
-//@FindBy(xpath="//li")private List<WebElement> listShrCountry2;
 
+@FindBy(xpath="//input[@name='shareHolderName3']")private WebElement shrHldName3;
+@FindBy(xpath="//input[@name='Percentage3']")private WebElement shrHldPerctg3;
+@FindBy(xpath="(//select[@class='sharholderCountry'])[3]")private WebElement shrHldCountry3;
 
-//@FindBy(xpath="//input[@name='shareholder_name3']")private WebElement shrHldName3;
-//@FindBy(xpath="//input[@name='shareholder_persentage3']")private WebElement shrHldPerctg3;
-//@FindBy(xpath="//input[@name='shareholder_name4']")private WebElement shrHldName4;
-//@FindBy(xpath="//input[@name='shareholder_persentage4']")private WebElement shrHldPerctg4;
+@FindBy(xpath="//input[@name='shareHolderName4']")private WebElement shrHldName4;
+@FindBy(xpath="//input[@name='Percentage4']")private WebElement shrHldPerctg4;
+@FindBy(xpath="(//select[@class='sharholderCountry'])[4]")private WebElement shrHldCountry4;
 
-//@FindBy(xpath="")private WebElement shrAddBtn;
-
-//@FindBy(xpath="//input[@name='shareholder_name5']")private WebElement shrHldName5;
-//@FindBy(xpath="//input[@name='shareholder_persentage5']")private WebElement shrHldPerctg5;
+@FindBy(xpath="//input[@name='shareHolderName5']")private WebElement shrHldName5;
+@FindBy(xpath="//input[@name='Percentage5']")private WebElement shrHldPerctg5;
+@FindBy(xpath="(//select[@class='sharholderCountry'])[5]")private WebElement shrHldCountry5;
 
 //*Contact Details*//
 @FindBy(xpath="//input[@name='PrimaryContactName']")private WebElement pCName;
@@ -157,12 +158,15 @@ public class AClKYCformPage
 
 @FindBy(xpath="//label[contains(text(),'Authorized Signatory Name ')]/following-sibling::input")private WebElement AuthoSignName;
 @FindBy(xpath="//button[text()='Submit']")private WebElement submitBtn;
+@FindBy(xpath="//div[@class='error']")private WebElement kycErrorMsg;
+
 @FindBy(xpath="//div[text()='Email address is already taken.']")private WebElement emailIsTakenMsg;
 @FindBy(xpath="//div[@class='Toastify__toast Toastify__toast-theme--light Toastify__toast--error Toastify__toast--close-on-click']")private WebElement emailIsTakenWindow;
 @FindBy(xpath="//h1[text()='Please Review KYC Form Before Submitting']")private WebElement kycViewbeforeSubmit;
 @FindBy(xpath="(//input[@type='checkbox'])[2]")private WebElement kycViewPopUpiReview;
 @FindBy(xpath="//button[text()='Edit']")private WebElement kycViewPopUpEditBtn;
 @FindBy(xpath="//button[text()='Submit']")private WebElement kycViewPopUpSubmitBtn;
+
 
 //KYC PomPage
 Actions act;
@@ -206,11 +210,12 @@ public AClKYCformPage(WebDriver driver) throws Throwable
   public void selectAClKYCformPageStCountry(String infoCountry) throws IOException, InterruptedException
   {
 	  seleInfoCountry.click();
-	  Thread.sleep(1000);
+	  Thread.sleep(100);
 	  for(WebElement c : seleCountrylist)
 	  {
 		  if(c.getText().equals(infoCountry) )
 		  {
+			  Thread.sleep(100);
 			  c.click();
 			  break;
 		  }
@@ -219,15 +224,8 @@ public AClKYCformPage(WebDriver driver) throws Throwable
   }
   public void inpAClKYCformPageIRegCompConNo(String regConNoN) throws InterruptedException
    {
-	 /* Thread.sleep(3000);
-	  cEmail.click();
-	  Thread.sleep(3000);
-	  rb.keyPress(KeyEvent.VK_TAB);
-	  rb.delay(500);
-	  rb.keyRelease(KeyEvent.VK_TAB);
-	  Thread.sleep(3000);*/
 	  contNo.sendKeys(regConNoN);
-	  rb.delay(1500);
+	  rb.delay(100);
    }
   public boolean inpAClKYCformPageIRegCompConNoEr()
   {
@@ -288,30 +286,49 @@ public AClKYCformPage(WebDriver driver) throws Throwable
   {
 	  Thread.sleep(500);
       UtilityClass.selectCountryList(selectCountryofIncorpBtn, cntryOfIncorp);
-	  
-//	  selectCountryofIncorpBtn.click();
-      
-//	  typeCountryofIncorp.sendKeys(cntryOfIncorp);
-//	  Thread.sleep(500);
-	  
-//	 for(WebElement s:listCountryofIncorp)
-//	  {
-		//System.out.println(s.getText());
-//		  if(s.getText().equalsIgnoreCase(cntryOfIncorp))
-//		  {
-//			  s.click();
-//		  }
-//		  else 
-//		  {
-//    		  rb.keyPress(KeyEvent.VK_TAB);	
-//   		  rb.delay(500);
-//	      }	  
-//	  }	
   }
- 
-  public void inpAClKYCformPageStDateOfIncorporationFirefox(String dd,String mm, String yyyy ) throws AWTException
+ /* public void selectAClKYCformPageCountryOfIncorpactionclass(String dd,String mm, String yyyy) throws InterruptedException
   {
-	  int d=Integer.parseInt(dd);
+	
+	 Thread.sleep(200);
+	 act.sendKeys(Keys.TAB).perform();
+	 Thread.sleep(200);	
+	 act.sendKeys(dd+mm).perform();
+	 act.sendKeys(Keys.ARROW_RIGHT).perform();
+	 act.sendKeys(yyyy).perform();
+	 
+	 int yyyy1=2023-y+1;
+	 for(int i=1;i<=d;i++)
+	 {   Thread.sleep(300);
+	     act.sendKeys(Keys.ARROW_UP).perform();
+	 }
+	 act.sendKeys(Keys.ARROW_RIGHT).perform();
+	 act.sendKeys(Keys.HOME).perform();
+	 for(int i=1;i<=m;i++)
+	 {   Thread.sleep(300);
+	 act.sendKeys(Keys.ARROW_UP).perform();
+	 }
+	 rb.keyPress(KeyEvent.VK_RIGHT);
+	// rb.keyPress(KeyEvent.VK_HOME);
+	 for(int i=1;i<=yyyy1;i++)
+	 {   Thread.sleep(300);
+		 rb.keyPress(KeyEvent.VK_DOWN);
+		 Thread.sleep(300);
+		 rb.keyRelease(KeyEvent.VK_DOWN);
+		 Thread.sleep(300);
+	 }
+  }*/
+ 
+  public void inpAClKYCformPageStDateOfIncorporationFirefox(String dd,String mm, String yyyy ) throws AWTException, InterruptedException
+  {
+	     Thread.sleep(200);
+		 act.sendKeys(Keys.TAB).perform();
+		 Thread.sleep(200);	
+		 act.sendKeys(dd+mm).perform();		 
+		 act.sendKeys(Keys.ARROW_RIGHT).perform();
+		 act.sendKeys(yyyy).perform();
+		 
+	/*  int d=Integer.parseInt(dd);
 		 int m=Integer.parseInt(mm);
 		 int y=Integer.parseInt(yyyy);
 		 rb.delay(3000);
@@ -346,18 +363,19 @@ public AClKYCformPage(WebDriver driver) throws Throwable
  		 rb.delay(100);
  		 rb.keyRelease(KeyEvent.VK_DOWN);
  		 rb.delay(100);
- 	 }
- 	 
-
-    //  rb.keyPress(KeyEvent.VK_1);
-   //   rb.keyPress(KeyEvent.VK_9);   
-   //   rb.keyPress(KeyEvent.VK_8);
-   //   rb.keyPress(KeyEvent.VK_4);
- //     trLEDate.sendKeys("30-08-2023");
+ 	 }*/
   }
- public void inpAClKYCformPageStDateOfIncorporation(String dd,String mm, String yyyy ) throws AWTException
+ public void inpAClKYCformPageStDateOfIncorporation(String dd,String mm, String yyyy ) throws AWTException, InterruptedException
  {
-	 int d=Integer.parseInt(dd);
+     Thread.sleep(200);
+		 act.sendKeys(Keys.TAB).perform();
+		 Thread.sleep(200);	
+		 act.sendKeys(dd+mm).perform();
+		 
+		 act.sendKeys(Keys.ARROW_RIGHT).perform();
+		 act.sendKeys(yyyy).perform();
+	 
+	 /*int d=Integer.parseInt(dd);
 	 int m=Integer.parseInt(mm);
 	 int y=Integer.parseInt(yyyy);
 	 
@@ -375,25 +393,19 @@ public AClKYCformPage(WebDriver driver) throws Throwable
 	 for(int i=1;i<=m;i++)
 	 {
 		 rb.keyPress(KeyEvent.VK_UP);
-		 rb.delay(300);
+		 rb.delay(100);
 		 rb.keyRelease(KeyEvent.VK_UP);
-		 rb.delay(300);
+		 rb.delay(100);
 	 }
 	 rb.keyPress(KeyEvent.VK_RIGHT);
 	 for(int i=1;i<=yyyy1;i++)
 	 {
 		 rb.keyPress(KeyEvent.VK_DOWN);
-		 rb.delay(300);
+		 rb.delay(100);
 		 rb.keyRelease(KeyEvent.VK_DOWN);
-		 rb.delay(300);
-	 }
+		 rb.delay(100);
+	 }*/
 	 
-
-   //  rb.keyPress(KeyEvent.VK_1);
-  //   rb.keyPress(KeyEvent.VK_9);   
-  //   rb.keyPress(KeyEvent.VK_8);
-   //  rb.keyPress(KeyEvent.VK_4);
-	 //trLEDate.sendKeys("30-08-2023");
  }
  public void inpAClKYCformPageStRegNo(String RegiNo)
  {
@@ -403,9 +415,15 @@ public AClKYCformPage(WebDriver driver) throws Throwable
  {
 	  tradLiscNo.sendKeys(tradeLisc);
  } 
- public void inpAClKYCformPageStTradLiscExDateFirefox(String dd, String mm,String yyyy) throws AWTException
+ public void inpAClKYCformPageStTradLiscExDateFirefox(String dd, String mm,String yyyy) throws AWTException, InterruptedException
  {
-	 int d=Integer.parseInt(dd);
+	 Thread.sleep(200);
+	 act.sendKeys(Keys.TAB).perform();
+	 Thread.sleep(200);	
+	 act.sendKeys(dd+mm).perform();
+	 act.sendKeys(Keys.ARROW_RIGHT).perform();
+	 act.sendKeys(yyyy).perform();
+/*	 int d=Integer.parseInt(dd);
 	 int m=Integer.parseInt(mm);
 	 int y=Integer.parseInt(yyyy);
 	
@@ -436,11 +454,17 @@ public AClKYCformPage(WebDriver driver) throws Throwable
 			 rb.delay(100);
 			 rb.keyRelease(KeyEvent.VK_UP);
 			 rb.delay(100);
-		 }
+		 }*/
  }
- public void inpAClKYCformPageStTradLiscExDate(String dd,String mm, String yyyy ) throws AWTException
- {	 
-	 int d=Integer.parseInt(dd);
+ public void inpAClKYCformPageStTradLiscExDate(String dd,String mm, String yyyy ) throws AWTException, InterruptedException
+ {	  
+	 Thread.sleep(200);
+     act.sendKeys(Keys.TAB).perform();
+     Thread.sleep(200);	
+     act.sendKeys(dd+mm).perform();
+     act.sendKeys(Keys.ARROW_RIGHT).perform();
+     act.sendKeys(yyyy).perform();
+	/* int d=Integer.parseInt(dd);
 	 int m=Integer.parseInt(mm);
 	 int y=Integer.parseInt(yyyy);
 	 
@@ -461,28 +485,16 @@ public AClKYCformPage(WebDriver driver) throws Throwable
 			 rb.keyPress(KeyEvent.VK_UP);
 			 rb.delay(100);
 			 rb.keyRelease(KeyEvent.VK_UP);
-			 rb.delay(300);
+			 rb.delay(100);
 		 }
 	 rb.keyPress(KeyEvent.VK_RIGHT);
 	 for(int i=1;i<=yyyy1+1;i++)
 		 {
 			 rb.keyPress(KeyEvent.VK_UP);
-			 rb.delay(300);
+			 rb.delay(100);
 			 rb.keyRelease(KeyEvent.VK_UP);
-			 rb.delay(300);
-		 }
-	 
-		 
-	// trLEDate.sendKeys(ddmm);
-	// rb.delay(500);
-	// rb.keyPress(KeyEvent.VK_RIGHT);
-	// rb.delay(100); // Optional delay to hold the key pressed
-	// rb.keyRelease(KeyEvent.VK_RIGHT);
-	// rb.delay(100);
-    // rb.keyPress(KeyEvent.VK_2);
-    // rb.keyPress(KeyEvent.VK_0);
-   //  rb.keyPress(KeyEvent.VK_2);
-   //  rb.keyPress(KeyEvent.VK_5);
+			 rb.delay(100);
+		 }*/
   
  }
  public void inpAClKYCformPageStVatNo(String compvatNo)
@@ -498,27 +510,27 @@ public AClKYCformPage(WebDriver driver) throws Throwable
  public void selectAClKYCformPageBankCountry(String cntryOfBank) throws InterruptedException
  {
 	
-	  Thread.sleep(500);
+	  Thread.sleep(100);
       UtilityClass.selectCountryList(selectCountryOfBank, cntryOfBank);
       
-//      selectCountryOfBank.click();
-//     Thread.sleep(500);
-//	  typeCountryofBank.sendKeys(cntryOfBank);
-//	  Thread.sleep(500);
+/*     selectCountryOfBank.click();
+     Thread.sleep(500);
+	  typeCountryofBank.sendKeys(cntryOfBank);
+	  Thread.sleep(500);
 	  
-//	 for(WebElement s:listCountryofBank)
-//	  {
+	 for(WebElement s:listCountryofBank)
+	  {
 	//	System.out.println(s.getText());
-//		  if(s.getText().equalsIgnoreCase(cntryOfBank))
-//		  {
-//			  s.click();
-//		  }
-//		  else 
-//		  {
-//   		  rb.keyPress(KeyEvent.VK_TAB);	
-//   		  rb.delay(500);
-//	      }	  
-//	  }	
+		  if(s.getText().equalsIgnoreCase(cntryOfBank))
+		  {
+			  s.click();
+		  }
+		  else 
+		  {
+   		  rb.keyPress(KeyEvent.VK_TAB);	
+   		  rb.delay(500);
+	      }	  
+	  }	*/
  }
  public void inpAClKYCformPageBankAddr(String bnkAddr)
  {
@@ -535,10 +547,6 @@ public AClKYCformPage(WebDriver driver) throws Throwable
  public void inpAClKYCformPageBankCurrency(String currency,WebDriver driver)
  {
 	 UtilityClass.selectCountryList(selectCurrency, currency);
-//	 typeCurrency.sendKeys(currency);
-//	 rb.delay(100);
-//	 rb.keyPress(KeyEvent.VK_TAB);
-	// rb.keyPress(KeyEvent.VK_ENTER);
  }
  public void inpAClKYCformPageBankAccNo(String accountNo)
  {
@@ -553,15 +561,15 @@ public AClKYCformPage(WebDriver driver) throws Throwable
  	bnkAccMangName.sendKeys(bnkAccManName);
  }
  public void selectAClKYCformPageBankAccMangCountry(String bmCountry) throws IOException, InterruptedException
- {
-	
+ {	
 	 
 	  seleBnkAccManCountry.click();
-	  Thread.sleep(1000);
+	  Thread.sleep(100);
 	  for(WebElement c : seleCountrylist)
 	  {
 		  if(c.getText().equals(bmCountry) )
 		  {
+			  Thread.sleep(100);
 			  c.click();
 			  break;
 		  }
@@ -593,24 +601,6 @@ public AClKYCformPage(WebDriver driver) throws Throwable
  public void selectAClKYCformPageShrHldCountry1(String shrCountry1) throws IOException, InterruptedException
  {
 	UtilityClass.selectCountryList(shrHldCountry1, shrCountry1);
-//	 shrHldCountry1.click();
-//     Thread.sleep(500);
-//     typeShrCountry1.sendKeys(shrCountry1);
-//	  Thread.sleep(500);
-	  
-//	 for(WebElement s:listShrCountry1)
-//	  {
-//		//System.out.println(s.getText());
-//		  if(s.getText().equalsIgnoreCase(shrCountry1))
-//		  {
-//			  s.click();
-//		  }
-//		  else 
-//		  {
- // 		  rb.keyPress(KeyEvent.VK_TAB);	
-//  		  rb.delay(500);
-	//      }	  
-	 // }	
  }
  
  public void inpAClKYCformPageShrHldName2(String shareHldName2)
@@ -624,25 +614,6 @@ public AClKYCformPage(WebDriver driver) throws Throwable
  public void selectAClKYCformPageShrHldCountry2(String shrCountry2) throws IOException, InterruptedException
  {
 	 UtilityClass.selectCountryList(shrHldCountry2, shrCountry2);
-
-//	 shrHldCountry2.click();
- //    Thread.sleep(500);
- //    typeShrCountry2.sendKeys(shrCountry2);
-//	  Thread.sleep(500);
-	  
-//	 for(WebElement s:listShrCountry2)
-//	  {
-		//System.out.println(s.getText());
-//		  if(s.getText().equalsIgnoreCase(shrCountry2))
-//		  {
-//			  s.click();
-//		  }
-//		  else 
-//		  {
- // 		  rb.keyPress(KeyEvent.VK_TAB);	
- // 		  rb.delay(500);
-//	      }	  
-//	  }	
  }
  
 //*Contact Details*//
@@ -659,11 +630,12 @@ public AClKYCformPage(WebDriver driver) throws Throwable
  {
 	  
 	  seleCDPCCountry.click();
-	  Thread.sleep(1000);
+	  Thread.sleep(100);
 	  for(WebElement c:seleCountrylist)
 	  {
 		  if(c.getText().equals(CPCCountry))
 		  {
+			  Thread.sleep(100);
 			  c.click();
 			  break;
 		  }
@@ -689,7 +661,6 @@ public AClKYCformPage(WebDriver driver) throws Throwable
  }
  public void selectAClKYCformPageCCFCountry(String CCFCountry) throws IOException
  {
-
 	  seleCFCountry.click();
 	  for(WebElement c:seleCountrylist)
 	  {
@@ -721,12 +692,12 @@ public AClKYCformPage(WebDriver driver) throws Throwable
  public void selectAClKYCformPageCOpDCCountry(String COpDCCountry) throws IOException, InterruptedException
  {
 	  seleOpDCountry.click();
-	  Thread.sleep(1000);
+	  Thread.sleep(100);
 	  for(WebElement c:seleCountrylist)
 	  {
 		  if(c.getText().equals(COpDCCountry))
 		  {
-			  Thread.sleep(1000);
+			  Thread.sleep(100);
 			  c.click();
 			  break;
 		  }
@@ -752,13 +723,13 @@ public AClKYCformPage(WebDriver driver) throws Throwable
  }
  public void selectAClKYCformPageCAccCountry(String CAcdCountry) throws IOException, InterruptedException
  {
-	 Thread.sleep(1000);
+	 Thread.sleep(100);
 	  seleAccCountry.click();
 	  for(WebElement c:seleCountrylist)
 	  {
 		  if(c.getText().equals(CAcdCountry))
 		  {
-			  Thread.sleep(1000);
+			  Thread.sleep(100);
 			  c.click();
 			  break;
 		  }
@@ -792,12 +763,12 @@ public AClKYCformPage(WebDriver driver) throws Throwable
  public void seleAClKYCformPageTrdRefCountry1(String tradeRefCountry1) throws InterruptedException
  {
 	 seleTrRefCountry1.click();
-	 Thread.sleep(1000);
+	 Thread.sleep(100);
 	  for(WebElement c:seleCountrylist)
 	  {
 		  if(c.getText().equals(tradeRefCountry1))
 		  {
-			  Thread.sleep(1000);
+			  Thread.sleep(100);
 			  c.click();
 			  break;
 		  }
@@ -820,12 +791,12 @@ public AClKYCformPage(WebDriver driver) throws Throwable
  {
 	 
 	 seleTrRefCountry2.click();
-	 Thread.sleep(1000);
+	 Thread.sleep(100);
 	  for(WebElement c:seleCountrylist)
 	  {
 		  if(c.getText().equals(tradeRefCountry2))
 		  {
-			  Thread.sleep(1000);
+			  Thread.sleep(100);
 			  c.click();
 			  break;
 		  }
@@ -895,6 +866,11 @@ public AClKYCformPage(WebDriver driver) throws Throwable
  {
 	 return submitBtn;
  }
+ public WebElement rtnAClKYCformPageErrorMsg()
+ {
+	 return kycErrorMsg;
+ }
+ 
  public WebElement rtnAClKYCformPageUemailIsTakenMsg()
  {
 	 return emailIsTakenMsg;

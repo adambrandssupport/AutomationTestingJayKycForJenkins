@@ -58,11 +58,37 @@ public class ACIkycPreviewPage
 @FindBy(xpath = "(//label[text()='Percentage'])[5]//following-sibling::p")private WebElement ShrHldPercentage5;
 @FindBy(xpath = "(//label[text()='Country'])[5]//following-sibling::p")private WebElement ShrHldCountry5;
 
+@FindBy(xpath = "(//label[text()='Name'])[6]//following-sibling::p")private WebElement pcName;
+@FindBy(xpath = "(//label[text()='Designation'])[1]//following-sibling::p")private WebElement pcDesignation;
+@FindBy(xpath = "(//label[text()='Phone'])[1]//following-sibling::p")private WebElement pcPhone;
+@FindBy(xpath = "(//label[text()='Email'])[1]//following-sibling::p")private WebElement pcEmail;
+@FindBy(xpath = "(//label[text()='Name'])[7]//following-sibling::p")private WebElement odName;
+@FindBy(xpath = "(//label[text()='Designation'])[2]//following-sibling::p")private WebElement odDesignation;
+@FindBy(xpath = "(//label[text()='Phone'])[2]//following-sibling::p")private WebElement odPhone;
+@FindBy(xpath = "(//label[text()='Email'])[2]//following-sibling::p")private WebElement odEmail;
+@FindBy(xpath = "(//label[text()='Name'])[8]//following-sibling::p")private WebElement cfdName;
+@FindBy(xpath = "(//label[text()='Designation'])[3]//following-sibling::p")private WebElement cfdDesignation;
+@FindBy(xpath = "(//label[text()='Phone'])[3]//following-sibling::p")private WebElement cfdPhone;
+@FindBy(xpath = "(//label[text()='Email'])[3]//following-sibling::p")private WebElement cfdEmail;
+@FindBy(xpath = "(//label[text()='Name'])[9]//following-sibling::p")private WebElement acName;
+@FindBy(xpath = "(//label[text()='Designation'])[4]//following-sibling::p")private WebElement acDesignation;
+@FindBy(xpath = "(//label[text()='Phone'])[4]//following-sibling::p")private WebElement acPhone;
+@FindBy(xpath = "(//label[text()='Email'])[4]//following-sibling::p")private WebElement acEmail;
+@FindBy(xpath = "//label[text()='What is the proposed business with Adam Energy FZE?']//following-sibling::p")private WebElement propBusiness;
+@FindBy(xpath = "//label[text()='Who is your Contact Person in Adam Energy FZE?']//following-sibling::p")private WebElement contactPerson;
 
+@FindBy(xpath = "(//label[text()='Name'])[10]//following-sibling::p")private WebElement trfName1;
+@FindBy(xpath = "(//label[text()='Phone'])[5]//following-sibling::p")private WebElement trfPhone1;
+@FindBy(xpath = "(//label[text()='Email'])[5]//following-sibling::p")private WebElement trfEmail1;
+
+@FindBy(xpath = "(//label[text()='Name'])[11]//following-sibling::p")private WebElement trfName2;
+@FindBy(xpath = "(//label[text()='Phone'])[6]//following-sibling::p")private WebElement trfPhone2;
+@FindBy(xpath = "(//label[text()='Email'])[6]//following-sibling::p")private WebElement trfEmail2;
 public ACIkycPreviewPage(WebDriver driver)
 {
     PageFactory.initElements(driver, this);
 }
+
 
 //Company info
 public String getACIkycPreviewPageCompName()
@@ -213,4 +239,113 @@ public String getACIkycPreviewPageShrCountry2()
 {
 	return ShrHldCountry2.getText();
 }
+
+//Contact Details
+public String getACIkycPreviewPagePCName()
+{
+	return pcName.getText();
+}
+public String getACIkycPreviewPagePCDesignation()
+{
+	return pcDesignation.getText();
+}
+public String getACIkycPreviewPagePCPhone()
+{
+	return pcPhone.getText();
+}
+public String getACIkycPreviewPagePCEmail()
+{
+	return pcEmail.getText();
+}
+
+public String getACIkycPreviewPageODName()
+{
+	return odName.getText();
+}
+public String getACIkycPreviewPageODDesignation()
+{
+	return odDesignation.getText();
+}
+public String getACIkycPreviewPageODPhone()
+{
+	return odPhone.getText();
+}
+public String getACIkycPreviewPageODEmail()
+{
+	return odEmail.getText();
+}
+
+public String getACIkycPreviewPageCFDName()
+{
+	return cfdName.getText();
+}
+public String getACIkycPreviewPageCFDDesignation()
+{
+	return cfdDesignation.getText();
+}
+public String getACIkycPreviewPageCFDPhone()
+{
+	return cfdPhone.getText();
+}
+public String getACIkycPreviewPageCFdEmail()
+{
+	return cfdEmail.getText();
+}
+
+public String getACIkycPreviewPageACName()
+{
+	return acName.getText();
+}
+public String getACIkycPreviewPageACDesignation()
+{
+	return acDesignation.getText();
+}
+public String getACIkycPreviewPageACPhone()
+{
+	return acPhone.getText();
+}
+public String getACIkycPreviewPageACEmail()
+{
+	return acEmail.getText();
+}
+
+
+public String getACIkycPreviewPagePropoBussi()
+{
+	return propBusiness.getText();
+}
+
+
+public String getACIkycPreviewPageContactPerson()
+{
+	return contactPerson.getText();
+}
+
+//Trade ref
+public String getACIkycPreviewPageTRFName1()
+{
+	return trfName1.getText();
+}
+public String getACIkycPreviewPageTRFPhone1()
+{
+	return trfPhone1.getText();
+}
+public String getACIkycPreviewPageTRFEmail1()
+{
+	return trfEmail1.getText();
+}
+
+public String getACIkycPreviewPageTRFName2()
+{
+	return trfName2.getText();
+}
+public String getACIkycPreviewPageTRFPhone2()
+{
+	return trfPhone2.getText();
+}
+public String getACIkycPreviewPageTRFEmail2()
+{
+	return trfEmail2.getText();
+}
+
 }

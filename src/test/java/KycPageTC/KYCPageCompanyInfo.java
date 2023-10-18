@@ -10,7 +10,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-
 import KYCPage.AClKYCformPage;
 import KYCPage.AClLoginPage;
 import LibraryFiles.BaseClass;

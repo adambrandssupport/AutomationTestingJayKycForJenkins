@@ -28,25 +28,27 @@ import LibraryFiles.UtilityClass;
 import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 import net.bytebuddy.utility.RandomString;
 	
-public class KYCPage extends BaseClass
+public class KYCPageTC1 extends BaseClass
 {	
 	
 	AClLoginPage lp;
     AClKYCformPage kp;
 	SoftAssert soft;
-	ExtentSparkReporter htmlReporter;
-	 
+	ExtentSparkReporter htmlReporter;	 
     ExtentReports extent;
-    //helps to generate the logs in the test report.
     ExtentTest test;
+    String rs;
 @BeforeMethod
 public void openBrowser() throws Throwable 
 {
+
 	initialiseBrowser();      //nullpointer Exception
+	//driver.get("https://adam-energy-kyc-m3zi.vercel.app/");
 	lp= new AClLoginPage(driver);
 	kp=new AClKYCformPage(driver);
 	soft=new SoftAssert();	
-	
+	rs= RandomString.make(2);
+
 /*	hp.clickHomePageSignInButton();	
 	lp.inpLoginPageEmail(UtilityClass.getPFData("EMailID"));
 	lp.inpLoginPagePwd(UtilityClass.getPFData("Password"));
@@ -54,14 +56,14 @@ public void openBrowser() throws Throwable
 
 }	
 @BeforeTest
-public void startExtentReport() {
+public void startExtentReport() throws InterruptedException {
+	
     // initialize the HtmlReporter
     htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir") +"/test-output/testReport.html");
 
     //initialize ExtentReports and attach the HtmlReporter
     extent = new ExtentReports();
     extent.attachReporter(htmlReporter);
-
 
     //configuration items to change the look and feel
     //add content, manage tests etc
@@ -73,6 +75,7 @@ public void startExtentReport() {
    
     htmlReporter.config().setTheme(Theme.DARK);
     htmlReporter.config().setTimeStampFormat("EEEE, MMMM dd, yyyy, hh:mm a '('zzz')'");
+    Thread.sleep(2000);
 }	
 
 @Test(dataProvider = "dataContainerKYCForm", dataProviderClass = DataSupplierForKYCForm.class)
@@ -102,10 +105,12 @@ public void KYCFormFillDataprovider
 		
 		) throws InterruptedException, IOException, AWTException
 {
+	
 	//if (Scenario.equals("Positive"))
 	test = extent.createTest("KYC Form Filling for Dataprovider", "The test case 1 has passed").assignAuthor("Kiran").pass("details");
 	
 //COMPANY INFO
+	
 	test.info("start of test");
 	kp.inpAClKYCformPageIRegCompName(iCoName);
 	Thread.sleep(100);	
@@ -239,19 +244,20 @@ public void KYCFormFillDataprovider
 	kp.inpAClKYCformPageShrHldName1(shrHldName1); 
 	Thread.sleep(100);
 	kp.inpAClKYCformPageShrHldPerctg1(shrHldPrctg1);
-//	Thread.sleep(100);
+	Thread.sleep(100);
 	kp.selectAClKYCformPageShrHldCountry1(shrCountry1);
-//	Thread.sleep(100);
+	Thread.sleep(100);
 	
 	
 	Thread.sleep(100);
-	kp.inpAClKYCformPageShrHldName2(shrHldName2);
+	if(shrHldName2!=(""))
+	{kp.inpAClKYCformPageShrHldName2(shrHldName2);
 	Thread.sleep(100);
 	kp.inpAClKYCformPageShrHldPerctg2(shrHldPrctg2);
 	Thread.sleep(100);
 	kp.selectAClKYCformPageShrHldCountry2(shrCountry2);
 	Thread.sleep(100);
-	
+	}
 
 	Thread.sleep(100);
 //Contact Details
@@ -287,8 +293,6 @@ public void KYCFormFillDataprovider
 	Thread.sleep(100);
 	kp.inpAClKYCformPageCCFEmail(cCFEmail);
 	Thread.sleep(100);
-	
-
 	
 	kp.inpAClKYCformPageCAcdName(cAccName);
 	Thread.sleep(100);
@@ -355,20 +359,24 @@ public void KYCFormFillDataprovider
     
     kp.inpAClKYCformPageUpldAuthoSignName(signName);
     
+	Thread.sleep(200);
+
+     if (driver.getPageSource().contains(kp.rtnAClKYCformPageErrorMsg().getText()));
+	   {
+		 test.log(Status.INFO,kp.rtnAClKYCformPageErrorMsg().getText());
+		 test.log(Status.WARNING, "form contains error Msg Before Submit Btn Click");
+		 Reporter.log(kp.rtnAClKYCformPageErrorMsg().getText(), true);
+	   }
+
 	kp.clickAClKYCformPageUSubmitBtn();
-	Thread.sleep(2000);
-	boolean r1 = kp.rtnAClKYCformPageUSubmitBtn().isEnabled();
 	
-	soft.assertTrue(kp.rtnAClKYCformPageUSubmitBtn().isEnabled(),"not enable");
-	Reporter.log(String.valueOf(r1));
-	System.out.println(r1);
-	
-	if (driver.getPageSource().contains("Invalid"))
+	if (driver.getCurrentUrl().contains("preview"))
 	{
-		test.log(Status.WARNING, "form contains error");
+		test.pass("Kyc form Submitted successfully");		
 	}
-	else {
-		test.pass("Kyc form filled correctly");
+	else
+	{
+		test.log(Status.FAIL, "form contains error Msg After Submit Btn Click");
 	}
 	
 /*boolean emailIsTakenPopUp= kp.rtnAClKYCformPageUemailIsTakenMsgWindow().isDisplayed();
@@ -488,8 +496,7 @@ public void test2()
 }*/
 @AfterMethod		
 public void getResult(ITestResult result) {
-    if(result.getStatus() == ITestResult.FAILURE) {
-    	
+    if(result.getStatus() == ITestResult.FAILURE) {	
         test.log(Status.FAIL,result.getThrowable());
         test.log(Status.WARNING, result.getTestName());
         test.log(Status.INFO, "TEST FAILED");
@@ -497,20 +504,22 @@ public void getResult(ITestResult result) {
     else if(result.getStatus() == ITestResult.SUCCESS) {
         test.log(Status.PASS, result.getTestName());
         test.log(Status.INFO, "TEST PASSED");
+        
         test.pass("details", MediaEntityBuilder.createScreenCaptureFromPath("screenshot.png").build());
-        test.addScreenCaptureFromPath("screenshot.png");
+        test.addScreenCaptureFromPath("C:\\Users\\PC\\eclipse-workspace\\AdamJayKyc\\Upload Document\\1certOfInc43.png");
     }
-    else {
+    else 
+    {
         test.log(Status.SKIP, result.getTestName());
     }
 }
-@AfterMethod(enabled =false)
+@AfterMethod(enabled =true)
 public void CaptureFailedTCSS(ITestResult s1) throws IOException, InterruptedException
 {
-	String rs= RandomString.make(2);
+	 
 if(s1.getStatus()==ITestResult.FAILURE)
 {
-	UtilityClass.captureSS(driver, rs);
+	UtilityClass.captureSS(driver, "");
 }
     Thread.sleep(2000);  
     

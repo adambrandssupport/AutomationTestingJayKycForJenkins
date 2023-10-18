@@ -11,10 +11,10 @@ import org.testng.annotations.Test;
 
 public class DataSupplierForKYCForm 
 {
-	int startRow=1;  // positive mandatory 1-2, DataType 3-7,  
-	int endRow=1;    // Length 8-11,  Number 12-13
+	int startRow=3;  // positive mandatory 1-2, DataType 3-7,  
+	int endRow=4;    // Length 8-11,  Number 12-13
 	
-@DataProvider(name = "dataContainerKYCForm")
+@DataProvider(name = "dataContainerKYCForm" , parallel = false)
 public String[][] excelDataSupplierKYCData() throws IOException
 {
 FileInputStream file = new FileInputStream("C:\\Users\\PC\\eclipse-workspace\\AdamJayKyc\\Test Data\\excelDataProviderKYCPage.xlsx");
@@ -40,8 +40,8 @@ String[][] data = new String[row][col];
  // System.out.println(Arrays.toString(s1)); 
 // }
  
-Workbook.close();
-file.close(); 
+/*Workbook.close();
+file.close(); */
 return data;
 }
 
@@ -117,7 +117,7 @@ file.close();
 return data;
 }
 
-@DataProvider(name = "dataContainerKYCCompanyStructure")
+@DataProvider(name = "dataContainerKYCCompanyStructure" )
 public String[][] excelDSKYCCompanyStructure() throws IOException
 {
 FileInputStream file = new FileInputStream("C:\\Users\\PC\\eclipse-workspace\\AdamJayKyc\\Test Data\\excelDataProviderKYCPage.xlsx");

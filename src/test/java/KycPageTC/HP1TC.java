@@ -13,7 +13,6 @@ import KYCPage.AClKYCformPage;
 import KYCPage.AClLoginPage;
 import LibraryFiles.BaseClass;
 import LibraryFiles.UtilityClass;
-
 import net.bytebuddy.utility.RandomString;
 
 public class HP1TC extends BaseClass

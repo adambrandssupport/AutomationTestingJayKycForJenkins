@@ -3,17 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="KycPageTC.KYCPage">
+      <class name="KycPageTC.KYCPageTC1">
         <methods>
-          <include name="CaptureFailedTCSS"/>
-          <include name="test2"/>
-          <include name="getResult"/>
-          <include name="logOut"/>
-          <include name="KYCFormFill" invocation-numbers="0"/>
           <include name="openBrowser"/>
+          <include name="logOut"/>
           <include name="startExtentReport"/>
+          <include name="getResult"/>
+          <include name="KYCFormFillDataprovider" invocation-numbers="0"/>
+          <include name="CaptureFailedTCSS"/>
         </methods>
-      </class> <!-- KycPageTC.KYCPage -->
+      </class> <!-- KycPageTC.KYCPageTC1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

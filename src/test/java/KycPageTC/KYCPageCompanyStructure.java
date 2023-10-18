@@ -2,18 +2,21 @@ package KycPageTC;
 
 import java.awt.AWTException;
 import java.io.IOException;
+
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+
 import KYCPage.AClKYCformPage;
 import KYCPage.AClLoginPage;
 import LibraryFiles.BaseClass;
 import LibraryFiles.DataSupplierForKYCForm;
 import LibraryFiles.UtilityClass;
 import net.bytebuddy.utility.RandomString;
+
 
 public class KYCPageCompanyStructure extends BaseClass
 {	
@@ -32,9 +35,9 @@ public void openBrowser() throws Throwable
 	soft=new SoftAssert();
 		
 	
-	lp.inpLoginPageEmail(UtilityClass.getPFData("EMailID"));
-	lp.inpLoginPagePwd(UtilityClass.getPFData("Password"));
-	lp.clickLoginPageLoginBtn();
+//	lp.inpLoginPageEmail(UtilityClass.getPFData("EMailID"));
+//	lp.inpLoginPagePwd(UtilityClass.getPFData("Password"));
+//		lp.clickLoginPageLoginBtn();
 }
 
 
@@ -83,6 +86,7 @@ public void KYCFormFill
 		Thread.sleep(500);
 		kp.selectAClKYCformPageCountryOfIncorp(CntryOfInc);
 		Thread.sleep(500);
+		
 		if(browserName.equalsIgnoreCase("Firefox"))
 		{		
 			kp.inpAClKYCformPageStDateOfIncorporationFirefox(dd1, mm1, yyyy1);

@@ -34,11 +34,12 @@ String value = WorkbookFactory.create(file).getSheet("Sheet1").getRow(rowIndex).
 return value;
 }
 
-public static void captureSS(WebDriver driver, String TCID) throws IOException
+public static String captureSS(WebDriver driver, String TCID) throws IOException
 {
     File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
     File dest = new File("C:\\Users\\PC\\eclipse-workspace\\AdamJayKyc\\FailedTCScreenShots\\Screenshot"+TCID+".png");
     FileHandler.copy(src, dest);
+    return dest.getAbsolutePath();
 }
 
 public static void drawBorder(WebDriver driver, WebElement ele) throws IOException
