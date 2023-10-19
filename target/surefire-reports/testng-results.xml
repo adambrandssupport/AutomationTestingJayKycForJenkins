@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[% and country is Required]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-10-18T14:43:25 IST" name="Suite" finished-at="2023-10-18T14:44:13 IST" duration-ms="48135">
+  <suite started-at="2023-10-19T20:02:57 IST" name="Suite" finished-at="2023-10-19T20:03:56 IST" duration-ms="59505">
     <groups>
     </groups>
-    <test started-at="2023-10-18T14:43:25 IST" name="Test" finished-at="2023-10-18T14:44:13 IST" duration-ms="48135">
+    <test started-at="2023-10-19T20:02:57 IST" name="Test" finished-at="2023-10-19T20:03:56 IST" duration-ms="59505">
       <class name="KycPageTC.KYCPreviewPageTC">
-        <test-method is-config="true" signature="startExtentReport()[pri:0, instance:KycPageTC.KYCPreviewPageTC@61001b64]" started-at="2023-10-18T14:43:27 IST" name="startExtentReport" finished-at="2023-10-18T14:43:27 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="startExtentReport()[pri:0, instance:KycPageTC.KYCPreviewPageTC@47e2e487]" started-at="2023-10-19T20:02:59 IST" name="startExtentReport" finished-at="2023-10-19T20:02:59 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startExtentReport -->
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:KycPageTC.KYCPreviewPageTC@61001b64]" started-at="2023-10-18T14:43:28 IST" name="openBrowser" finished-at="2023-10-18T14:43:32 IST" duration-ms="3465" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:KycPageTC.KYCPreviewPageTC@47e2e487]" started-at="2023-10-19T20:03:00 IST" name="openBrowser" finished-at="2023-10-19T20:03:07 IST" duration-ms="6759" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="KYCFormFillForPreview(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:KycPageTC.KYCPreviewPageTC@61001b64]" started-at="2023-10-18T14:43:32 IST" name="KYCFormFillForPreview" data-provider="dataContainerKYCForm" finished-at="2023-10-18T14:44:05 IST" duration-ms="33760" status="FAIL">
+        <test-method signature="KYCFormFillForPreview(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:KycPageTC.KYCPreviewPageTC@47e2e487]" started-at="2023-10-19T20:03:07 IST" name="KYCFormFillForPreview" data-provider="dataContainerKYCForm" finished-at="2023-10-19T20:03:54 IST" duration-ms="47170" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -324,7 +327,7 @@
             </param>
             <param index="61">
               <value>
-                <![CDATA[7894561244]]>
+                <![CDATA[78945644]]>
               </value>
             </param>
             <param index="62">
@@ -448,95 +451,57 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-Company phone not match expected [123456789] but found [972123456789],
-mang phone not match expected [8698706548] but found [50678945612],
-shrHldPrctg1 not match expected [51] but found [51%],
-shrHldPrctg2 not match expected [20] but found [20%],
-PCPhon not match expected [456789041] but found [243456789041],
-CFPhon not match expected [1234567842] but found [571234567842],
-cOpPhon not match expected [789561243] but found [968789561243],
-cAccName not match expected [Ms. J P Datta A'CCD] but found [HashCurrent Avccount],
-cAccPhon not match expected [7894561244] but found [50678945612],
-trfPhon1 not match expected [789456444] but found [66789456444],
-trfPhon2 not match expected [789561555] but found [90789561555]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Company phone not match expected [123456789] but found [972123456789],
-mang phone not match expected [8698706548] but found [50678945612],
-shrHldPrctg1 not match expected [51] but found [51%],
-shrHldPrctg2 not match expected [20] but found [20%],
-PCPhon not match expected [456789041] but found [243456789041],
-CFPhon not match expected [1234567842] but found [571234567842],
-cOpPhon not match expected [789561243] but found [968789561243],
-cAccName not match expected [Ms. J P Datta A'CCD] but found [HashCurrent Avccount],
-cAccPhon not match expected [7894561244] but found [50678945612],
-trfPhon1 not match expected [789456444] but found [66789456444],
-trfPhon2 not match expected [789561555] but found [90789561555]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at KycPageTC.KYCPreviewPageTC.KYCFormFillForPreview(KYCPreviewPageTC.java:505)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
-at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:17)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- KYCFormFillForPreview -->
-        <test-method is-config="true" signature="CaptureFailedTCSS(org.testng.ITestResult)[pri:0, instance:KycPageTC.KYCPreviewPageTC@61001b64]" started-at="2023-10-18T14:44:06 IST" name="CaptureFailedTCSS" finished-at="2023-10-18T14:44:08 IST" duration-ms="2217" status="PASS">
+        <test-method is-config="true" signature="CaptureFailedTCSS(org.testng.ITestResult)[pri:0, instance:KycPageTC.KYCPreviewPageTC@47e2e487]" started-at="2023-10-19T20:03:54 IST" name="CaptureFailedTCSS" finished-at="2023-10-19T20:03:56 IST" duration-ms="2004" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=KYCFormFillForPreview status=FAILURE method=KYCPreviewPageTC.KYCFormFillForPreview(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:KycPageTC.KYCPreviewPageTC@61001b64] output={null}]]]>
+                <![CDATA[[TestResult name=KYCFormFillForPreview status=SUCCESS method=KYCPreviewPageTC.KYCFormFillForPreview(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:KycPageTC.KYCPreviewPageTC@47e2e487] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CaptureFailedTCSS -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:KycPageTC.KYCPreviewPageTC@61001b64]" started-at="2023-10-18T14:44:08 IST" name="getResult" finished-at="2023-10-18T14:44:08 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:KycPageTC.KYCPreviewPageTC@47e2e487]" started-at="2023-10-19T20:03:56 IST" name="getResult" finished-at="2023-10-19T20:03:56 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=KYCFormFillForPreview status=FAILURE method=KYCPreviewPageTC.KYCFormFillForPreview(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:KycPageTC.KYCPreviewPageTC@61001b64] output={null}]]]>
+                <![CDATA[[TestResult name=KYCFormFillForPreview status=SUCCESS method=KYCPreviewPageTC.KYCFormFillForPreview(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:KycPageTC.KYCPreviewPageTC@47e2e487] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="logOut()[pri:0, instance:KycPageTC.KYCPreviewPageTC@61001b64]" started-at="2023-10-18T14:44:08 IST" name="logOut" finished-at="2023-10-18T14:44:08 IST" duration-ms="361" status="PASS">
+        <test-method is-config="true" signature="afterInvocation(org.testng.ITestResult)[pri:0, instance:KycPageTC.KYCPreviewPageTC@47e2e487]" started-at="2023-10-19T20:03:56 IST" name="afterInvocation" finished-at="2023-10-19T20:03:56 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=KYCFormFillForPreview status=SUCCESS method=KYCPreviewPageTC.KYCFormFillForPreview(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:KycPageTC.KYCPreviewPageTC@47e2e487] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterInvocation -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:KycPageTC.KYCPreviewPageTC@47e2e487]" started-at="2023-10-19T20:03:56 IST" name="logOut" finished-at="2023-10-19T20:03:56 IST" duration-ms="141" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
       </class> <!-- KycPageTC.KYCPreviewPageTC -->
       <class name="KycPageTC.KYCPageTC1">
-        <test-method is-config="true" signature="startExtentReport()[pri:0, instance:KycPageTC.KYCPageTC1@29215f06]" started-at="2023-10-18T14:43:25 IST" name="startExtentReport" finished-at="2023-10-18T14:43:27 IST" duration-ms="2223" status="PASS">
+        <test-method is-config="true" signature="startExtentReport()[pri:0, instance:KycPageTC.KYCPageTC1@d9345cd]" started-at="2023-10-19T20:02:57 IST" name="startExtentReport" finished-at="2023-10-19T20:02:59 IST" duration-ms="2246" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startExtentReport -->
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:KycPageTC.KYCPageTC1@29215f06]" started-at="2023-10-18T14:43:28 IST" name="openBrowser" finished-at="2023-10-18T14:43:37 IST" duration-ms="9121" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:KycPageTC.KYCPageTC1@d9345cd]" started-at="2023-10-19T20:03:00 IST" name="openBrowser" finished-at="2023-10-19T20:03:07 IST" duration-ms="6768" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="KYCFormFillDataprovider(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:KycPageTC.KYCPageTC1@29215f06]" started-at="2023-10-18T14:43:37 IST" name="KYCFormFillDataprovider" data-provider="dataContainerKYCForm" finished-at="2023-10-18T14:44:11 IST" duration-ms="33633" status="PASS">
+        <test-method signature="KYCFormFillDataprovider(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:KycPageTC.KYCPageTC1@d9345cd]" started-at="2023-10-19T20:03:07 IST" name="KYCFormFillDataprovider" data-provider="dataContainerKYCForm" finished-at="2023-10-19T20:03:51 IST" duration-ms="43794" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -845,7 +810,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
             </param>
             <param index="61">
               <value>
-                <![CDATA[7894561244]]>
+                <![CDATA[78945644]]>
               </value>
             </param>
             <param index="62">
@@ -970,34 +935,48 @@ at java.base/java.lang.Thread.run(Thread.java:833)
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[% and country is Required]]>
+            </line>
           </reporter-output>
         </test-method> <!-- KYCFormFillDataprovider -->
-        <test-method is-config="true" signature="CaptureFailedTCSS(org.testng.ITestResult)[pri:0, instance:KycPageTC.KYCPageTC1@29215f06]" started-at="2023-10-18T14:44:11 IST" name="CaptureFailedTCSS" finished-at="2023-10-18T14:44:13 IST" duration-ms="2001" status="PASS">
+        <test-method is-config="true" signature="CaptureFailedTCSS(org.testng.ITestResult)[pri:0, instance:KycPageTC.KYCPageTC1@d9345cd]" started-at="2023-10-19T20:03:51 IST" name="CaptureFailedTCSS" finished-at="2023-10-19T20:03:53 IST" duration-ms="2010" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=KYCFormFillDataprovider status=SUCCESS method=KYCPageTC1.KYCFormFillDataprovider(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:KycPageTC.KYCPageTC1@29215f06] output={null}]]]>
+                <![CDATA[[TestResult name=KYCFormFillDataprovider status=SUCCESS method=KYCPageTC1.KYCFormFillDataprovider(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:KycPageTC.KYCPageTC1@d9345cd] output=% and country is Required]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CaptureFailedTCSS -->
-        <test-method is-config="true" signature="logOut()[pri:0, instance:KycPageTC.KYCPageTC1@29215f06]" started-at="2023-10-18T14:44:13 IST" name="logOut" finished-at="2023-10-18T14:44:13 IST" duration-ms="63" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOut -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:KycPageTC.KYCPageTC1@29215f06]" started-at="2023-10-18T14:44:13 IST" name="getResult" finished-at="2023-10-18T14:44:13 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:KycPageTC.KYCPageTC1@d9345cd]" started-at="2023-10-19T20:03:53 IST" name="getResult" finished-at="2023-10-19T20:03:53 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=KYCFormFillDataprovider status=SUCCESS method=KYCPageTC1.KYCFormFillDataprovider(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:KycPageTC.KYCPageTC1@29215f06] output={null}]]]>
+                <![CDATA[[TestResult name=KYCFormFillDataprovider status=SUCCESS method=KYCPageTC1.KYCFormFillDataprovider(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:KycPageTC.KYCPageTC1@d9345cd] output=% and country is Required]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="afterInvocation(org.testng.ITestResult)[pri:0, instance:KycPageTC.KYCPageTC1@d9345cd]" started-at="2023-10-19T20:03:53 IST" name="afterInvocation" finished-at="2023-10-19T20:03:53 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=KYCFormFillDataprovider status=SUCCESS method=KYCPageTC1.KYCFormFillDataprovider(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:KycPageTC.KYCPageTC1@d9345cd] output=% and country is Required]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterInvocation -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:KycPageTC.KYCPageTC1@d9345cd]" started-at="2023-10-19T20:03:53 IST" name="logOut" finished-at="2023-10-19T20:03:53 IST" duration-ms="604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
       </class> <!-- KycPageTC.KYCPageTC1 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

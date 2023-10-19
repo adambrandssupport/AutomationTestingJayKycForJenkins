@@ -224,8 +224,7 @@ public AClKYCformPage(WebDriver driver) throws Throwable
   }
   public void inpAClKYCformPageIRegCompConNo(String regConNoN) throws InterruptedException
    {
-	  contNo.sendKeys(regConNoN);
-	  rb.delay(100);
+	  contNo.sendKeys(regConNoN);	 
    }
   public boolean inpAClKYCformPageIRegCompConNoEr()
   {
@@ -284,7 +283,7 @@ public AClKYCformPage(WebDriver driver) throws Throwable
   }
   public void selectAClKYCformPageCountryOfIncorp(String cntryOfIncorp) throws InterruptedException
   {
-	  Thread.sleep(500);
+	  Thread.sleep(100);
       UtilityClass.selectCountryList(selectCountryofIncorpBtn, cntryOfIncorp);
   }
  /* public void selectAClKYCformPageCountryOfIncorpactionclass(String dd,String mm, String yyyy) throws InterruptedException
@@ -319,16 +318,18 @@ public AClKYCformPage(WebDriver driver) throws Throwable
 	 }
   }*/
  
-  public void inpAClKYCformPageStDateOfIncorporationFirefox(String dd,String mm, String yyyy ) throws AWTException, InterruptedException
+ /* public void inpAClKYCformPageStDateOfIncorporationFirefox(String dd,String mm, String yyyy ) throws AWTException, InterruptedException
   {
-	     Thread.sleep(200);
+	   
 		 act.sendKeys(Keys.TAB).perform();
-		 Thread.sleep(200);	
-		 act.sendKeys(dd+mm).perform();		 
+		 Thread.sleep(100);	
+		 act.sendKeys(dd+mm).perform();	
+		 Thread.sleep(100);	
 		 act.sendKeys(Keys.ARROW_RIGHT).perform();
+		 Thread.sleep(100);	
 		 act.sendKeys(yyyy).perform();
 		 
-	/*  int d=Integer.parseInt(dd);
+	  int d=Integer.parseInt(dd);
 		 int m=Integer.parseInt(mm);
 		 int y=Integer.parseInt(yyyy);
 		 rb.delay(3000);
@@ -363,16 +364,16 @@ public AClKYCformPage(WebDriver driver) throws Throwable
  		 rb.delay(100);
  		 rb.keyRelease(KeyEvent.VK_DOWN);
  		 rb.delay(100);
- 	 }*/
-  }
+ 	 }
+  }*/
  public void inpAClKYCformPageStDateOfIncorporation(String dd,String mm, String yyyy ) throws AWTException, InterruptedException
  {
-     Thread.sleep(200);
 		 act.sendKeys(Keys.TAB).perform();
-		 Thread.sleep(200);	
+		 Thread.sleep(100);	
 		 act.sendKeys(dd+mm).perform();
-		 
+		 Thread.sleep(100);	
 		 act.sendKeys(Keys.ARROW_RIGHT).perform();
+		 Thread.sleep(100);	
 		 act.sendKeys(yyyy).perform();
 	 
 	 /*int d=Integer.parseInt(dd);
@@ -415,15 +416,9 @@ public AClKYCformPage(WebDriver driver) throws Throwable
  {
 	  tradLiscNo.sendKeys(tradeLisc);
  } 
- public void inpAClKYCformPageStTradLiscExDateFirefox(String dd, String mm,String yyyy) throws AWTException, InterruptedException
+ /*public void inpAClKYCformPageStTradLiscExDateFirefox(String dd, String mm,String yyyy) throws AWTException, InterruptedException
  {
-	 Thread.sleep(200);
-	 act.sendKeys(Keys.TAB).perform();
-	 Thread.sleep(200);	
-	 act.sendKeys(dd+mm).perform();
-	 act.sendKeys(Keys.ARROW_RIGHT).perform();
-	 act.sendKeys(yyyy).perform();
-/*	 int d=Integer.parseInt(dd);
+	 int d=Integer.parseInt(dd);
 	 int m=Integer.parseInt(mm);
 	 int y=Integer.parseInt(yyyy);
 	
@@ -454,15 +449,16 @@ public AClKYCformPage(WebDriver driver) throws Throwable
 			 rb.delay(100);
 			 rb.keyRelease(KeyEvent.VK_UP);
 			 rb.delay(100);
-		 }*/
- }
+		 }
+ }*/
  public void inpAClKYCformPageStTradLiscExDate(String dd,String mm, String yyyy ) throws AWTException, InterruptedException
  {	  
-	 Thread.sleep(200);
      act.sendKeys(Keys.TAB).perform();
-     Thread.sleep(200);	
+     Thread.sleep(100);	
      act.sendKeys(dd+mm).perform();
+     Thread.sleep(100);	
      act.sendKeys(Keys.ARROW_RIGHT).perform();
+     Thread.sleep(100);	
      act.sendKeys(yyyy).perform();
 	/* int d=Integer.parseInt(dd);
 	 int m=Integer.parseInt(mm);
@@ -509,8 +505,6 @@ public AClKYCformPage(WebDriver driver) throws Throwable
  }
  public void selectAClKYCformPageBankCountry(String cntryOfBank) throws InterruptedException
  {
-	
-	  Thread.sleep(100);
       UtilityClass.selectCountryList(selectCountryOfBank, cntryOfBank);
       
 /*     selectCountryOfBank.click();

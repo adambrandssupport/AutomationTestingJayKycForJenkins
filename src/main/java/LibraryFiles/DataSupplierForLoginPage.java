@@ -10,8 +10,9 @@ import org.testng.annotations.DataProvider;
 
 public class DataSupplierForLoginPage
 {
+	
 
-@DataProvider(name = "dataContainerTFLogin")
+@DataProvider(name = "dataContainerTFLogin1" , parallel = true)
 public String[][] excelDataSupplierTFLogin() throws IOException
 {
 FileInputStream file = new FileInputStream("C:\\Users\\PC\\eclipse-workspace\\AdamJayKyc\\Test Data\\excelDataProviderLoginPage.xlsx");
@@ -32,10 +33,10 @@ String[][] data = new String[row-1][col];
        }
     	System.out.println();
    }
- //for(String[] s1:data)
- //{
- // System.out.println(Arrays.toString(s1)); 
-// }
+ /*for(String[] s1:data)
+ {
+  System.out.println(Arrays.toString(s1)); 
+ }*/
  
 Workbook.close();
 file.close(); 
@@ -47,16 +48,17 @@ return data;
 //{
 //	System.out.println(ID+pw);
 //}
-//@DataProvider(name="kiran")
-//public Object[][] dataSupply()
-//{
-//	Object[][] data= new Object[2][2];
-//	data[0][0]="kiran";
-//	data[0][1]="tester";
-//	data[1][0]="Dhaval";
-//	data[1][1]="UIUX";
-//	return data;
-//}
+
+/*@DataProvider(name="kiran")
+public Object[][] dataSupply()
+{
+	Object[][] data= new Object[2][2];
+	data[0][0]="kiran";
+	data[0][1]="tester";
+	data[1][0]="Dhaval";
+	data[1][1]="UIUX";
+	return data;
+}*/
 
 @DataProvider(name = "dataContainerForNegativeTC")
 public String[][] excelDataSupplierNegative() throws IOException

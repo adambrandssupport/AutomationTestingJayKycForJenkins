@@ -9,12 +9,11 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class DataSupplierForKYCForm 
+public class DataSupplierForKYCForm
 {
-	int startRow=3;  // positive mandatory 1-2, DataType 3-7,  
-	int endRow=4;    // Length 8-11,  Number 12-13
-	
-@DataProvider(name = "dataContainerKYCForm" , parallel = false)
+	int startRow=1;  // positive mandatory 1-2, DataType 3-7,  
+	int endRow=1;    // Length 8-11,  Number 12-13	
+@DataProvider(name = "dataContainerKYCForm")
 public String[][] excelDataSupplierKYCData() throws IOException
 {
 FileInputStream file = new FileInputStream("C:\\Users\\PC\\eclipse-workspace\\AdamJayKyc\\Test Data\\excelDataProviderKYCPage.xlsx");
@@ -46,21 +45,21 @@ return data;
 }
 
 
-//@Test(dataProvider ="dataContainer" )
-//public void man(String ID, String pw)
-//{
-//	System.out.println(ID+pw);
-//}
-//@DataProvider(name="kiran")
-//public Object[][] dataSupply()
-//{
-//	Object[][] data= new Object[2][2];
-//	data[0][0]="kiran";
-//	data[0][1]="tester";
-//	data[1][0]="Dhaval";
-//	data[1][1]="UIUX";
-//	return data;
-//}
+/*@Test(dataProvider ="dataContainer" )
+public void man(String ID, String pw)
+{
+	System.out.println(ID+pw);
+}
+@DataProvider(name="kiran")
+public Object[][] dataSupply()
+{
+	Object[][] data= new Object[2][2];
+	data[0][0]="kiran";
+	data[0][1]="tester";
+	data[1][0]="Dhaval";
+	data[1][1]="UIUX";
+	return data;
+}*/
 @DataProvider(name = "dataContainerEditKYC")
 public String[][] excelDataSupplierEditKYCData() throws IOException
 {

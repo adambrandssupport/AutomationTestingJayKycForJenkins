@@ -3,6 +3,7 @@ package KycPageTC;
 import java.awt.AWTException;
 import java.io.IOException;
 
+import org.openqa.selenium.NoSuchWindowException;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
@@ -78,7 +79,7 @@ public void startExtentReport() throws InterruptedException {
     Thread.sleep(2000);
 }	
 
-@Test(dataProvider = "dataContainerKYCForm", dataProviderClass = DataSupplierForKYCForm.class)
+@Test(dataProvider = "dataContainerKYCForm", dataProviderClass = DataSupplierForKYCForm.class, threadPoolSize = 2)
 public void KYCFormFillDataprovider
 (
 		String Scenario, String iCoName, String ipCoName, String iRAdd,String infCountry, String iCont,String Email, String iWbsite, String iDomain, String iEmp,
@@ -182,31 +183,18 @@ public void KYCFormFillDataprovider
 	}
 	Thread.sleep(100);
 	kp.selectAClKYCformPageCountryOfIncorp(CntryOfInc);
+	
 	Thread.sleep(100);
-	if(browserName.equalsIgnoreCase("Firefox"))
-	{		Thread.sleep(100);	
-		kp.inpAClKYCformPageStDateOfIncorporationFirefox(dd1, mm1, yyyy1);
-	}
-	else
-	{
-		kp.inpAClKYCformPageStDateOfIncorporation(dd1, mm1, yyyy1);
-	}
+	kp.inpAClKYCformPageStDateOfIncorporation(dd1, mm1, yyyy1);
+	
 	Thread.sleep(100);
 	kp.inpAClKYCformPageStRegNo(sRegNo);
 	Thread.sleep(100);
 	kp.inpAClKYCformPageStTradLiscNo(sTrdLisc);
+	
 	Thread.sleep(100);	
-
-	if(browserName.equalsIgnoreCase("Firefox"))
-	{
-	
-	kp.inpAClKYCformPageStTradLiscExDateFirefox(dd2, mm2,yyyy2);
-	}
-	else
-	{
-		kp.inpAClKYCformPageStTradLiscExDate(dd2, mm2,yyyy2);
-	}
-	
+	kp.inpAClKYCformPageStTradLiscExDate(dd2, mm2,yyyy2);
+		
 	Thread.sleep(100);
 	kp.inpAClKYCformPageStVatNo(sVat);
 	Thread.sleep(100);
@@ -248,15 +236,14 @@ public void KYCFormFillDataprovider
 	kp.selectAClKYCformPageShrHldCountry1(shrCountry1);
 	Thread.sleep(100);
 	
-	
-	Thread.sleep(100);
 	if(shrHldName2!=(""))
-	{kp.inpAClKYCformPageShrHldName2(shrHldName2);
-	Thread.sleep(100);
-	kp.inpAClKYCformPageShrHldPerctg2(shrHldPrctg2);
-	Thread.sleep(100);
-	kp.selectAClKYCformPageShrHldCountry2(shrCountry2);
-	Thread.sleep(100);
+	{
+	  kp.inpAClKYCformPageShrHldName2(shrHldName2);
+	  Thread.sleep(100);
+	  kp.inpAClKYCformPageShrHldPerctg2(shrHldPrctg2);
+	  Thread.sleep(100);
+	  kp.selectAClKYCformPageShrHldCountry2(shrCountry2);
+	  Thread.sleep(100);
 	}
 
 	Thread.sleep(100);
@@ -311,6 +298,8 @@ public void KYCFormFillDataprovider
 	Thread.sleep(100);
 	
 //TradeReferance
+	if(tRFName1!="")
+	{
 	kp.inpAClKYCformPageTrdRefName1(tRFName1);
 	Thread.sleep(100);
 	kp.seleAClKYCformPageTrdRefCountry1(trfCountry1);	
@@ -319,7 +308,9 @@ public void KYCFormFillDataprovider
 	Thread.sleep(100);
 	kp.inpAClKYCformPageTrdRefEmail1(trEmail1);
 	Thread.sleep(100);
-	
+	}
+	if(tRFName2!="")
+	{
 	kp.inpAClKYCformPageTrdRefName2(tRFName2);
 	Thread.sleep(100);
 	kp.seleAClKYCformPageTrdRefCountry2(trfCountry2);
@@ -328,7 +319,7 @@ public void KYCFormFillDataprovider
 	Thread.sleep(100);
 	kp.inpAClKYCformPageTrdRefEmail2(trEmail2);
 	Thread.sleep(100);
-	
+	}
 //Upload Document
     
 	Thread.sleep(100);
@@ -340,17 +331,21 @@ public void KYCFormFillDataprovider
 	Thread.sleep(100);
 	kp.uplodAClKYCformPageUpldTaxRegi(upTRC);
 	Thread.sleep(100);
+	if(upCP!="")
+	{
 	kp.uplodAClKYCformPageUpldCompProfile(upCP);
 	Thread.sleep(100);
-    kp.inpAClKYCformPageUpldURL(uURL);
-
+	}
+	kp.inpAClKYCformPageUpldURL(uURL);
+	if(upBR!="")
+	{
 	Thread.sleep(100);
 	kp.uplodAClKYCformPageUpldBankRef(upBR);
-	Thread.sleep(100);
+	}
+	Thread.sleep(100);	
 	kp.uplodAClKYCformPageUpldPassport(upPass);
 	Thread.sleep(100);	
-		
-	Thread.sleep(100);
+
 	kp.clickAClKYCformPageUiDeclrare(); 
 	Thread.sleep(100);
 	
@@ -478,8 +473,6 @@ public void KYCFormFillDataprovider
 	
 	Reporter.log(compName +iCoName);*/
 
-	
-	
     soft.assertTrue(true);
     soft.assertAll();
 }/*
@@ -511,6 +504,17 @@ public void getResult(ITestResult result) {
     else 
     {
         test.log(Status.SKIP, result.getTestName());
+    }
+}
+
+@AfterMethod(enabled =true)
+public void afterInvocation( ITestResult result) 
+{
+    if (result.getThrowable() != null) {
+        if (result.getThrowable() instanceof NoSuchWindowException) {
+            // Handle the NoSuchWindowException here, e.g., log the error or perform cleanup.
+            // You can also decide to retry or take other actions depending on your requirements.
+        }
     }
 }
 @AfterMethod(enabled =true)

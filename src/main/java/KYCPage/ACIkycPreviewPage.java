@@ -32,15 +32,15 @@ public class ACIkycPreviewPage
 @FindBy(xpath = "//label[text()='Bank Name']//following-sibling::p")private WebElement  bnkName;
 @FindBy(xpath = "//label[text()='Bank Country']/following-sibling::p")private WebElement bnkCountry;
 @FindBy(xpath = "//label[text()='Bank Branch Address']/following-sibling::p")private WebElement bnkAddress;
-@FindBy(xpath = "//label[text()='SwiftCode']/following-sibling::p")private WebElement swiftCode;
+@FindBy(xpath = "//label[text()='Swift Code']/following-sibling::p")private WebElement swiftCode;
 @FindBy(xpath = "//label[text()='Account Name']/following-sibling::p")private WebElement accName;
 @FindBy(xpath = "//label[text()='Account Currency']/following-sibling::p")private WebElement AccCurrency;
 @FindBy(xpath = "//label[text()='Account Number']/following-sibling::p")private WebElement accNo;
 @FindBy(xpath = "//label[text()='IBAN/ABA']/following-sibling::p")private WebElement iBANNo;
-@FindBy(xpath = "//label[text()='Bank Account Mangers Name']/following-sibling::p")private WebElement managerName;
-@FindBy(xpath = "//label[text()='Account Managers Contact']/following-sibling::p")private WebElement managerPhone;
+@FindBy(xpath = "//label[text()='Bank Account Manger's Name']/following-sibling::p")private WebElement managerName;
+@FindBy(xpath = "//label[text()='Bank Account Manager's Contact Details']/following-sibling::p")private WebElement managerPhone;
 @FindBy(xpath = "//label[text()='Correspondent Bank Name']/following-sibling::p")private WebElement correBnkName;
-@FindBy(xpath = "//label[text()='Correspondent Bank SwiftCode']/following-sibling::p")private WebElement CorreBnkswiftCode;
+@FindBy(xpath = "//label[text()='Correspondent Bank Swift Code']/following-sibling::p")private WebElement CorreBnkswiftCode;
 
 @FindBy(xpath = "(//label[text()='Name'])[1]//following-sibling::p")private WebElement ShrHldName1;
 @FindBy(xpath = "(//label[text()='Percentage'])[1]//following-sibling::p")private WebElement ShrHldPercentage1;
@@ -221,7 +221,7 @@ public String getACIkycPreviewPageShrName1()
 }
 public String getACIkycPreviewPageShrPercentage1()
 {
-	return ShrHldPercentage1.getText();
+	return ShrHldPercentage1.getText().substring(0,2);
 }
 public String getACIkycPreviewPageShrCountry1()
 {
@@ -233,7 +233,7 @@ public String getACIkycPreviewPageShrName2()
 }
 public String getACIkycPreviewPageShrPercentage2()
 {
-	return ShrHldPercentage2.getText();
+	return ShrHldPercentage2.getText().substring(0,2);
 }
 public String getACIkycPreviewPageShrCountry2()
 {
@@ -300,7 +300,7 @@ public String getACIkycPreviewPageACDesignation()
 {
 	return acDesignation.getText();
 }
-public String getACIkycPreviewPageACPhone()
+public String getACIkycPreviewPageACCPhone()
 {
 	return acPhone.getText();
 }

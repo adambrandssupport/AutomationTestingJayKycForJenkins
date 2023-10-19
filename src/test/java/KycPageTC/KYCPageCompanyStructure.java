@@ -87,14 +87,8 @@ public void KYCFormFill
 		kp.selectAClKYCformPageCountryOfIncorp(CntryOfInc);
 		Thread.sleep(500);
 		
-		if(browserName.equalsIgnoreCase("Firefox"))
-		{		
-			kp.inpAClKYCformPageStDateOfIncorporationFirefox(dd1, mm1, yyyy1);
-		}
-		else
-		{
-			kp.inpAClKYCformPageStDateOfIncorporation(dd1, mm1, yyyy1);
-		}
+		kp.inpAClKYCformPageStDateOfIncorporation(dd1, mm1, yyyy1);
+
 		
 		Thread.sleep(500);
 		kp.inpAClKYCformPageStRegNo(sRegNo);
@@ -103,15 +97,9 @@ public void KYCFormFill
 		kp.inpAClKYCformPageStTradLiscNo(sTrdLisc);
 		
 		Thread.sleep(500);
-		if(browserName.equalsIgnoreCase("Firefox"))
-		{
+
+		kp.inpAClKYCformPageStTradLiscExDate(dd2, mm2,yyyy2);
 		
-		kp.inpAClKYCformPageStTradLiscExDateFirefox(dd2, mm2,yyyy2);
-		}
-		else
-		{
-			kp.inpAClKYCformPageStTradLiscExDate(dd2, mm2,yyyy2);
-		}
 		Thread.sleep(500);
 		kp.inpAClKYCformPageStVatNo(sVat);
 		Thread.sleep(500);	

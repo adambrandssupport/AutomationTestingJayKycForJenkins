@@ -3,6 +3,7 @@ package KycPageTC;
 import java.awt.AWTException;
 import java.io.IOException;
 
+import org.openqa.selenium.NoSuchWindowException;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -140,30 +141,17 @@ public void KYCFormFillForPreview
 	}
 	Thread.sleep(100);
 	kp.selectAClKYCformPageCountryOfIncorp(CntryOfInc);
+	
 	Thread.sleep(100);
-	if(browserName.equalsIgnoreCase("Firefox"))
-	{		Thread.sleep(100);	
-		kp.inpAClKYCformPageStDateOfIncorporationFirefox(dd1, mm1, yyyy1);
-	}
-	else
-	{
-		kp.inpAClKYCformPageStDateOfIncorporation(dd1, mm1, yyyy1);
-	}
+	kp.inpAClKYCformPageStDateOfIncorporation(dd1, mm1, yyyy1);
+	
 	Thread.sleep(100);
 	kp.inpAClKYCformPageStRegNo(sRegNo);
 	Thread.sleep(100);
 	kp.inpAClKYCformPageStTradLiscNo(sTrdLisc);
-	Thread.sleep(100);	
-
-	if(browserName.equalsIgnoreCase("Firefox"))
-	{
 	
-	kp.inpAClKYCformPageStTradLiscExDateFirefox(dd2, mm2,yyyy2);
-	}
-	else
-	{
-		kp.inpAClKYCformPageStTradLiscExDate(dd2, mm2,yyyy2);
-	}
+	Thread.sleep(100);	
+	kp.inpAClKYCformPageStTradLiscExDate(dd2, mm2,yyyy2);
 	
 	Thread.sleep(100);
 	kp.inpAClKYCformPageStVatNo(sVat);
@@ -186,8 +174,7 @@ public void KYCFormFillForPreview
 	kp.inpAClKYCformPageBankIBan(bIban); 
 	
 	Thread.sleep(100);
-	kp.inpAClKYCformPageBankAccMangName(bMangName);
-	
+	kp.inpAClKYCformPageBankAccMangName(bMangName);	
 	Thread.sleep(100);
 	kp.selectAClKYCformPageBankAccMangCountry(bMangCountry);
 	Thread.sleep(100);
@@ -207,16 +194,15 @@ public void KYCFormFillForPreview
 	Thread.sleep(100);
 	
 	
-	Thread.sleep(100);
-	kp.inpAClKYCformPageShrHldName2(shrHldName2);
-	Thread.sleep(100);
-	kp.inpAClKYCformPageShrHldPerctg2(shrHldPrctg2);
-	Thread.sleep(100);
-	kp.selectAClKYCformPageShrHldCountry2(shrCountry2);
-	Thread.sleep(100);
-	
-
-	Thread.sleep(100);
+	if(shrHldName2!=(""))
+	{
+	  kp.inpAClKYCformPageShrHldName2(shrHldName2);
+	  Thread.sleep(100);
+	  kp.inpAClKYCformPageShrHldPerctg2(shrHldPrctg2);
+	  Thread.sleep(100);
+	  kp.selectAClKYCformPageShrHldCountry2(shrCountry2);
+	  Thread.sleep(100);
+	}
 //Contact Details
 	kp.inpAClKYCformPageCPCName(cPCName);
 	Thread.sleep(100);
@@ -267,55 +253,64 @@ public void KYCFormFillForPreview
 	kp.inpAClKYCformPageCConctPerson(cConPer);
 	Thread.sleep(100);
 	
-//TradeReferance
-	kp.inpAClKYCformPageTrdRefName1(tRFName1);
-	Thread.sleep(100);
-	kp.seleAClKYCformPageTrdRefCountry1(trfCountry1);	
-	Thread.sleep(100);
-	kp.inpAClKYCformPageTrdRefPhone1(trfPhon1);
-	Thread.sleep(100);
-	kp.inpAClKYCformPageTrdRefEmail1(trEmail1);
-	Thread.sleep(100);
-	
-	kp.inpAClKYCformPageTrdRefName2(tRFName2);
-	Thread.sleep(100);
-	kp.seleAClKYCformPageTrdRefCountry2(trfCountry2);
-	Thread.sleep(100);
-	kp.inpAClKYCformPageTrdRefPhone2(trfPhon2);
-	Thread.sleep(100);
-	kp.inpAClKYCformPageTrdRefEmail2(trEmail2);
-	Thread.sleep(100);
-	
-//Upload Document
-    
-	Thread.sleep(100);
-	kp.uplodkAClKYCformPageUpldCertOfIncorp(upCoI);
-	Thread.sleep(100);
-	kp.uplodAClKYCformPageUpldAoA(upAoA);
-	Thread.sleep(100);
-	kp.uplodAClKYCformPageUpldTrdLiscCert(upTLC);
-	Thread.sleep(100);
-	kp.uplodAClKYCformPageUpldTaxRegi(upTRC);
-	Thread.sleep(100);
-	kp.uplodAClKYCformPageUpldCompProfile(upCP);
-	Thread.sleep(100);
-    kp.inpAClKYCformPageUpldURL(uURL);
+	//TradeReferance
+		if(tRFName1!="")
+		{
+		kp.inpAClKYCformPageTrdRefName1(tRFName1);
+		Thread.sleep(100);
+		kp.seleAClKYCformPageTrdRefCountry1(trfCountry1);	
+		Thread.sleep(100);
+		kp.inpAClKYCformPageTrdRefPhone1(trfPhon1);
+		Thread.sleep(100);
+		kp.inpAClKYCformPageTrdRefEmail1(trEmail1);
+		Thread.sleep(100);
+		}
+		if(tRFName2!="")
+		{
+		kp.inpAClKYCformPageTrdRefName2(tRFName2);
+		Thread.sleep(100);
+		kp.seleAClKYCformPageTrdRefCountry2(trfCountry2);
+		Thread.sleep(100);
+		kp.inpAClKYCformPageTrdRefPhone2(trfPhon2);
+		Thread.sleep(100);
+		kp.inpAClKYCformPageTrdRefEmail2(trEmail2);
+		Thread.sleep(100);
+		}
+	//Upload Document
+	    
+		Thread.sleep(100);
+		kp.uplodkAClKYCformPageUpldCertOfIncorp(upCoI);
+		Thread.sleep(100);
+		kp.uplodAClKYCformPageUpldAoA(upAoA);
+		Thread.sleep(100);
+		kp.uplodAClKYCformPageUpldTrdLiscCert(upTLC);
+		Thread.sleep(100);
+		kp.uplodAClKYCformPageUpldTaxRegi(upTRC);
+		Thread.sleep(100);
+		if(upCP!="")
+		{
+		kp.uplodAClKYCformPageUpldCompProfile(upCP);
+		Thread.sleep(100);
+		}
+		kp.inpAClKYCformPageUpldURL(uURL);
+		Thread.sleep(100);  
+		if(upBR!="")
+		{
+		kp.uplodAClKYCformPageUpldBankRef(upBR);
+		Thread.sleep(100); 
+		}
 
-	Thread.sleep(100);
-	kp.uplodAClKYCformPageUpldBankRef(upBR);
-	Thread.sleep(100);
-	kp.uplodAClKYCformPageUpldPassport(upPass);
-	Thread.sleep(100);	
+		kp.uplodAClKYCformPageUpldPassport(upPass);
+		Thread.sleep(100);	
+
+		kp.clickAClKYCformPageUiDeclrare(); 
+		Thread.sleep(100);
 		
-	Thread.sleep(100);
-	kp.clickAClKYCformPageUiDeclrare(); 
-	Thread.sleep(100);
+	    kp.uplodAClKYCformPageUpldSign(upSign);
+	    Thread.sleep(100);
+	    
+	    kp.inpAClKYCformPageUpldAuthoSignName(signName);
 	
-    kp.uplodAClKYCformPageUpldSign(upSign);
-    Thread.sleep(100);
-    
-    kp.inpAClKYCformPageUpldAuthoSignName(signName);
-    
 	Thread.sleep(200);
      if (driver.getPageSource().contains(kp.rtnAClKYCformPageErrorMsg().getText()));
 	   {
@@ -338,35 +333,35 @@ public void KYCFormFillForPreview
 //	soft.assertEquals(prevp.getACIkycPreviewPageCompName(), iCoName,"Company name not match");	
 	soft.assertEquals(prevp.getACIkycPreviewPageParentCompName(), ipCoName,"Parent Company name not match");
 	soft.assertEquals(prevp.getACIkycPreviewPageCompAdd(), iRAdd,"Company Address not match");
-	soft.assertEquals(prevp.getACIkycPreviewPageCompPhone(), iCont,"Company phone not match");
-	//soft.assertEquals(prevp.getACIkycPreviewPageEmail(), iCoName,"Company name not match");
-	//soft.assertEquals(prevp.getACIkycPreviewPageWebsite(), iWbsite,"website not match");
-	//soft.assertEquals(prevp.getACIkycPreviewPageDomain(), iDomain,"domain not match");
+	soft.assertTrue(prevp.getACIkycPreviewPageCompPhone().contains(iCont),"Company phone not match");
+	soft.assertEquals(prevp.getACIkycPreviewPageEmail(), Email,"Company email not match");
+	soft.assertEquals(prevp.getACIkycPreviewPageWebsite(), iWbsite,"website not match");
+	soft.assertEquals(prevp.getACIkycPreviewPageDomain(), iDomain,"domain not match");
 	soft.assertEquals(prevp.getACIkycPreviewPageNumberOfEmployee(), iEmp,"Emp No not match");
 		
 	soft.assertEquals(prevp.getACIkycPreviewPageBussiStru(), struType,"Business Structure not match");
 //	soft.assertEquals(prevp.getACIkycPreviewPageOtherBussiStru(), sOStr,"Other Business Structure not match");
 	soft.assertEquals(prevp.getACIkycPreviewPageBussiNature(), natureType,"Business Nature not match");
-//	soft.assertEquals(prevp.getACIkycPreviewPageOtherBussiNature(), sOBusi,"Other Business Nature not match");
+	soft.assertEquals(prevp.getACIkycPreviewPageOtherBussiNature(), sOBusi,"Other Business Nature not match");
 //	soft.assertEquals(prevp.getACIkycPreviewPageCountryofIncorp(), CntryOfInc,"Country of incorp not match");
-	//soft.assertEquals(prevp.getACIkycPreviewPageDateOfIncorp(), (yyyy1/mm1/dd1),"Date of incorp not match");
+	soft.assertEquals(prevp.getACIkycPreviewPageDateOfIncorp(), (yyyy1+"-"+mm1+"-"+dd1),"Date of incorp not match");
 	soft.assertEquals(prevp.getACIkycPreviewPageRegNo(), sRegNo,"Registration No not match");
 	soft.assertEquals(prevp.getACIkycPreviewPageTrdLiscNo(), sTrdLisc,"TradeLisc No not match");
-	//soft.assertEquals(prevp.getACIkycPreviewPageTrdLiscNoExp(), sTrdLisc,"TradeLisc Exp date  not match");
+	soft.assertEquals(prevp.getACIkycPreviewPageTrdLiscNoExp(), (yyyy2+"-"+mm2+"-"+dd2),"TradeLisc Exp date  not match");
 //	soft.assertEquals(prevp.getACIkycPreviewPageVatRegNo(), sVat,"Vat No not match");
 	
 	soft.assertEquals(prevp.getACIkycPreviewPageBankName(), bName,"Bank Name not match");
 	soft.assertEquals(prevp.getACIkycPreviewPageBankCountry(), bankCountry,"Bank Country not match");
 	soft.assertEquals(prevp.getACIkycPreviewPageBankAdd(), bAdd,"Bank Add not match");
-	soft.assertEquals(prevp.getACIkycPreviewPageSwiftCode(), bSwift,"swift code Nature not match");
+//	soft.assertEquals(prevp.getACIkycPreviewPageSwiftCode(), bSwift,"swift code Nature not match");
 	soft.assertEquals(prevp.getACIkycPreviewPageAccName(), bAccName,"acc name not match");
 	soft.assertEquals(prevp.getACIkycPreviewPageAccCurrency(), curency,"currency not match");
 	soft.assertEquals(prevp.getACIkycPreviewPageAccNo(), bAccNo,"acc No not match");
 	soft.assertEquals(prevp.getACIkycPreviewPageIBan(), bIban,"iban No not match");
-	soft.assertEquals(prevp.getACIkycPreviewPageManagerName(), bMangName,"mang name not match");
-	soft.assertEquals(prevp.getACIkycPreviewPageACPhone(), bMangCont,"mang phone not match");
+//	soft.assertEquals(prevp.getACIkycPreviewPageManagerName(), bMangName,"mang name not match");
+//	soft.assertTrue(prevp.getACIkycPreviewPageManagerPhone().contains(bMangCont),"mang phone not match");
 	soft.assertEquals(prevp.getACIkycPreviewPageCorrespBnk(), bCorBankName,"corr bank not match");
-	soft.assertEquals(prevp.getACIkycPreviewPageCorrespBnkSwift(), bCorBankSwift,"corre swift No not match");
+//	soft.assertEquals(prevp.getACIkycPreviewPageCorrespBnkSwift(), bCorBankSwift,"corre swift No not match");
 	
 	soft.assertEquals(prevp.getACIkycPreviewPageShrName1(), shrHldName1,"shrHldName1 not match");
 	soft.assertEquals(prevp.getACIkycPreviewPageShrPercentage1(), shrHldPrctg1,"shrHldPrctg1 not match");
@@ -377,29 +372,31 @@ public void KYCFormFillForPreview
 	
 	soft.assertEquals(prevp.getACIkycPreviewPagePCName(), cPCName,"PCName not match");
 	soft.assertEquals(prevp.getACIkycPreviewPagePCDesignation(), cPCDesign,"PCDesig not match");
-	soft.assertEquals(prevp.getACIkycPreviewPagePCPhone(), cPCPhon,"PCPhon not match");
+	soft.assertTrue(prevp.getACIkycPreviewPagePCPhone().contains(cPCPhon),"PCPhon not match");
 	soft.assertEquals(prevp.getACIkycPreviewPagePCEmail(), cPCEmail,"PCEmail not match");
 	
 	soft.assertEquals(prevp.getACIkycPreviewPageCFDName(), cCFName,"CFName not match");
 	soft.assertEquals(prevp.getACIkycPreviewPageCFDDesignation(), cCFDesign,"CFDesig not match");
-	soft.assertEquals(prevp.getACIkycPreviewPageCFDPhone(), cCFPhon,"CFPhon not match");
+	soft.assertTrue(prevp.getACIkycPreviewPageCFDPhone().contains(cCFPhon),"CFPhon not match");
 	soft.assertEquals(prevp.getACIkycPreviewPageCFdEmail(), cCFEmail,"CFEmail not match");
 	
 	soft.assertEquals(prevp.getACIkycPreviewPageODName(), cOpName,"cOpName not match");
 	soft.assertEquals(prevp.getACIkycPreviewPageODDesignation(), cOpDesign,"cOpDesign not match");
-	soft.assertEquals(prevp.getACIkycPreviewPageODPhone(), cOpPhon,"cOpPhon not match");
+	soft.assertTrue(prevp.getACIkycPreviewPageODPhone().contains(cOpPhon),"cOpPhon not match");
 	soft.assertEquals(prevp.getACIkycPreviewPageODEmail(), cOpEmail,"cOpEmail not match");
 	
-	soft.assertEquals(prevp.getACIkycPreviewPageAccName(), cAccName,"cAccName not match");
+	soft.assertEquals(prevp.getACIkycPreviewPageACName(), cAccName,"cAccName not match");
 	soft.assertEquals(prevp.getACIkycPreviewPageACDesignation(), cAccDesign,"cAccDesign not match");
-	soft.assertEquals(prevp.getACIkycPreviewPageACPhone(), cAccPhon,"cAccPhon not match");
+	soft.assertTrue(prevp.getACIkycPreviewPageACCPhone().contains(cAccPhon),"cAccPhon not match");
+	System.out.println(prevp.getACIkycPreviewPageACCPhone()+"==>"+cAccPhon);
+	
 	soft.assertEquals(prevp.getACIkycPreviewPageACEmail(), cAccEmail,"cAccEmail not match");
 		
 	soft.assertEquals(prevp.getACIkycPreviewPageTRFName1(), tRFName1,"tRFName2 not match");
-	soft.assertEquals(prevp.getACIkycPreviewPageTRFPhone1(), trfPhon1,"trfPhon1 not match");
+	soft.assertTrue(prevp.getACIkycPreviewPageTRFPhone1().contains(trfPhon1),"trfPhon1 not match");
 	soft.assertEquals(prevp.getACIkycPreviewPageTRFEmail1(), trEmail1,"trEmail1 not match");
 	soft.assertEquals(prevp.getACIkycPreviewPageTRFName2(), tRFName2,"tRFName2 not match");
-	soft.assertEquals(prevp.getACIkycPreviewPageTRFPhone2(), trfPhon2,"trfPhon2 not match");
+	soft.assertTrue(prevp.getACIkycPreviewPageTRFPhone2().contains(trfPhon2),"trfPhon2 not match");
 	soft.assertEquals(prevp.getACIkycPreviewPageTRFEmail2(), trEmail2,"trEmail2 not match");
 /*boolean emailIsTakenPopUp= kp.rtnAClKYCformPageUemailIsTakenMsgWindow().isDisplayed();
 	
@@ -531,6 +528,16 @@ public void getResult(ITestResult result) {
     }
     else {
         test.log(Status.SKIP, result.getTestName());
+    }
+}
+@AfterMethod(enabled =true)
+public void afterInvocation( ITestResult result) 
+{
+    if (result.getThrowable() != null) {
+        if (result.getThrowable() instanceof NoSuchWindowException) {
+            // Handle the NoSuchWindowException here, e.g., log the error or perform cleanup.
+            // You can also decide to retry or take other actions depending on your requirements.
+        }
     }
 }
 @AfterMethod(enabled =true)

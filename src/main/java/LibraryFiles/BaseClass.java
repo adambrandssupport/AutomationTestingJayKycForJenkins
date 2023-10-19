@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 public class BaseClass 
 {
 public WebDriver driver;
-public String browserName="Chrome";
+public String browserName="Edge";
 
 public void initialiseBrowser() throws IOException
 {

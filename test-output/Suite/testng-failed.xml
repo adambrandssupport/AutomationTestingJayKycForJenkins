@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="classes" name="Test(failed)">
-    <parameter name="browserName" value="Edge"/>
+  <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="KycPageTC.KYCPageTC1">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="logOut"/>
+          <include name="startExtentReport"/>
+          <include name="getResult"/>
+          <include name="KYCFormFillDataprovider" invocation-numbers="0"/>
+          <include name="CaptureFailedTCSS"/>
+        </methods>
+      </class> <!-- KycPageTC.KYCPageTC1 -->
       <class name="KycPageTC.KYCPreviewPageTC">
         <methods>
           <include name="logOut"/>
@@ -14,16 +23,6 @@
           <include name="CaptureFailedTCSS"/>
         </methods>
       </class> <!-- KycPageTC.KYCPreviewPageTC -->
-      <class name="KycPageTC.KYCPageTC1">
-        <methods>
-          <include name="logOut"/>
-          <include name="openBrowser"/>
-          <include name="startExtentReport"/>
-          <include name="getResult"/>
-          <include name="KYCFormFillDataprovider" invocation-numbers="0"/>
-          <include name="CaptureFailedTCSS"/>
-        </methods>
-      </class> <!-- KycPageTC.KYCPageTC1 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
