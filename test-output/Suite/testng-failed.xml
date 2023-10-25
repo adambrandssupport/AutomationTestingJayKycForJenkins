@@ -2,27 +2,19 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
+    <parameter name="browserName" value="Chrome"/>
     <classes>
-      <class name="KycPageTC.KYCPageTC1">
-        <methods>
-          <include name="openBrowser"/>
-          <include name="logOut"/>
-          <include name="startExtentReport"/>
-          <include name="getResult"/>
-          <include name="KYCFormFillDataprovider" invocation-numbers="0"/>
-          <include name="CaptureFailedTCSS"/>
-        </methods>
-      </class> <!-- KycPageTC.KYCPageTC1 -->
-      <class name="KycPageTC.KYCPreviewPageTC">
+      <class name="LoginTC.CrossBrowser">
         <methods>
           <include name="logOut"/>
-          <include name="openBrowser"/>
+          <include name="afterInvocation"/>
           <include name="startExtentReport"/>
-          <include name="KYCFormFillForPreview" invocation-numbers="0"/>
-          <include name="getResult"/>
+          <include name="InitialiseBrowser"/>
+          <include name="signIn"/>
           <include name="CaptureFailedTCSS"/>
+          <include name="getResult"/>
         </methods>
-      </class> <!-- KycPageTC.KYCPreviewPageTC -->
+      </class> <!-- LoginTC.CrossBrowser -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

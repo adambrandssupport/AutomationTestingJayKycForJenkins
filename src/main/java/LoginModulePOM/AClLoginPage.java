@@ -12,19 +12,22 @@ import LibraryFiles.UtilityClass;
 
 public class AClLoginPage 
 {
+@FindBy(xpath="//h1[text()='Hello ! Welcome Back ']")private WebElement signInPageTitle;
 @FindBy(xpath="//input[@name='emailAddress']")private WebElement Email ;
 @FindBy(xpath="//input[@name='password']")private WebElement Password ;
-@FindBy(xpath="//input[@type='checkbox']")private WebElement remMe;
 @FindBy(xpath="//button[text()='Sign In']")private WebElement loginBtn ;
+@FindBy(xpath="//a[@class='signup-link']")private WebElement signUpLink;
+@FindBy(xpath="//div[@class='error']")private WebElement emailErMsg;
+@FindBy(xpath="(//div[@class='error'])[2]")private WebElement pwdErMsg;
+
+@FindBy(xpath="//input[@type='checkbox']")private WebElement remMe;
 @FindBy(xpath="//h2[text()='Login successful']")private WebElement logInSuccesstMsg;
 @FindBy(xpath="//div[contains(text(),'Password didn')]")private WebElement wrongPwdMsg;
 @FindBy(xpath="//div[text()='User not registered']")private WebElement notRegMsg;
 @FindBy(xpath="//i[@class='eye fa fa-eye']")private WebElement togglePwdBtn;
-@FindBy(xpath="//a[@class='signup-link']")private WebElement signUpLink;
 @FindBy(xpath="//p[text()='Forgot Password?']")private WebElement forgotPwdLink;
-@FindBy(xpath="//h1[text()='Hello ! Welcome Back ']")private WebElement signInPageTitle;
-@FindBy(xpath="//div[@class='animate__animated animate__fadeInUp marginBottom']//p[@class='error-message'][normalize-space()='This field is required']")private WebElement invalidEmailMsg;
-@FindBy(xpath="//div[@class='login-div animate__animated animate__fadeInUp']//p[@class='error-message'][normalize-space()='This field is required']")private WebElement pwdReqMsg;
+
+
 public AClLoginPage(WebDriver driver)
 {
 	PageFactory.initElements(driver, this);
@@ -46,35 +49,35 @@ public String getAClLoginPageText()
 	String text= signInPageTitle.getText();
 	return text;		
 }
-public void clickLoginPageRemMeCheckbox()
+public void clickAClLoginPageRemMeCheckbox()
 {
 	remMe.click();
 }
 
-public WebElement rtnEleLogInSuccesstMsg() throws IOException
+public WebElement rtnAClLoginPageLogInSuccesstMsg() throws IOException
 {
 	return logInSuccesstMsg;
 }
-public WebElement rtnEleWrongPwdMsg() throws IOException
+public WebElement rtnAClLoginPageWrongPwdMsg() throws IOException
 {
 	return wrongPwdMsg;
 }
-public WebElement rtnEleNotRegMsg() throws IOException
+public WebElement rtnAClLoginPageNotRegMsg() throws IOException
 {	
 	return notRegMsg;
 }
 
-public WebElement rtnInvalidEmailMsg() throws IOException
+public WebElement rtnAClLoginPageInvalidEmailMsg() throws IOException
 {	
-	return invalidEmailMsg;
+	return emailErMsg;
 }
 
-public WebElement rtnPwdReqMsg() throws IOException
+public WebElement rtnAClLoginPagePwdReqMsg() throws IOException
 {	
-	return pwdReqMsg;
+	return pwdErMsg;
 }
 
-public String drawborderLoginPageToastMsg(WebDriver driver) throws IOException
+public String drawborderAClLoginPageToastMsg(WebDriver driver) throws IOException
 {		
 	//act.click(togglePwdBtn).perform();
 	  UtilityClass.drawBorder(driver, logInSuccesstMsg);

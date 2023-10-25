@@ -1,4 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>AdamJayKyc</groupId>
   <artifactId>AdamJayKyc</artifactId>
@@ -12,7 +12,7 @@
           <version>3.1.2</version>
           <configuration>
 			<suiteXmlFiles>
-		        <suiteXmlFile>testng2TC.xml</suiteXmlFile><!-- write name of testng.xml file [Obtain by right click test class file=>convert to testNG] you want to execute as build -->
+		        <suiteXmlFile>testngCrossBrowser.xml</suiteXmlFile><!-- write name of testng.xml file [Obtain by right click test class file=>convert to testNG] you want to execute as build -->
 			</suiteXmlFiles>
 		  </configuration>
         </plugin>

@@ -43,10 +43,10 @@ public void negativeTC(String Scenario, String EID, String pwd, String Expmsg1, 
    if(Scenario.equals("BothBlank"))
 	{
 	    Thread.sleep(3000);
-	    UtilityClass.drawBorder(driver, lp.rtnInvalidEmailMsg());
-	    UtilityClass.drawBorder(driver, lp.rtnPwdReqMsg());
-	    String actMsg1=lp.rtnInvalidEmailMsg().getAttribute("innerHTML");
-	    String actMsg2=lp.rtnPwdReqMsg().getAttribute("innerHTML");	
+	    UtilityClass.drawBorder(driver, lp.rtnAClLoginPageInvalidEmailMsg());
+	    UtilityClass.drawBorder(driver, lp.rtnAClLoginPageWrongPwdMsg());
+	    String actMsg1=lp.rtnAClLoginPageInvalidEmailMsg().getText();
+	    String actMsg2=lp.rtnAClLoginPagePwdReqMsg().getText();	
 		Reporter.log(Expmsg1+"==>"+actMsg1, true);
 		Reporter.log(Expmsg2+"==>"+actMsg2, true);
 		soft.assertEquals(actMsg1, Expmsg1);
@@ -57,8 +57,8 @@ public void negativeTC(String Scenario, String EID, String pwd, String Expmsg1, 
    else if(Scenario.equals("PwdBlank"))
 	{	  
 	   Thread.sleep(3000);
-	   UtilityClass.drawBorder(driver, lp.rtnPwdReqMsg());
-	   String actMsg1=lp.rtnPwdReqMsg().getAttribute("innerHTML");
+	   UtilityClass.drawBorder(driver, lp.rtnAClLoginPagePwdReqMsg());
+	   String actMsg1=lp.rtnAClLoginPagePwdReqMsg().getAttribute("innerHTML");
 	   soft.assertEquals(actMsg1, Expmsg1); 
 	   Reporter.log(Expmsg1+"==>"+actMsg1, true);
 	   Thread.sleep(3000);
@@ -68,8 +68,8 @@ public void negativeTC(String Scenario, String EID, String pwd, String Expmsg1, 
 	else if(Scenario.equals("PwdCaseSensitive"))
 	{
 	   Thread.sleep(3000);
-	   UtilityClass.drawBorder(driver, lp.rtnEleWrongPwdMsg());
-	   String actMsg1=lp.rtnEleWrongPwdMsg().getAttribute("innerHTML");
+	   UtilityClass.drawBorder(driver, lp.rtnAClLoginPagePwdReqMsg());
+	   String actMsg1=lp.rtnAClLoginPagePwdReqMsg().getAttribute("innerHTML");
 	   soft.assertEquals(actMsg1, Expmsg1);	  
 	   Reporter.log(Expmsg1+"==>"+actMsg1, true);
 	   Thread.sleep(3000);
@@ -77,8 +77,8 @@ public void negativeTC(String Scenario, String EID, String pwd, String Expmsg1, 
 	}
 	else if(Scenario.equals("EmailBlank"))
 	{
-	   UtilityClass.drawBorder(driver, lp.rtnInvalidEmailMsg());
-	   String actMsg1=lp.rtnInvalidEmailMsg().getAttribute("innerHTML");
+	   UtilityClass.drawBorder(driver, lp.rtnAClLoginPageInvalidEmailMsg());
+	   String actMsg1=lp.rtnAClLoginPageInvalidEmailMsg().getAttribute("innerHTML");
 	   soft.assertEquals(actMsg1, Expmsg1);	
 	   Reporter.log(Expmsg1+"==>"+actMsg1, true);
 	   Thread.sleep(5000);

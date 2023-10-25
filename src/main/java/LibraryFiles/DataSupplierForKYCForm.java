@@ -29,8 +29,8 @@ String[][] data = new String[row][col];
    {
     for(int j=0; j<col; j++)
        {
-    	DataFormatter df = new  DataFormatter();
-    	   data [i][j]=df.formatCellValue(sheet.getRow(i+startRow+1).getCell(j));
+    	 DataFormatter df = new  DataFormatter();
+    	 data [i][j]= df.formatCellValue(sheet.getRow(i+startRow+1).getCell(j));
        }
     	System.out.println();
    }

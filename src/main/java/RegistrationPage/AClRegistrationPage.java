@@ -10,15 +10,15 @@ import LibraryFiles.UtilityClass;
 public class AClRegistrationPage 
 {
 	@FindBy(xpath = "//h1[text()='Create Account']")private WebElement signUpPageTitle;
-	@FindBy(xpath = "//input[@placeholder='Demo']")private WebElement compName;
-	@FindBy(xpath = "//input[@placeholder='Demo@gmail.com']")private WebElement eMail;
+	@FindBy(xpath = "//input[@name='companyName']")private WebElement compName;
+	@FindBy(xpath = "//input[@name='emailAddress']")private WebElement eMail;
 	@FindBy(xpath = "//select[@class='PhoneInputCountrySelect']")private WebElement countryCode;
 	@FindBy(xpath = "//input[@class='PhoneInputInput']")private WebElement phoneNO;
-	@FindBy(xpath = "(//input[@type='password'])[1]")private WebElement pwd;
+	@FindBy(xpath = "//input[@name='password']")private WebElement pwd;
 	@FindBy(xpath = "//input[@name='confirmPassword']")private WebElement reTypePwd;
-	@FindBy(xpath = "//input[@class='login-input-btn']")private WebElement signUpBtn;
+	@FindBy(xpath = "//button[text()='Sign Up']")private WebElement signUpBtn;
 	@FindBy(xpath = "(//i[@class='eye fa fa-eye-slash'])[1]")private WebElement togglePwdBtn;
-	@FindBy(xpath = "//span[text()='Sign In']")private WebElement signInLink;	
+	@FindBy(xpath = "//a[@class='login-link']")private WebElement signInLink;	
 	public AClRegistrationPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);

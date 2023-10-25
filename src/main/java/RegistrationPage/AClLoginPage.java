@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class AClLoginPage 
 {
-	@FindBy(xpath = "//h1[text()='Hello ! Welcome Back']")private WebElement signInPageTitle;
+	@FindBy(xpath = "//h1[text()='Hello ! Welcome Back ']")private WebElement signInPageTitle;
 	public AClLoginPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
@@ -16,5 +16,4 @@ public class AClLoginPage
 	{	
 		return signInPageTitle;		
 	}
-
 }

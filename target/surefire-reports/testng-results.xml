@@ -1,983 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[% and country is Required]]>
-    </line>
   </reporter-output>
-  <suite started-at="2023-10-19T20:02:57 IST" name="Suite" finished-at="2023-10-19T20:03:56 IST" duration-ms="59505">
+  <suite started-at="2023-10-24T17:41:40 IST" name="Suite" finished-at="2023-10-24T17:41:55 IST" duration-ms="15502">
     <groups>
     </groups>
-    <test started-at="2023-10-19T20:02:57 IST" name="Test" finished-at="2023-10-19T20:03:56 IST" duration-ms="59505">
-      <class name="KycPageTC.KYCPreviewPageTC">
-        <test-method is-config="true" signature="startExtentReport()[pri:0, instance:KycPageTC.KYCPreviewPageTC@47e2e487]" started-at="2023-10-19T20:02:59 IST" name="startExtentReport" finished-at="2023-10-19T20:02:59 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startExtentReport -->
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:KycPageTC.KYCPreviewPageTC@47e2e487]" started-at="2023-10-19T20:03:00 IST" name="openBrowser" finished-at="2023-10-19T20:03:07 IST" duration-ms="6759" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method signature="KYCFormFillForPreview(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:KycPageTC.KYCPreviewPageTC@47e2e487]" started-at="2023-10-19T20:03:07 IST" name="KYCFormFillForPreview" data-provider="dataContainerKYCForm" finished-at="2023-10-19T20:03:54 IST" duration-ms="47170" status="PASS">
+    <test started-at="2023-10-24T17:41:40 IST" name="Test" finished-at="2023-10-24T17:41:55 IST" duration-ms="15502">
+      <class name="LoginTC.CrossBrowser">
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:LoginTC.CrossBrowser@194bcebf]" started-at="2023-10-24T17:41:40 IST" name="InitialiseBrowser" finished-at="2023-10-24T17:41:46 IST" duration-ms="6482" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Positive]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Hashtag InfoSystem 123456]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[parent Hashtag InfoSystem 123456]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[1/405, 1st Floor, hashtag, Nanpura, Surat, Gujarat 395001]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Israel]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[123456789]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[kiran@gmail.com]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[www.hashtaystem.com]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[hashtaginfosy-st.em.com]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[100]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[Others]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[Private Limited]]>
-              </value>
-            </param>
-            <param index="12">
-              <value>
-                <![CDATA[Others]]>
-              </value>
-            </param>
-            <param index="13">
-              <value>
-                <![CDATA[Transportation]]>
-              </value>
-            </param>
-            <param index="14">
-              <value>
-                <![CDATA[India]]>
-              </value>
-            </param>
-            <param index="15">
-              <value>
-                <![CDATA[03]]>
-              </value>
-            </param>
-            <param index="16">
-              <value>
-                <![CDATA[03]]>
-              </value>
-            </param>
-            <param index="17">
-              <value>
-                <![CDATA[2022]]>
-              </value>
-            </param>
-            <param index="18">
-              <value>
-                <![CDATA[REG123455]]>
-              </value>
-            </param>
-            <param index="19">
-              <value>
-                <![CDATA[TRD456]]>
-              </value>
-            </param>
-            <param index="20">
-              <value>
-                <![CDATA[03]]>
-              </value>
-            </param>
-            <param index="21">
-              <value>
-                <![CDATA[03]]>
-              </value>
-            </param>
-            <param index="22">
-              <value>
-                <![CDATA[2025]]>
-              </value>
-            </param>
-            <param index="23">
-              <value>
-                <![CDATA[VAT456]]>
-              </value>
-            </param>
-            <param index="24">
-              <value>
-                <![CDATA[State Bank Of India]]>
-              </value>
-            </param>
-            <param index="25">
-              <value>
-                <![CDATA[India]]>
-              </value>
-            </param>
-            <param index="26">
-              <value>
-                <![CDATA[1/405, 2nd Floor, SBI, Surat, Gujarat 395001]]>
-              </value>
-            </param>
-            <param index="27">
-              <value>
-                <![CDATA[SBISWIFT1245658]]>
-              </value>
-            </param>
-            <param index="28">
-              <value>
-                <![CDATA[HashCurrent Avccount]]>
-              </value>
-            </param>
-            <param index="29">
-              <value>
-                <![CDATA[Afghanistan-Afghani]]>
-              </value>
-            </param>
-            <param index="30">
-              <value>
-                <![CDATA[SBINO123456789123456]]>
-              </value>
-            </param>
-            <param index="31">
-              <value>
-                <![CDATA[SBIIBAN12235555544444]]>
-              </value>
-            </param>
-            <param index="32">
-              <value>
-                <![CDATA[Mr. John Snow B'M]]>
-              </value>
-            </param>
-            <param index="33">
-              <value>
-                <![CDATA[Bhutan]]>
-              </value>
-            </param>
-            <param index="34">
-              <value>
-                <![CDATA[8698706548]]>
-              </value>
-            </param>
-            <param index="35">
-              <value>
-                <![CDATA[ICICI Bank]]>
-              </value>
-            </param>
-            <param index="36">
-              <value>
-                <![CDATA[ICICISWIT122322]]>
-              </value>
-            </param>
-            <param index="37">
-              <value>
-                <![CDATA[Mrs. Robert B'aratheon]]>
-              </value>
-            </param>
-            <param index="38">
-              <value>
-                <![CDATA[51]]>
-              </value>
-            </param>
-            <param index="39">
-              <value>
-                <![CDATA[Australia]]>
-              </value>
-            </param>
-            <param index="40">
-              <value>
-                <![CDATA[Miss. Aegon T'argarian]]>
-              </value>
-            </param>
-            <param index="41">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-            <param index="42">
-              <value>
-                <![CDATA[Bahamas]]>
-              </value>
-            </param>
-            <param index="43">
-              <value>
-                <![CDATA[Mr. P B D'hangar PCD]]>
-              </value>
-            </param>
-            <param index="44">
-              <value>
-                <![CDATA[C E Officer]]>
-              </value>
-            </param>
-            <param index="45">
-              <value>
-                <![CDATA[Congo]]>
-              </value>
-            </param>
-            <param index="46">
-              <value>
-                <![CDATA[456789041]]>
-              </value>
-            </param>
-            <param index="47">
-              <value>
-                <![CDATA[sdsfsf@sf.in]]>
-              </value>
-            </param>
-            <param index="48">
-              <value>
-                <![CDATA[Dr. A S S'hivade CFD]]>
-              </value>
-            </param>
-            <param index="49">
-              <value>
-                <![CDATA[M Director]]>
-              </value>
-            </param>
-            <param index="50">
-              <value>
-                <![CDATA[Colombia]]>
-              </value>
-            </param>
-            <param index="51">
-              <value>
-                <![CDATA[1234567842]]>
-              </value>
-            </param>
-            <param index="52">
-              <value>
-                <![CDATA[sdsfsf@sf.in]]>
-              </value>
-            </param>
-            <param index="53">
-              <value>
-                <![CDATA[Er. Emmar O'DD]]>
-              </value>
-            </param>
-            <param index="54">
-              <value>
-                <![CDATA[Finance Manager]]>
-              </value>
-            </param>
-            <param index="55">
-              <value>
-                <![CDATA[Oman]]>
-              </value>
-            </param>
-            <param index="56">
-              <value>
-                <![CDATA[789561243]]>
-              </value>
-            </param>
-            <param index="57">
-              <value>
-                <![CDATA[sdsfsf@sf.in]]>
-              </value>
-            </param>
-            <param index="58">
-              <value>
-                <![CDATA[Ms. J P Datta A'CCD]]>
-              </value>
-            </param>
-            <param index="59">
-              <value>
-                <![CDATA[Operation Manager]]>
-              </value>
-            </param>
-            <param index="60">
-              <value>
-                <![CDATA[Costa Rica]]>
-              </value>
-            </param>
-            <param index="61">
-              <value>
-                <![CDATA[78945644]]>
-              </value>
-            </param>
-            <param index="62">
-              <value>
-                <![CDATA[sdsfsf@sf.in]]>
-              </value>
-            </param>
-            <param index="63">
-              <value>
-                <![CDATA[Oil Filtration]]>
-              </value>
-            </param>
-            <param index="64">
-              <value>
-                <![CDATA[Mr. Johan C'arter]]>
-              </value>
-            </param>
-            <param index="65">
-              <value>
-                <![CDATA[Dr. Jiya D'susa]]>
-              </value>
-            </param>
-            <param index="66">
-              <value>
-                <![CDATA[Thailand]]>
-              </value>
-            </param>
-            <param index="67">
-              <value>
-                <![CDATA[789456444]]>
-              </value>
-            </param>
-            <param index="68">
-              <value>
-                <![CDATA[sdsfsf@sxvf.com]]>
-              </value>
-            </param>
-            <param index="69">
-              <value>
-                <![CDATA[Mr. Tom J'erry]]>
-              </value>
-            </param>
-            <param index="70">
-              <value>
-                <![CDATA[Turkey]]>
-              </value>
-            </param>
-            <param index="71">
-              <value>
-                <![CDATA[789561555]]>
-              </value>
-            </param>
-            <param index="72">
-              <value>
-                <![CDATA[sdsfsf@sf.in]]>
-              </value>
-            </param>
-            <param index="73">
-              <value>
-                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\1certOfInc43.png]]>
-              </value>
-            </param>
-            <param index="74">
-              <value>
-                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\2ArtOfAsso107.jpeg]]>
-              </value>
-            </param>
-            <param index="75">
-              <value>
-                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\3TradeLisc133.pdf]]>
-              </value>
-            </param>
-            <param index="76">
-              <value>
-                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\4TaxRegi.jpeg]]>
-              </value>
-            </param>
-            <param index="77">
-              <value>
-                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\5CompProfile70.png]]>
-              </value>
-            </param>
-            <param index="78">
-              <value>
-                <![CDATA[www.hashtaginfosystemurl.com]]>
-              </value>
-            </param>
-            <param index="79">
-              <value>
-                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\6BankRef43.png]]>
-              </value>
-            </param>
-            <param index="80">
-              <value>
-                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\7Passport133.pdf]]>
-              </value>
-            </param>
-            <param index="81">
-              <value>
-                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\8AuthoSign105.jpeg]]>
-              </value>
-            </param>
-            <param index="82">
-              <value>
-                <![CDATA[Mr. Tom J'erry]]>
-              </value>
-            </param>
-            <param index="83">
-              <value>
-                <![CDATA[https://adamadminui.web.app]]>
-              </value>
-            </param>
-            <param index="84">
-              <value>
-                <![CDATA[tester.adambrands@gmail.com]]>
-              </value>
-            </param>
-            <param index="85">
-              <value>
-                <![CDATA[Admin@123]]>
+                <![CDATA[Chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- KYCFormFillForPreview -->
-        <test-method is-config="true" signature="CaptureFailedTCSS(org.testng.ITestResult)[pri:0, instance:KycPageTC.KYCPreviewPageTC@47e2e487]" started-at="2023-10-19T20:03:54 IST" name="CaptureFailedTCSS" finished-at="2023-10-19T20:03:56 IST" duration-ms="2004" status="PASS">
+        </test-method> <!-- InitialiseBrowser -->
+        <test-method is-config="true" signature="startExtentReport()[pri:0, instance:LoginTC.CrossBrowser@194bcebf]" started-at="2023-10-24T17:41:46 IST" name="startExtentReport" finished-at="2023-10-24T17:41:47 IST" duration-ms="268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtentReport -->
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:LoginTC.CrossBrowser@194bcebf]" started-at="2023-10-24T17:41:47 IST" name="signIn" data-provider="dataContainerTFLogin1" finished-at="2023-10-24T17:41:47 IST" duration-ms="272" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=KYCFormFillForPreview status=SUCCESS method=KYCPreviewPageTC.KYCFormFillForPreview(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:KycPageTC.KYCPreviewPageTC@47e2e487] output={null}]]]>
+                <![CDATA[kiran]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[tester]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn -->
+        <test-method is-config="true" signature="CaptureFailedTCSS(org.testng.ITestResult)[pri:0, instance:LoginTC.CrossBrowser@194bcebf]" started-at="2023-10-24T17:41:47 IST" name="CaptureFailedTCSS" finished-at="2023-10-24T17:41:49 IST" duration-ms="2004" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signIn status=SUCCESS method=CrossBrowser.signIn(java.lang.String,java.lang.String)[pri:0, instance:LoginTC.CrossBrowser@194bcebf] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CaptureFailedTCSS -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:KycPageTC.KYCPreviewPageTC@47e2e487]" started-at="2023-10-19T20:03:56 IST" name="getResult" finished-at="2023-10-19T20:03:56 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:LoginTC.CrossBrowser@194bcebf]" started-at="2023-10-24T17:41:49 IST" name="getResult" finished-at="2023-10-24T17:41:49 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=KYCFormFillForPreview status=SUCCESS method=KYCPreviewPageTC.KYCFormFillForPreview(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:KycPageTC.KYCPreviewPageTC@47e2e487] output={null}]]]>
+                <![CDATA[[TestResult name=signIn status=SUCCESS method=CrossBrowser.signIn(java.lang.String,java.lang.String)[pri:0, instance:LoginTC.CrossBrowser@194bcebf] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="afterInvocation(org.testng.ITestResult)[pri:0, instance:KycPageTC.KYCPreviewPageTC@47e2e487]" started-at="2023-10-19T20:03:56 IST" name="afterInvocation" finished-at="2023-10-19T20:03:56 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterInvocation(org.testng.ITestResult)[pri:0, instance:LoginTC.CrossBrowser@194bcebf]" started-at="2023-10-24T17:41:49 IST" name="afterInvocation" finished-at="2023-10-24T17:41:49 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=KYCFormFillForPreview status=SUCCESS method=KYCPreviewPageTC.KYCFormFillForPreview(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:KycPageTC.KYCPreviewPageTC@47e2e487] output={null}]]]>
+                <![CDATA[[TestResult name=signIn status=SUCCESS method=CrossBrowser.signIn(java.lang.String,java.lang.String)[pri:0, instance:LoginTC.CrossBrowser@194bcebf] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterInvocation -->
-        <test-method is-config="true" signature="logOut()[pri:0, instance:KycPageTC.KYCPreviewPageTC@47e2e487]" started-at="2023-10-19T20:03:56 IST" name="logOut" finished-at="2023-10-19T20:03:56 IST" duration-ms="141" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOut -->
-      </class> <!-- KycPageTC.KYCPreviewPageTC -->
-      <class name="KycPageTC.KYCPageTC1">
-        <test-method is-config="true" signature="startExtentReport()[pri:0, instance:KycPageTC.KYCPageTC1@d9345cd]" started-at="2023-10-19T20:02:57 IST" name="startExtentReport" finished-at="2023-10-19T20:02:59 IST" duration-ms="2246" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startExtentReport -->
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:KycPageTC.KYCPageTC1@d9345cd]" started-at="2023-10-19T20:03:00 IST" name="openBrowser" finished-at="2023-10-19T20:03:07 IST" duration-ms="6768" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method signature="KYCFormFillDataprovider(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:KycPageTC.KYCPageTC1@d9345cd]" started-at="2023-10-19T20:03:07 IST" name="KYCFormFillDataprovider" data-provider="dataContainerKYCForm" finished-at="2023-10-19T20:03:51 IST" duration-ms="43794" status="PASS">
+        <test-method is-config="true" signature="InitialiseBrowser(java.lang.String)[pri:0, instance:LoginTC.CrossBrowser@194bcebf]" started-at="2023-10-24T17:41:49 IST" name="InitialiseBrowser" finished-at="2023-10-24T17:41:52 IST" duration-ms="3125" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Positive]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Hashtag InfoSystem 123456]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[parent Hashtag InfoSystem 123456]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[1/405, 1st Floor, hashtag, Nanpura, Surat, Gujarat 395001]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Israel]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[123456789]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[kiran@gmail.com]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[www.hashtaystem.com]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[hashtaginfosy-st.em.com]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[100]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[Others]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[Private Limited]]>
-              </value>
-            </param>
-            <param index="12">
-              <value>
-                <![CDATA[Others]]>
-              </value>
-            </param>
-            <param index="13">
-              <value>
-                <![CDATA[Transportation]]>
-              </value>
-            </param>
-            <param index="14">
-              <value>
-                <![CDATA[India]]>
-              </value>
-            </param>
-            <param index="15">
-              <value>
-                <![CDATA[03]]>
-              </value>
-            </param>
-            <param index="16">
-              <value>
-                <![CDATA[03]]>
-              </value>
-            </param>
-            <param index="17">
-              <value>
-                <![CDATA[2022]]>
-              </value>
-            </param>
-            <param index="18">
-              <value>
-                <![CDATA[REG123455]]>
-              </value>
-            </param>
-            <param index="19">
-              <value>
-                <![CDATA[TRD456]]>
-              </value>
-            </param>
-            <param index="20">
-              <value>
-                <![CDATA[03]]>
-              </value>
-            </param>
-            <param index="21">
-              <value>
-                <![CDATA[03]]>
-              </value>
-            </param>
-            <param index="22">
-              <value>
-                <![CDATA[2025]]>
-              </value>
-            </param>
-            <param index="23">
-              <value>
-                <![CDATA[VAT456]]>
-              </value>
-            </param>
-            <param index="24">
-              <value>
-                <![CDATA[State Bank Of India]]>
-              </value>
-            </param>
-            <param index="25">
-              <value>
-                <![CDATA[India]]>
-              </value>
-            </param>
-            <param index="26">
-              <value>
-                <![CDATA[1/405, 2nd Floor, SBI, Surat, Gujarat 395001]]>
-              </value>
-            </param>
-            <param index="27">
-              <value>
-                <![CDATA[SBISWIFT1245658]]>
-              </value>
-            </param>
-            <param index="28">
-              <value>
-                <![CDATA[HashCurrent Avccount]]>
-              </value>
-            </param>
-            <param index="29">
-              <value>
-                <![CDATA[Afghanistan-Afghani]]>
-              </value>
-            </param>
-            <param index="30">
-              <value>
-                <![CDATA[SBINO123456789123456]]>
-              </value>
-            </param>
-            <param index="31">
-              <value>
-                <![CDATA[SBIIBAN12235555544444]]>
-              </value>
-            </param>
-            <param index="32">
-              <value>
-                <![CDATA[Mr. John Snow B'M]]>
-              </value>
-            </param>
-            <param index="33">
-              <value>
-                <![CDATA[Bhutan]]>
-              </value>
-            </param>
-            <param index="34">
-              <value>
-                <![CDATA[8698706548]]>
-              </value>
-            </param>
-            <param index="35">
-              <value>
-                <![CDATA[ICICI Bank]]>
-              </value>
-            </param>
-            <param index="36">
-              <value>
-                <![CDATA[ICICISWIT122322]]>
-              </value>
-            </param>
-            <param index="37">
-              <value>
-                <![CDATA[Mrs. Robert B'aratheon]]>
-              </value>
-            </param>
-            <param index="38">
-              <value>
-                <![CDATA[51]]>
-              </value>
-            </param>
-            <param index="39">
-              <value>
-                <![CDATA[Australia]]>
-              </value>
-            </param>
-            <param index="40">
-              <value>
-                <![CDATA[Miss. Aegon T'argarian]]>
-              </value>
-            </param>
-            <param index="41">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-            <param index="42">
-              <value>
-                <![CDATA[Bahamas]]>
-              </value>
-            </param>
-            <param index="43">
-              <value>
-                <![CDATA[Mr. P B D'hangar PCD]]>
-              </value>
-            </param>
-            <param index="44">
-              <value>
-                <![CDATA[C E Officer]]>
-              </value>
-            </param>
-            <param index="45">
-              <value>
-                <![CDATA[Congo]]>
-              </value>
-            </param>
-            <param index="46">
-              <value>
-                <![CDATA[456789041]]>
-              </value>
-            </param>
-            <param index="47">
-              <value>
-                <![CDATA[sdsfsf@sf.in]]>
-              </value>
-            </param>
-            <param index="48">
-              <value>
-                <![CDATA[Dr. A S S'hivade CFD]]>
-              </value>
-            </param>
-            <param index="49">
-              <value>
-                <![CDATA[M Director]]>
-              </value>
-            </param>
-            <param index="50">
-              <value>
-                <![CDATA[Colombia]]>
-              </value>
-            </param>
-            <param index="51">
-              <value>
-                <![CDATA[1234567842]]>
-              </value>
-            </param>
-            <param index="52">
-              <value>
-                <![CDATA[sdsfsf@sf.in]]>
-              </value>
-            </param>
-            <param index="53">
-              <value>
-                <![CDATA[Er. Emmar O'DD]]>
-              </value>
-            </param>
-            <param index="54">
-              <value>
-                <![CDATA[Finance Manager]]>
-              </value>
-            </param>
-            <param index="55">
-              <value>
-                <![CDATA[Oman]]>
-              </value>
-            </param>
-            <param index="56">
-              <value>
-                <![CDATA[789561243]]>
-              </value>
-            </param>
-            <param index="57">
-              <value>
-                <![CDATA[sdsfsf@sf.in]]>
-              </value>
-            </param>
-            <param index="58">
-              <value>
-                <![CDATA[Ms. J P Datta A'CCD]]>
-              </value>
-            </param>
-            <param index="59">
-              <value>
-                <![CDATA[Operation Manager]]>
-              </value>
-            </param>
-            <param index="60">
-              <value>
-                <![CDATA[Costa Rica]]>
-              </value>
-            </param>
-            <param index="61">
-              <value>
-                <![CDATA[78945644]]>
-              </value>
-            </param>
-            <param index="62">
-              <value>
-                <![CDATA[sdsfsf@sf.in]]>
-              </value>
-            </param>
-            <param index="63">
-              <value>
-                <![CDATA[Oil Filtration]]>
-              </value>
-            </param>
-            <param index="64">
-              <value>
-                <![CDATA[Mr. Johan C'arter]]>
-              </value>
-            </param>
-            <param index="65">
-              <value>
-                <![CDATA[Dr. Jiya D'susa]]>
-              </value>
-            </param>
-            <param index="66">
-              <value>
-                <![CDATA[Thailand]]>
-              </value>
-            </param>
-            <param index="67">
-              <value>
-                <![CDATA[789456444]]>
-              </value>
-            </param>
-            <param index="68">
-              <value>
-                <![CDATA[sdsfsf@sxvf.com]]>
-              </value>
-            </param>
-            <param index="69">
-              <value>
-                <![CDATA[Mr. Tom J'erry]]>
-              </value>
-            </param>
-            <param index="70">
-              <value>
-                <![CDATA[Turkey]]>
-              </value>
-            </param>
-            <param index="71">
-              <value>
-                <![CDATA[789561555]]>
-              </value>
-            </param>
-            <param index="72">
-              <value>
-                <![CDATA[sdsfsf@sf.in]]>
-              </value>
-            </param>
-            <param index="73">
-              <value>
-                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\1certOfInc43.png]]>
-              </value>
-            </param>
-            <param index="74">
-              <value>
-                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\2ArtOfAsso107.jpeg]]>
-              </value>
-            </param>
-            <param index="75">
-              <value>
-                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\3TradeLisc133.pdf]]>
-              </value>
-            </param>
-            <param index="76">
-              <value>
-                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\4TaxRegi.jpeg]]>
-              </value>
-            </param>
-            <param index="77">
-              <value>
-                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\5CompProfile70.png]]>
-              </value>
-            </param>
-            <param index="78">
-              <value>
-                <![CDATA[www.hashtaginfosystemurl.com]]>
-              </value>
-            </param>
-            <param index="79">
-              <value>
-                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\6BankRef43.png]]>
-              </value>
-            </param>
-            <param index="80">
-              <value>
-                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\7Passport133.pdf]]>
-              </value>
-            </param>
-            <param index="81">
-              <value>
-                <![CDATA[C:\Users\PC\eclipse-workspace\AdamJayKyc\Upload Document\8AuthoSign105.jpeg]]>
-              </value>
-            </param>
-            <param index="82">
-              <value>
-                <![CDATA[Mr. Tom J'erry]]>
-              </value>
-            </param>
-            <param index="83">
-              <value>
-                <![CDATA[https://adamadminui.web.app]]>
-              </value>
-            </param>
-            <param index="84">
-              <value>
-                <![CDATA[tester.adambrands@gmail.com]]>
-              </value>
-            </param>
-            <param index="85">
-              <value>
-                <![CDATA[Admin@123]]>
+                <![CDATA[Chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[% and country is Required]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- KYCFormFillDataprovider -->
-        <test-method is-config="true" signature="CaptureFailedTCSS(org.testng.ITestResult)[pri:0, instance:KycPageTC.KYCPageTC1@d9345cd]" started-at="2023-10-19T20:03:51 IST" name="CaptureFailedTCSS" finished-at="2023-10-19T20:03:53 IST" duration-ms="2010" status="PASS">
+        </test-method> <!-- InitialiseBrowser -->
+        <test-method is-config="true" signature="startExtentReport()[pri:0, instance:LoginTC.CrossBrowser@194bcebf]" started-at="2023-10-24T17:41:52 IST" name="startExtentReport" finished-at="2023-10-24T17:41:52 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtentReport -->
+        <test-method signature="signIn(java.lang.String,java.lang.String)[pri:0, instance:LoginTC.CrossBrowser@194bcebf]" started-at="2023-10-24T17:41:52 IST" name="signIn" data-provider="dataContainerTFLogin1" finished-at="2023-10-24T17:41:52 IST" duration-ms="458" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=KYCFormFillDataprovider status=SUCCESS method=KYCPageTC1.KYCFormFillDataprovider(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:KycPageTC.KYCPageTC1@d9345cd] output=% and country is Required]]]>
+                <![CDATA[Dhaval]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[UIUX]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn -->
+        <test-method is-config="true" signature="CaptureFailedTCSS(org.testng.ITestResult)[pri:0, instance:LoginTC.CrossBrowser@194bcebf]" started-at="2023-10-24T17:41:52 IST" name="CaptureFailedTCSS" finished-at="2023-10-24T17:41:54 IST" duration-ms="2012" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signIn status=SUCCESS method=CrossBrowser.signIn(java.lang.String,java.lang.String)[pri:0, instance:LoginTC.CrossBrowser@194bcebf] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CaptureFailedTCSS -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:KycPageTC.KYCPageTC1@d9345cd]" started-at="2023-10-19T20:03:53 IST" name="getResult" finished-at="2023-10-19T20:03:53 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=KYCFormFillDataprovider status=SUCCESS method=KYCPageTC1.KYCFormFillDataprovider(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:KycPageTC.KYCPageTC1@d9345cd] output=% and country is Required]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="logOut()[pri:0, instance:LoginTC.CrossBrowser@194bcebf]" started-at="2023-10-24T17:41:54 IST" name="logOut" finished-at="2023-10-24T17:41:55 IST" duration-ms="802" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="afterInvocation(org.testng.ITestResult)[pri:0, instance:KycPageTC.KYCPageTC1@d9345cd]" started-at="2023-10-19T20:03:53 IST" name="afterInvocation" finished-at="2023-10-19T20:03:53 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="afterInvocation(org.testng.ITestResult)[pri:0, instance:LoginTC.CrossBrowser@194bcebf]" started-at="2023-10-24T17:41:54 IST" name="afterInvocation" finished-at="2023-10-24T17:41:54 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=KYCFormFillDataprovider status=SUCCESS method=KYCPageTC1.KYCFormFillDataprovider(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:KycPageTC.KYCPageTC1@d9345cd] output=% and country is Required]]]>
+                <![CDATA[[TestResult name=signIn status=SUCCESS method=CrossBrowser.signIn(java.lang.String,java.lang.String)[pri:0, instance:LoginTC.CrossBrowser@194bcebf] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterInvocation -->
-        <test-method is-config="true" signature="logOut()[pri:0, instance:KycPageTC.KYCPageTC1@d9345cd]" started-at="2023-10-19T20:03:53 IST" name="logOut" finished-at="2023-10-19T20:03:53 IST" duration-ms="604" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:LoginTC.CrossBrowser@194bcebf]" started-at="2023-10-24T17:41:54 IST" name="getResult" finished-at="2023-10-24T17:41:54 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signIn status=SUCCESS method=CrossBrowser.signIn(java.lang.String,java.lang.String)[pri:0, instance:LoginTC.CrossBrowser@194bcebf] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logOut -->
-      </class> <!-- KycPageTC.KYCPageTC1 -->
+        </test-method> <!-- getResult -->
+      </class> <!-- LoginTC.CrossBrowser -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -30,8 +30,7 @@ import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 import net.bytebuddy.utility.RandomString;
 	
 public class KYCPageTC1 extends BaseClass
-{	
-	
+{		
 	AClLoginPage lp;
     AClKYCformPage kp;
 	SoftAssert soft;
